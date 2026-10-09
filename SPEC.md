@@ -50,7 +50,7 @@ The vocabulary comes from Knowt flashcard sets, one per topic. Each set is expor
 - Words appear in the CSV order within each topic.
 - The CSV is converted to a data file that ships with the site. The app fetches nothing from Knowt or Quizlet at runtime.
 
-**Words that share an English meaning.** A topic can have two words with the same English (e.g. 计算机学 and 电脑 are both "computer science" in School 学校). Since every quiz question shows English and asks for Chinese:
+**Words that share an English meaning.** A topic can have two words with the same English (the School 学校 set originally had 计算机学 and 电脑 both as "computer science"; 电脑 was corrected to "computer"). Since every quiz question shows English and asks for Chinese:
 - **Multiple choice:** a word with the same English is never used as a distractor, so there's only one correct option.
 - **Short answer:** any Chinese word in the topic with that exact English is accepted.
 
