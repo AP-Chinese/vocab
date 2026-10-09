@@ -106,4 +106,6 @@ Only `main` deploys, through GitHub Actions to GitHub Pages, and only after the 
 
 1. **Results can be faked.** The timestamp comes from the phone's clock, and screenshots can be edited. Results are a deterrent, not proof. A possible fix is a verification code the teacher can check (spec, "Possible later work").
 2. **The test topic can be reached on preview links.** The repo is public, so a tech-savvy student could screenshot a PASS from a preview link. It would show "🧪 Test topic (preview only)" as the topic, which the teacher would notice.
-3. **No real Safari or WeChat testing.** Browser tests use Chrome sized like a phone. iPhone WeChat uses Safari's engine (WebKit), so real-phone checks are still needed.
+3. **No Safari-engine tests (deferred, Oct 2026).** Browser tests only use Chrome sized like a phone. iPhone WeChat and Safari use a different engine (WebKit), so engine-specific bugs can slip through. The card flip is the most likely, since its 3D CSS is handled differently in Safari. Real-phone checks in WeChat are still needed either way.
+   - **Plan when we pick it up (about 30 min):** add an "iPhone SE (Safari engine)" Playwright project that's skipped when WebKit isn't installed, and add `npx playwright install --with-deps webkit` to the CI workflow. WebKit can't be installed in the Claude Code cloud environment, so it would run only in GitHub CI (on pull requests and `main`), with no screenshot comparisons.
+   - Playwright's WebKit on Linux isn't identical to Safari on an iPhone, so this narrows the gap without closing it.
