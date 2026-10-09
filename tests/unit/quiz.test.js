@@ -1,7 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildQuiz, isCorrect, isPass, normalizeAnswer, percent } from "../site/js/quiz.js";
-import { TOPICS } from "../site/js/vocab.js";
+import { buildQuiz, isCorrect, isPass, normalizeAnswer, percent } from "../../site/js/quiz.js";
+import { TOPICS } from "../../site/js/vocab.js";
+import { DEV_TOPICS } from "../../site/js/dev-topics.js";
 
 const words = (n) => Array.from({ length: n }, (_, i) => ({ chinese: `词${i}`, english: `word ${i}` }));
 
@@ -67,7 +68,7 @@ test("pass threshold is 90% without rounding", () => {
 
 test("vocab data is well formed", () => {
   assert.ok(TOPICS.length > 0);
-  for (const topic of TOPICS) {
+  for (const topic of [...TOPICS, ...DEV_TOPICS]) {
     assert.ok(topic.name);
     assert.ok(topic.words.length >= 4, `${topic.name} needs at least 4 words for multiple choice`);
     for (const w of topic.words) assert.ok(w.chinese.trim() && w.english.trim(), JSON.stringify(w));

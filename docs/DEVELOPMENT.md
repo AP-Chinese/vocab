@@ -15,9 +15,29 @@ https://raw.githack.com/rachelli429/ap-chinese-vocab/<commit-sha>/site/index.htm
 ## Running locally
 
 ```sh
+npm install    # once per checkout; also turns on the pre-commit hook
 npm start      # serves site/ at http://localhost:8080
-npm test       # unit tests (Node 22+)
 ```
+
+## Test topic (preview only)
+
+`site/js/dev-topics.js` adds a 5-word "🧪 Test topic (preview only)" topic, so the whole quiz and the results screen can be tried in under a minute. The deploy workflow deletes that file before publishing, so it never appears on the GitHub Pages site. It does appear locally and on raw.githack.com preview links.
+
+## Tests
+
+`npm test` runs everything, and it also runs automatically before every commit (`.githooks/pre-commit`). To skip it once in an emergency: `git commit --no-verify`.
+
+| command | what it runs |
+|---|---|
+| `npm run test:unit` | Quiz rules in `tests/unit/`: every word asked once, the half-and-half split, 4 distinct choices, answer grading, the 90% pass mark, and checks on the word list. |
+| `npm run test:e2e` | Browser tests in `tests/e2e/` on an iPhone SE and a Pixel 7 screen: using the flashcards, audio, name entry, typing answers (including the pinyin-keyboard Enter guard), feedback, pass/fail results, and retakes. Also the visual tests below. |
+| `npm run test:update-screenshots` | Re-captures the screenshots after an intended design change. Review the new images before committing. |
+
+**Visual regression tests** (`tests/e2e/visual.spec.js`) compare every screen with the saved images in `tests/e2e/screenshots/<phone>/`. If a change alters how a screen looks, the test fails and saves a before/after/diff in `test-results/`. The saved screenshots double as an always-current gallery of the app, browsable on GitHub.
+
+Notes:
+- The tests pin the random order, the clock (Oct 9, 2026, 7:42 PM Eastern), and fake a Chinese voice, so every run looks the same.
+- Screenshots are captured in the Claude Code cloud environment (Linux). On another computer fonts render slightly differently, so the visual tests may fail there even when nothing changed. CI on GitHub skips them for the same reason and runs only the unit and functional tests.
 
 ## Adding a topic
 

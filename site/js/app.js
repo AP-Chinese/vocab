@@ -1,6 +1,10 @@
-import { TOPICS } from "./vocab.js";
+import { TOPICS as VOCAB_TOPICS } from "./vocab.js";
 import { buildQuiz, isCorrect, isPass, percent, shuffle } from "./quiz.js";
 import { initSpeech, speak } from "./speech.js";
+
+// Preview-only topics; the file is absent from the deployed site, so this falls back to none.
+const { DEV_TOPICS = [] } = await import("./dev-topics.js").catch(() => ({}));
+const TOPICS = [...VOCAB_TOPICS, ...DEV_TOPICS];
 
 const app = document.getElementById("app");
 

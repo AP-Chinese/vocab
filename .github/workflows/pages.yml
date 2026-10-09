@@ -23,7 +23,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm test
+      - run: npm ci
+      - run: npm run test:unit
+      - run: npx playwright install --with-deps chromium
+      # Screenshot comparisons are skipped here: GitHub's machines render fonts differently.
+      - run: npx playwright test --grep-invert @visual
 
   deploy:
     needs: test
@@ -35,6 +39,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Remove preview-only files
+        run: rm site/js/dev-topics.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
