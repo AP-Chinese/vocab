@@ -35,20 +35,24 @@ The assignment is for students with low reading scores on the mock AP tests. The
 
 ### Source data
 
-The vocabulary currently lives in Quizlet, one set per topic, with a Google Sheet linking to each set. Each set will be exported from Quizlet (term/definition text) and combined once into a CSV checked into the repo at `data/vocab.csv`. The word list will not change after that.
+The vocabulary comes from Knowt flashcard sets, one per topic. Each set is exported as a PDF with two columns (Chinese, English) and committed to `data/source/`, named `NN-topic.pdf` (e.g. `01-school.pdf`). The number sets the topic order.
 
-Expected columns (**to confirm against the real sheet**):
+`scripts/pdf_to_csv.py` extracts every PDF into `data/vocab.csv`. The topic name comes from the PDF title (e.g. `School 学校`). The word list will not change after this one-time import.
 
-| column    | example     | notes                             |
-|-----------|-------------|-----------------------------------|
-| `topic`   | 家庭与社区   | the topic group the word belongs to |
-| `chinese` | 爸爸         | simplified characters             |
-| `english` | dad, father | English meaning                   |
+| column    | example                   | notes                                         |
+|-----------|---------------------------|-----------------------------------------------|
+| `topic`   | School 学校               | English + Chinese topic name                  |
+| `chinese` | 课程                      | simplified characters                         |
+| `english` | course; curriculum; class | English meaning; multiple meanings separated by `; ` |
 
 - Each topic has about 30–50 words.
 - Topics appear in the app in the same order as in the CSV.
 - Words appear in the CSV order within each topic.
-- The CSV is converted to a JSON/JS data file that ships with the site (either once by hand or with a small build script). The app does not fetch anything from Google at runtime.
+- The CSV is converted to a data file that ships with the site. The app fetches nothing from Knowt or Quizlet at runtime.
+
+**Words that share an English meaning.** A topic can have two words with the same English (e.g. 计算机学 and 电脑 are both "computer science" in School 学校). Since every quiz question shows English and asks for Chinese:
+- **Multiple choice:** a word with the same English is never used as a distractor, so there's only one correct option.
+- **Short answer:** any Chinese word in the topic with that exact English is accepted.
 
 ## Screens and flows
 
@@ -97,7 +101,7 @@ Home (topic list)
 
 **Multiple choice (English → Chinese)**
 - Shows the English meaning.
-- Four Chinese options: the correct answer and 3 distractors chosen at random from other words in the **same topic**. All four options must be distinct, in random order.
+- Four Chinese options: the correct answer and 3 distractors chosen at random from other words in the **same topic** that have a different English meaning. All four options must be distinct, in random order.
 - Tapping an option submits it immediately.
 
 **Short answer (English → Chinese)**
@@ -111,7 +115,7 @@ Home (topic list)
 - Remove all whitespace
 - Remove ASCII and full-width punctuation (e.g. `，。！？、；：,.!?;:`)
 
-No partial credit and no alternate answers.
+No partial credit. The only alternates accepted are words in the same topic with the identical English meaning (see Content).
 
 **Feedback after each question**
 - Show ✅ Correct or ❌ Incorrect right away.
@@ -163,8 +167,9 @@ Buttons: **Retake quiz** (no limit; keeps the name and reshuffles), **Back to to
 
 ## Open items
 
-- [ ] Get the vocabulary sheet as CSV and confirm the columns and topic names.
-- [ ] Confirm the GitHub repo can be public (for GitHub Pages), or choose another free static host.
+- [x] Confirm the source data format (Knowt PDF → `data/vocab.csv`, checked with `01-school.pdf`).
+- [ ] Export and commit the remaining topic PDFs.
+- [x] The GitHub repo is public (GitHub Pages is OK).
 - [ ] Early WeChat test of the hosted link and text-to-speech.
 
 ## Possible later work
