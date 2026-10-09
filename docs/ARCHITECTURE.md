@@ -100,7 +100,7 @@ Decisions inside the rules:
 
 ## 12. Deploying
 
-Only `main` deploys, through GitHub Actions to GitHub Pages, and only after the tests pass. The site is published from the `AP-Chinese-Vocab` organization, so the link (https://ap-chinese-vocab.github.io/vocab/) doesn't show a personal username.
+Only `main` deploys, through GitHub Actions to GitHub Pages, and only after the tests pass. The site is published from the `ap-chinese` organization, so the link (https://ap-chinese.github.io/vocab/) doesn't show a personal username.
 
 ## Known weak spots
 
