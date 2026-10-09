@@ -1,0 +1,5 @@
+#!/bin/sh
+# Runs the full test suite before every commit. Enabled by `npm install` (see "prepare" in package.json).
+# Skip once in an emergency with: git commit --no-verify
+echo "pre-commit: running tests (npm test)…"
+npm test --silent
