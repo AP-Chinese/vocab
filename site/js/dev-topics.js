@@ -3,6 +3,7 @@
 // It still works locally and on raw.githack.com preview links.
 export const DEV_TOPICS = [
   {
+    id: "test",
     name: "🧪 Test topic (preview only)",
     words: [
       { chinese: "你好", english: "hello" },

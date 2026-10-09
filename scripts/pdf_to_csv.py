@@ -1,7 +1,8 @@
 """Convert Knowt flashcard PDF exports in data/source/ into data/vocab.csv and site/js/vocab.js.
 
-Each PDF is one topic. Files are processed in filename order (e.g. 01-school.pdf),
-and the topic name comes from the PDF title (e.g. "School 学校").
+Each PDF is one topic. Files are processed in filename order (e.g. 01-school.pdf).
+The topic's ID for links comes from the file name ("school"), and its display name
+from the PDF title (e.g. "School 学校").
 
 Usage: python3 scripts/pdf_to_csv.py
 Requires poppler-utils (pdftotext, pdfinfo).
@@ -34,6 +35,15 @@ def pdf_title(path):
         if line.startswith("Title:"):
             return line.split(":", 1)[1].strip()
     return path.stem
+
+
+def topic_id(path):
+    # The stable ID used in links: "01-school.pdf" -> "school". The number prefix only sets the order.
+    topic = re.sub(r"^\d+[-_ ]*", "", path.stem).lower()
+    topic = re.sub(r"[^a-z0-9]+", "-", topic).strip("-")
+    if not topic:
+        sys.exit(f"{path.name}: file name needs a topic after the number, e.g. 02-family.pdf")
+    return topic
 
 
 def normalize_english(text):
@@ -72,7 +82,7 @@ def main():
             rows = parse_pdf(pdf, topic)
             for chinese, english in rows:
                 writer.writerow([topic, chinese, english])
-            topics.append({"name": topic, "words": [{"chinese": c, "english": e} for c, e in rows]})
+            topics.append({"id": topic_id(pdf), "name": topic, "words": [{"chinese": c, "english": e} for c, e in rows]})
             print(f"{pdf.name}: {topic!r} -> {len(rows)} words")
     JS_FILE.parent.mkdir(parents=True, exist_ok=True)
     JS_FILE.write_text(

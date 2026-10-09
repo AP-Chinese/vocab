@@ -42,13 +42,12 @@ function header(title, backHref) {
 
 function route() {
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-  const topicIndex = Number(parts[1]);
-  const topic = parts[0] === "topic" ? TOPICS[topicIndex] : undefined;
+  const topic = parts[0] === "topic" ? TOPICS.find((t) => t.id === parts[1]) : undefined;
 
   if (!topic) return showHome();
-  if (parts[2] === "cards") return showCards(topicIndex);
-  if (parts[2] === "quiz") return showQuizStart(topicIndex);
-  return showTopic(topicIndex);
+  if (parts[2] === "cards") return showCards(topic);
+  if (parts[2] === "quiz") return showQuizStart(topic);
+  return showTopic(topic);
 }
 
 function render(html) {
@@ -66,8 +65,8 @@ function showHome() {
       <p class="hint">Pick a topic to study the flashcards or take the quiz.</p>
       <ul class="topic-list">
         ${TOPICS.map(
-          (t, i) => `
-          <li><a class="topic-link" href="#/topic/${i}">
+          (t) => `
+          <li><a class="topic-link" href="#/topic/${t.id}">
             <span>${esc(t.name)}</span><span class="count">${t.words.length} words</span>
           </a></li>`,
         ).join("")}
@@ -78,31 +77,28 @@ function showHome() {
 
 // ---------- Topic ----------
 
-function showTopic(topicIndex) {
+function showTopic(topic) {
   state = {};
-  const topic = TOPICS[topicIndex];
   render(`
     ${header(topic.name, "#/")}
     <main class="topic-menu">
-      <a class="big-btn" href="#/topic/${topicIndex}/cards">Flashcards</a>
-      <a class="big-btn primary" href="#/topic/${topicIndex}/quiz">Quiz</a>
+      <a class="big-btn" href="#/topic/${topic.id}/cards">Flashcards</a>
+      <a class="big-btn primary" href="#/topic/${topic.id}/quiz">Quiz</a>
     </main>
     ${footer()}`);
 }
 
 // ---------- Flashcards ----------
 
-function showCards(topicIndex) {
-  const topic = TOPICS[topicIndex];
+function showCards(topic) {
   // `revealed` holds the cards already flipped once; Next stays disabled until the current one is.
-  state = { screen: "cards", topicIndex, order: shuffle(topic.words), index: 0, flipped: false, revealed: new Set() };
+  state = { screen: "cards", topic, order: shuffle(topic.words), index: 0, flipped: false, revealed: new Set() };
   renderCards();
 }
 
 function renderCards() {
-  const { topicIndex, order, index, flipped, revealed } = state;
-  const topic = TOPICS[topicIndex];
-  const back = `#/topic/${topicIndex}`;
+  const { topic, order, index, flipped, revealed } = state;
+  const back = `#/topic/${topic.id}`;
 
   if (index >= order.length) {
     render(`
@@ -110,7 +106,7 @@ function renderCards() {
       <main class="done">
         <p class="done-title">You've gone through all ${order.length} cards!</p>
         <button type="button" class="big-btn" data-action="cards-restart">Study again</button>
-        <a class="big-btn primary" href="#/topic/${topicIndex}/quiz">Take the quiz</a>
+        <a class="big-btn primary" href="#/topic/${topic.id}/quiz">Take the quiz</a>
       </main>`);
     return;
   }
@@ -141,11 +137,10 @@ function renderCards() {
 
 // ---------- Quiz ----------
 
-function showQuizStart(topicIndex) {
-  const topic = TOPICS[topicIndex];
-  state = { screen: "quiz-name", topicIndex };
+function showQuizStart(topic) {
+  state = { screen: "quiz-name", topic };
   render(`
-    ${header(topic.name, `#/topic/${topicIndex}`)}
+    ${header(topic.name, `#/topic/${topic.id}`)}
     <main class="quiz-name">
       <p>This quiz has <strong>${topic.words.length} questions</strong>, one for every word in the topic. You need <strong>90%</strong> to pass.</p>
       <label for="name">Your name</label>
@@ -155,10 +150,10 @@ function showQuizStart(topicIndex) {
 }
 
 function startQuiz() {
-  const topic = TOPICS[state.topicIndex];
+  const { topic } = state;
   state = {
     screen: "quiz",
-    topicIndex: state.topicIndex,
+    topic,
     questions: buildQuiz(topic.words),
     current: 0,
     correctCount: 0,
@@ -168,8 +163,7 @@ function startQuiz() {
 }
 
 function renderQuestion() {
-  const { topicIndex, questions, current, answer } = state;
-  const topic = TOPICS[topicIndex];
+  const { topic, questions, current, answer } = state;
   const q = questions[current];
 
   let body;
@@ -207,7 +201,7 @@ function renderQuestion() {
     : "";
 
   render(`
-    ${header(topic.name, `#/topic/${topicIndex}`)}
+    ${header(topic.name, `#/topic/${topic.id}`)}
     <main class="quiz">
       <p class="progress">Question ${current + 1} / ${questions.length}</p>
       <p class="prompt-label">${q.type === "mc" ? "Choose the Chinese for:" : "Type the Chinese for:"}</p>
@@ -236,12 +230,11 @@ function nextQuestion() {
 }
 
 function showResults() {
-  const { topicIndex, correctCount, questions } = state;
-  const topic = TOPICS[topicIndex];
+  const { topic, correctCount, questions } = state;
   const total = questions.length;
   const passed = isPass(correctCount, total);
   const finishedAt = new Date().toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
-  state = { screen: "results", topicIndex };
+  state = { screen: "results", topic };
 
   render(`
     <main class="results">
@@ -257,7 +250,7 @@ function showResults() {
       </dl>
       <p class="hint">Take a screenshot and send it to your teacher.</p>
       <div class="nav-row">
-        <a class="btn" href="#/topic/${topicIndex}">Back to topic</a>
+        <a class="btn" href="#/topic/${topic.id}">Back to topic</a>
         <button type="button" class="btn primary" data-action="quiz-retake">Retake quiz</button>
       </div>
     </main>`);
@@ -288,7 +281,7 @@ app.addEventListener("click", (event) => {
       renderCards();
       break;
     case "cards-restart":
-      showCards(state.topicIndex);
+      showCards(state.topic);
       break;
     case "quiz-start":
       startQuiz();

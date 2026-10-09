@@ -141,3 +141,14 @@ test("Report a problem links to the bug form on Home and Topic, but not on quiz 
   await page.getByRole("link", { name: "Quiz" }).click();
   await expect(link).toHaveCount(0);
 });
+
+test("topics are linked by name, and unknown topic links fall back to Home", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: /School 学校/ }).click();
+  await expect(page).toHaveURL(/#\/topic\/school$/);
+  await page.getByRole("link", { name: "Quiz" }).click();
+  await expect(page).toHaveURL(/#\/topic\/school\/quiz$/);
+
+  await page.goto("/#/topic/0/quiz"); // an old position-based link
+  await expect(page.getByRole("heading", { name: "AP Chinese Vocab" })).toBeVisible();
+});

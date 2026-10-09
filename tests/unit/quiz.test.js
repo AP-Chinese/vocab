@@ -68,7 +68,10 @@ test("pass threshold is 90% without rounding", () => {
 
 test("vocab data is well formed", () => {
   assert.ok(TOPICS.length > 0);
-  for (const topic of [...TOPICS, ...DEV_TOPICS]) {
+  const all = [...TOPICS, ...DEV_TOPICS];
+  assert.equal(new Set(all.map((t) => t.id)).size, all.length, "topic IDs must be unique");
+  for (const topic of all) {
+    assert.match(topic.id, /^[a-z0-9]+(-[a-z0-9]+)*$/, `${topic.name}: ID must be link-safe`);
     assert.ok(topic.name);
     assert.ok(topic.words.length >= 4, `${topic.name} needs at least 4 words for multiple choice`);
     for (const w of topic.words) assert.ok(w.chinese.trim() && w.english.trim(), JSON.stringify(w));
