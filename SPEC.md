@@ -35,7 +35,7 @@ The assignment is for students with low reading scores on the mock AP tests. The
 
 ### Source data
 
-The vocabulary currently lives in a Quizlet-exported Google Sheet. It will be converted once to a CSV checked into the repo at `data/vocab.csv`. The word list will not change after that.
+The vocabulary currently lives in Quizlet, one set per topic, with a Google Sheet linking to each set. Each set will be exported from Quizlet (term/definition text) and combined once into a CSV checked into the repo at `data/vocab.csv`. The word list will not change after that.
 
 Expected columns (**to confirm against the real sheet**):
 
@@ -92,7 +92,7 @@ Home (topic list)
 #### 4b. Questions
 
 - **Every word in the topic is asked exactly once.**
-- The words are shuffled, then split half and half between the two question types. If the count is odd, multiple choice gets the extra word. The two types are mixed together in random order.
+- The words are shuffled, then split half and half between the two question types. If the count is odd, multiple choice gets the extra word (e.g. 41 words → 21 multiple choice + 20 short answer). The two types are mixed together in random order.
 - A progress indicator, e.g. `Question 7 / 42`.
 
 **Multiple choice (English → Chinese)**
