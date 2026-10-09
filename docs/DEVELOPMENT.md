@@ -53,7 +53,7 @@ Notes:
 Nothing in the app is specific to one topic. Topics and words come entirely from `site/js/vocab.js`, which is generated:
 
 1. Export the Knowt set as PDF and commit it as `data/source/NN-topic.pdf`. The number sets the order on the home screen, e.g. `02-family.pdf`.
-2. Run `python3 scripts/pdf_to_csv.py` (needs `poppler-utils`). It reads every PDF in `data/source/` and regenerates `data/vocab.csv` and `site/js/vocab.js`. The topic name shown in the app is the PDF's title (e.g. `School 学校`).
+2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title (e.g. `School 学校`).
 3. Run `npm test`. It checks every topic has at least 4 words, no blanks, and no duplicate Chinese.
 4. Check the word count against the Knowt set, and check for words that share an English meaning (the app handles them, but they may be mistakes in the source set).
 

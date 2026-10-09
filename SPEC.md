@@ -38,7 +38,7 @@ The assignment is for students with low reading scores on the mock AP tests. The
 
 The vocabulary comes from Knowt flashcard sets, one per topic. Each set is exported as a PDF with two columns (Chinese, English) and committed to `data/source/`, named `NN-topic.pdf` (e.g. `01-school.pdf`). The number sets the topic order.
 
-`scripts/pdf_to_csv.py` extracts every PDF into `data/vocab.csv`. The topic name comes from the PDF title (e.g. `School 学校`). The word list will not change after this one-time import.
+`scripts/import_vocab.py` extracts every PDF into `site/js/vocab.js`, the word list the site loads. Each topic gets an `id` from its file name (`school`, used in links), and its display name comes from the PDF title (e.g. `School 学校`). The word list will not change after this one-time import.
 
 | column    | example                   | notes                                         |
 |-----------|---------------------------|-----------------------------------------------|
@@ -47,9 +47,8 @@ The vocabulary comes from Knowt flashcard sets, one per topic. Each set is expor
 | `english` | course; curriculum; class | English meaning; multiple meanings separated by `; ` |
 
 - Each topic has about 30–50 words.
-- Topics appear in the app in the same order as in the CSV.
-- Words appear in the CSV order within each topic.
-- The CSV is converted to a data file that ships with the site. The app fetches nothing from Knowt or Quizlet at runtime.
+- Topics appear in file-name order. Words appear in the same order as in each PDF.
+- The word list ships with the site. The app fetches nothing from Knowt or Quizlet at runtime.
 
 **Words that share an English meaning.** A topic can have two words with the same English (the School 学校 set originally had 计算机学 and 电脑 both as "computer science"; 电脑 was corrected to "computer"). Since every quiz question shows English and asks for Chinese:
 - **Multiple choice:** a word with the same English is never used as a distractor, so there's only one correct option.
@@ -176,7 +175,7 @@ A 5-word "🧪 Test topic (preview only)" (`site/js/dev-topics.js`) makes it qui
 
 ## Open items
 
-- [x] Confirm the source data format (Knowt PDF → `data/vocab.csv`, checked with `01-school.pdf`).
+- [x] Confirm the source data format (Knowt PDF → `site/js/vocab.js`, checked with `01-school.pdf`).
 - [ ] Export and commit the remaining topic PDFs.
 - [x] The GitHub repo is public (GitHub Pages is OK).
 - [ ] Early WeChat test of the hosted link and text-to-speech.

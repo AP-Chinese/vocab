@@ -5,8 +5,7 @@ Why the app is built the way it is. When a decision changes, update its entry ra
 ## Map
 
 ```
-data/source/NN-topic.pdf ──scripts/pdf_to_csv.py──► site/js/vocab.js  (what the app loads)
-                                                 └► data/vocab.csv    (readable copy)
+data/source/NN-topic.pdf ──scripts/import_vocab.py──► site/js/vocab.js  (the word list the app loads)
 site/
   index.html          loads js/app.js
   styles.css          all styling
@@ -35,10 +34,10 @@ The app is small (a few hundred lines), and having no build step means the files
 
 ## 3. Word list pipeline
 
-- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly, and `data/vocab.csv`, a copy that's easy to read and review on GitHub.
+- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync.
 - Generated files are committed, so there's no build step.
 - Teacher-approved corrections (e.g. 电脑 → "computer") go in `OVERRIDES` in the script, so they survive re-imports.
-- Never edit `vocab.js` or `vocab.csv` by hand. The next import overwrites them.
+- Never edit `vocab.js` by hand. The next import overwrites them.
 
 ## 4. Topics are identified by ID, not position
 
