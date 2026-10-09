@@ -7,6 +7,7 @@ const { DEV_TOPICS = [] } = await import("./dev-topics.js").catch(() => ({}));
 const TOPICS = [...VOCAB_TOPICS, ...DEV_TOPICS];
 
 const app = document.getElementById("app");
+const BUG_REPORT_URL = "https://forms.gle/sfat25Dz7Ddcc9dY6";
 
 // Kept for the whole visit so a retake (or another topic's quiz) doesn't ask again.
 let studentName = "";
@@ -19,6 +20,14 @@ function esc(text) {
 
 function speakButton(chinese) {
   return `<button type="button" class="speak-btn" data-action="speak" data-text="${esc(chinese)}" aria-label="Play audio">🔊</button>`;
+}
+
+// Shown on Home and Topic only, so it never clutters a results screenshot.
+function footer() {
+  return `
+    <footer class="footer">
+      <a href="${BUG_REPORT_URL}" target="_blank" rel="noopener">Report a problem</a>
+    </footer>`;
 }
 
 function header(title, backHref) {
@@ -63,7 +72,8 @@ function showHome() {
           </a></li>`,
         ).join("")}
       </ul>
-    </main>`);
+    </main>
+    ${footer()}`);
 }
 
 // ---------- Topic ----------
@@ -76,7 +86,8 @@ function showTopic(topicIndex) {
     <main class="topic-menu">
       <a class="big-btn" href="#/topic/${topicIndex}/cards">Flashcards</a>
       <a class="big-btn primary" href="#/topic/${topicIndex}/quiz">Quiz</a>
-    </main>`);
+    </main>
+    ${footer()}`);
 }
 
 // ---------- Flashcards ----------

@@ -95,17 +95,19 @@ test.describe("quiz", () => {
     expect(await page.evaluate(() => document.documentElement.scrollHeight <= window.innerHeight)).toBe(true);
   });
 
-  test("one wrong out of five (80%) does not pass; retake keeps the name", async ({ page }) => {
+  test("one wrong out of five (80%) does not pass; retake keeps the name and reshuffles", async ({ page }) => {
     await startQuiz(page);
-    await finishQuiz(page, { wrong: 1 });
+    const firstRun = await finishQuiz(page, { wrong: 1 });
     await expect(page.locator(".result-headline")).toHaveText("Try again! 💪");
     await expect(page.locator(".result-status")).toHaveText("Not passed yet · 90% needed");
     await expect(page.locator(".result-details")).toContainText("4 / 5 (80%)");
 
     await page.getByRole("button", { name: "Retake quiz" }).click();
     await expect(page.locator(".progress")).toHaveText("Question 1 / 5");
-    await finishQuiz(page);
+    const retake = await finishQuiz(page);
     await expect(page.locator(".result-details")).toContainText("Test Student");
+    expect(retake).not.toEqual(firstRun);
+    expect(retake.map((q) => q.slice(3)).sort()).toEqual(firstRun.map((q) => q.slice(3)).sort()); // same words
   });
 });
 
@@ -115,4 +117,14 @@ test("🔊 buttons are hidden when the phone has no Chinese voice", async ({ pag
   await page.getByRole("link", { name: "Flashcards" }).click();
   await expect(page.locator(".card-front .chinese")).toBeVisible();
   await expect(page.locator(".speak-btn")).toBeHidden();
+});
+
+test("Report a problem links to the bug form on Home and Topic, but not on quiz screens", async ({ page }) => {
+  await page.goto("/");
+  const link = page.getByRole("link", { name: "Report a problem" });
+  await expect(link).toHaveAttribute("href", "https://forms.gle/sfat25Dz7Ddcc9dY6");
+  await page.getByRole("link", { name: /Test topic/ }).click();
+  await expect(link).toBeVisible();
+  await page.getByRole("link", { name: "Quiz" }).click();
+  await expect(link).toHaveCount(0);
 });

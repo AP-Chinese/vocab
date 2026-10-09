@@ -5,12 +5,12 @@
 [raw.githack.com](https://raw.githack.com) serves files straight from GitHub with the right content types, so the static site runs as-is from any commit:
 
 ```
-https://raw.githack.com/rachelli429/ap-chinese-vocab/<commit-sha>/site/index.html
+https://raw.githack.com/AP-Chinese-Vocab/vocab/<commit-sha>/site/index.html
 ```
 
 - Use the **full commit hash** (`git rev-parse HEAD`), not the branch name. Branch names with a slash (like `claude/…`) don't work in the URL, and a commit link always shows exactly that version.
 - Push the commit first. githack fetches from GitHub, not from your computer.
-- The `raw.githack.com` domain is only for development. It doesn't tell us whether WeChat will open the real link, and it isn't for students. Their link is the GitHub Pages one: https://rachelli429.github.io/ap-chinese-vocab/.
+- The `raw.githack.com` domain is only for development. It doesn't tell us whether WeChat will open the real link, and it isn't for students. Their link is the GitHub Pages one: https://ap-chinese-vocab.github.io/vocab/.
 
 ## Running locally
 

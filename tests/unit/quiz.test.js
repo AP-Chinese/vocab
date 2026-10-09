@@ -75,3 +75,11 @@ test("vocab data is well formed", () => {
     assert.equal(new Set(topic.words.map((w) => w.chinese)).size, topic.words.length, `${topic.name} has duplicate Chinese`);
   }
 });
+
+test("each new quiz (e.g. a retake) has a different order and question types", () => {
+  const list = TOPICS[0].words;
+  const signature = (quiz) => quiz.map((q) => `${q.type}:${q.word.chinese}`).join();
+  const first = signature(buildQuiz(list));
+  const retakes = Array.from({ length: 5 }, () => signature(buildQuiz(list)));
+  assert.ok(retakes.every((r) => r !== first));
+});

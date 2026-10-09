@@ -12,7 +12,8 @@ export default defineConfig({
     timezoneId: "America/New_York",
   },
   expect: {
-    toHaveScreenshot: { animations: "disabled", maxDiffPixelRatio: 0.01 },
+    // Strict: even a small link or a changed word must fail. Rendering is deterministic in this environment.
+    toHaveScreenshot: { animations: "disabled", maxDiffPixels: 0 },
   },
   projects: [
     // Smallest common iPhone, and a typical large Android phone. Only Chromium is installed, so both use it.

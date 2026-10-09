@@ -55,9 +55,14 @@ export async function answer(page, { correct = true } = {}) {
 }
 
 // Runs the whole quiz, answering the first `wrong` questions incorrectly.
+// Returns the questions in the order asked, e.g. ["mc:friend", "sa:teacher", ...].
 export async function finishQuiz(page, { wrong = 0 } = {}) {
+  const asked = [];
   for (let i = 0; i < TEST_TOPIC.words.length; i++) {
+    const type = (await page.locator(".options").count()) ? "mc" : "sa";
+    asked.push(`${type}:${await page.locator(".prompt").textContent()}`);
     await answer(page, { correct: i >= wrong });
     await page.locator('[data-action="quiz-next"]').click();
   }
+  return asked;
 }

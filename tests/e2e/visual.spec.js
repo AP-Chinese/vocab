@@ -11,6 +11,11 @@ test.describe("screens @visual", () => {
     await expect(page).toHaveScreenshot("home.png");
   });
 
+  test("topic", async ({ page }) => {
+    await page.goto("/#/topic/0");
+    await expect(page).toHaveScreenshot("topic.png");
+  });
+
   test("flashcard front and back", async ({ page }) => {
     await page.goto("/#/topic/0/cards"); // a real School 学校 card
     await expect(page).toHaveScreenshot("flashcard-front.png");

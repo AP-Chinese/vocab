@@ -75,6 +75,8 @@ Home (topic list)
 - Two large buttons: **Flashcards** and **Quiz**.
 - A back button to Home.
 
+Home and Topic both have a small **Report a problem** link at the bottom, which opens the bug report Google Form (https://forms.gle/sfat25Dz7Ddcc9dY6). It is deliberately left off the quiz and results screens.
+
 ### 3. Flashcards
 
 - The topic's words are **shuffled each time** the deck opens.
