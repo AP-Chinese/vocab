@@ -1,5 +1,14 @@
 # Development notes
 
+## Tech choices
+
+The app is plain HTML, CSS, and JavaScript modules: no framework and no build step. That keeps it small and fast on phones, and it means the files in `site/` can be previewed straight from GitHub (see below).
+
+**Switching to React later.** We decided to wait (Oct 2026). React starts paying off once the app has more interactive screens and shared state, for example an admin/dev panel, progress tracking, or spaced repetition. When we switch:
+- Use Vite to build. Deploy the `dist/` output instead of `site/`.
+- raw.githack.com previews stop working, because they serve repo files as-is and a React app needs building first. Replace them with per-branch deploys (e.g. a Pages preview or Netlify/Cloudflare branch previews).
+- The quiz logic in `site/js/quiz.js` has no DOM code and can be reused unchanged, along with its unit tests. The Playwright tests and screenshots should keep passing as-is, which makes them a good safety net for the switch.
+
 ## Previewing a branch without merging
 
 [raw.githack.com](https://raw.githack.com) serves files straight from GitHub with the right content types, so the static site runs as-is from any commit:

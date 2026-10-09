@@ -94,12 +94,13 @@ function showTopic(topicIndex) {
 
 function showCards(topicIndex) {
   const topic = TOPICS[topicIndex];
-  state = { screen: "cards", topicIndex, order: shuffle(topic.words), index: 0, flipped: false };
+  // `revealed` holds the cards already flipped once; Next stays disabled until the current one is.
+  state = { screen: "cards", topicIndex, order: shuffle(topic.words), index: 0, flipped: false, revealed: new Set() };
   renderCards();
 }
 
 function renderCards() {
-  const { topicIndex, order, index, flipped } = state;
+  const { topicIndex, order, index, flipped, revealed } = state;
   const topic = TOPICS[topicIndex];
   const back = `#/topic/${topicIndex}`;
 
@@ -133,7 +134,7 @@ function renderCards() {
       <p class="hint">Tap the card to flip it.</p>
       <div class="nav-row">
         <button type="button" class="btn" data-action="cards-prev" ${index === 0 ? "disabled" : ""}>‹ Previous</button>
-        <button type="button" class="btn primary" data-action="cards-next">Next ›</button>
+        <button type="button" class="btn primary" data-action="cards-next" ${revealed.has(index) ? "" : "disabled"}>Next ›</button>
       </div>
     </main>`);
 }
@@ -337,6 +338,8 @@ app.addEventListener("keydown", (event) => {
 function flipCard(card) {
   state.flipped = !state.flipped;
   card.classList.toggle("flipped", state.flipped);
+  state.revealed.add(state.index);
+  app.querySelector('[data-action="cards-next"]').disabled = false;
 }
 
 window.addEventListener("hashchange", route);

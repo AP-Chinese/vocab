@@ -25,15 +25,28 @@ test.describe("flashcards", () => {
     expect(await page.evaluate(() => window.__spoken)).toEqual([chinese]);
     await expect(card).not.toHaveClass(/flipped/); // tapping 🔊 doesn't flip the card
 
+    const next = page.getByRole("button", { name: "Next ›" });
+    await expect(next).toBeDisabled(); // must see the answer first
     await card.click({ position: { x: 20, y: 20 } });
     await expect(card).toHaveClass(/flipped/);
-    await page.getByRole("button", { name: "Next ›" }).click();
+    await card.click({ position: { x: 20, y: 20 } }); // flipping back keeps Next enabled
+    await expect(next).toBeEnabled();
+    await next.click();
     await expect(page.locator(".progress")).toHaveText("2 / 5");
     await expect(card).not.toHaveClass(/flipped/); // a new card starts on its front
+    await expect(next).toBeDisabled();
+
+    // Going back to a card already flipped doesn't require flipping it again.
+    await page.getByRole("button", { name: "‹ Previous" }).click();
+    await expect(page.locator(".progress")).toHaveText("1 / 5");
+    await expect(next).toBeEnabled();
   });
 
   test("end screen after the last card", async ({ page }) => {
-    for (let i = 0; i < 5; i++) await page.getByRole("button", { name: "Next ›" }).click();
+    for (let i = 0; i < 5; i++) {
+      await page.locator(".card").click({ position: { x: 20, y: 20 } });
+      await page.getByRole("button", { name: "Next ›" }).click();
+    }
     await expect(page.getByText("You've gone through all 5 cards!")).toBeVisible();
     await page.getByRole("link", { name: "Take the quiz" }).click();
     await expect(page.getByLabel("Your name")).toBeVisible();

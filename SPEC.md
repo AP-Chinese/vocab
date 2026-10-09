@@ -23,6 +23,7 @@ The assignment is for students with low reading scores on the mock AP tests. The
 - Saving progress between visits (a refresh starts over)
 - Progress tracking, streaks, or stats
 - Spaced repetition
+- Switching to React (see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md#tech-choices))
 - Customizing the quiz format
 - Mixing several topics in one session
 - Direct links to a single topic
@@ -84,6 +85,7 @@ Home and Topic both have a small **Report a problem** link at the bottom, which 
 - **Back:** the English meaning.
 - Tapping the card flips it, and tapping again flips it back.
 - **Previous** and **Next** buttons. Moving to another card always shows its front.
+- **Next is disabled until the current card has been flipped**, so students have to check the meaning before moving on. A card that has already been flipped once (e.g. after going back with Previous) doesn't need flipping again.
 - A progress indicator, e.g. `12 / 42`.
 - After the last card: an end screen with **Study again** (reshuffles) and **Take the quiz**.
 - No self-grading.
