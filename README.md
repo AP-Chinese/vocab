@@ -6,7 +6,7 @@ It's a static site with no backend and no build step. Everything lives in `site/
 
 ## Development
 
-See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for running locally, previewing a branch without merging, and adding topics.
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for running locally, previewing a branch without merging, the preview-only test topic, tests, and adding topics.
 
 ## Deploying
 

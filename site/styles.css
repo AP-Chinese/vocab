@@ -249,14 +249,15 @@ input:disabled { opacity: 1; color: var(--text); background: var(--bg); }
 .results { justify-content: center; }
 
 .result-banner {
-  padding: 20px;
+  padding: 18px 16px;
   border-radius: var(--radius);
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
   color: #fff;
 }
+
+.result-headline { margin: 0; font-size: 2.1rem; font-weight: 800; line-height: 1.2; }
+/* Kept plain and explicit so the teacher can tell pass/fail at a glance in a screenshot. */
+.result-status { margin: 4px 0 0; font-size: 1.05rem; font-weight: 600; opacity: 0.95; }
 
 .result-banner.pass { background: var(--correct); }
 .result-banner.fail { background: var(--incorrect); }

@@ -129,7 +129,7 @@ There is no going back to earlier questions. Leaving or refreshing the page aban
 
 Everything below must fit on **one phone screen without scrolling**, so a single screenshot captures it:
 
-- **PASS** (green) or **NOT PASSED** (red), large
+- A large banner: **Excellent! 🎉** with "Passed" underneath (green), or **Try again! 💪** with "Not passed yet · 90% needed" underneath (red). The plain status line stays so the teacher can tell pass from fail at a glance.
 - Student name
 - Topic name
 - Score as both a count and a percentage, e.g. `39 / 42 (93%)`
@@ -142,7 +142,8 @@ Buttons: **Retake quiz** (no limit; keeps the name and reshuffles), **Back to to
 
 ## Audio
 
-- Plays the Chinese word aloud using the browser's built-in text-to-speech (Web Speech API, `zh-CN` voice).
+- Plays the Chinese word aloud using the browser's built-in text-to-speech (Web Speech API, Mandarin `zh-CN` voice).
+- **A woman's voice is preferred.** Browsers don't report a voice's gender, so known female voices are chosen by name (iOS/macOS Tingting, Windows Xiaoxiao/Huihui, Google's voice on Chrome and Android). Known male voices are used only if nothing else is available. This can't be guaranteed on every phone; only pre-recorded audio could guarantee it.
 - Available on the flashcard front and on quiz feedback. It is **not** available on quiz questions, because hearing the answer would give it away.
 - If no Chinese voice is available or text-to-speech isn't supported, the 🔊 button is hidden. Everything else still works.
 - **Risk:** text-to-speech support inside WeChat's built-in browser is uncertain, especially on iOS. This needs testing on real phones early. The fallback, if needed, is pre-generated audio files (out of scope unless the test fails).
@@ -156,9 +157,13 @@ Buttons: **Retake quiz** (no limit; keeps the name and reshuffles), **Back to to
 - **Supported browsers:** WeChat's built-in browser (iOS and Android), mobile Safari, and mobile Chrome. Desktop browsers should work but aren't the focus.
 - Uses system fonts with good CJK support. No web font download.
 
+## Preview-only test topic
+
+A 5-word "🧪 Test topic (preview only)" (`site/js/dev-topics.js`) makes it quick to try the whole quiz and the results screen. It shows up locally and on raw.githack.com preview links, and the browser tests use it. The deploy workflow deletes the file before publishing, so **it never appears on the student-facing site**. Otherwise students could use it to make an easy PASS screenshot.
+
 ## Testing and acceptance
 
-- Unit tests for: CSV → data conversion, answer normalization and grading, quiz generation (every word asked once, half-and-half split, 4 distinct options with the correct one included), and the pass threshold.
+- Automated tests run before every commit: unit tests for the quiz rules, voice choice and word list; browser tests on iPhone SE and Pixel 7 screens; and screenshot comparisons of every screen. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md#tests).
 - Manual check on real phones, **opening the link from a WeChat chat**:
   - The page loads (WeChat doesn't block the domain).
   - The pinyin keyboard works in short answer, and Enter during pinyin composition doesn't submit.

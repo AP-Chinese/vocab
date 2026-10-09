@@ -1,5 +1,5 @@
 import { TOPICS as VOCAB_TOPICS } from "./vocab.js";
-import { buildQuiz, isCorrect, isPass, percent, shuffle } from "./quiz.js";
+import { PASS_PERCENT, buildQuiz, isCorrect, isPass, percent, shuffle } from "./quiz.js";
 import { initSpeech, speak } from "./speech.js";
 
 // Preview-only topics; the file is absent from the deployed site, so this falls back to none.
@@ -233,7 +233,10 @@ function showResults() {
 
   render(`
     <main class="results">
-      <div class="result-banner ${passed ? "pass" : "fail"}">${passed ? "PASS" : "NOT PASSED"}</div>
+      <div class="result-banner ${passed ? "pass" : "fail"}">
+        <p class="result-headline">${passed ? "Excellent! 🎉" : "Try again! 💪"}</p>
+        <p class="result-status">${passed ? "Passed" : `Not passed yet · ${PASS_PERCENT}% needed`}</p>
+      </div>
       <dl class="result-details">
         <dt>Name</dt><dd>${esc(studentName)}</dd>
         <dt>Topic</dt><dd>${esc(topic.name)}</dd>

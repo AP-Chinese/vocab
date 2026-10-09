@@ -85,7 +85,8 @@ test.describe("quiz", () => {
   test("all correct passes, and results fit on one screen", async ({ page }) => {
     await startQuiz(page);
     await finishQuiz(page);
-    await expect(page.locator(".result-banner")).toHaveText("PASS");
+    await expect(page.locator(".result-headline")).toHaveText("Excellent! 🎉");
+    await expect(page.locator(".result-status")).toHaveText("Passed");
     const details = page.locator(".result-details");
     await expect(details).toContainText("Test Student");
     await expect(details).toContainText(TEST_TOPIC.name);
@@ -97,7 +98,8 @@ test.describe("quiz", () => {
   test("one wrong out of five (80%) does not pass; retake keeps the name", async ({ page }) => {
     await startQuiz(page);
     await finishQuiz(page, { wrong: 1 });
-    await expect(page.locator(".result-banner")).toHaveText("NOT PASSED");
+    await expect(page.locator(".result-headline")).toHaveText("Try again! 💪");
+    await expect(page.locator(".result-status")).toHaveText("Not passed yet · 90% needed");
     await expect(page.locator(".result-details")).toContainText("4 / 5 (80%)");
 
     await page.getByRole("button", { name: "Retake quiz" }).click();
