@@ -4,18 +4,9 @@ A mobile-first flashcard and quiz site for AP Chinese vocabulary. Students pick 
 
 It's a static site with no backend and no build step. Everything lives in `site/`.
 
-## Run locally
+## Development
 
-```sh
-npm start      # serves site/ at http://localhost:8080
-npm test       # unit tests (Node 22+)
-```
-
-## Adding vocabulary
-
-1. Export a Knowt set as PDF and save it as `data/source/NN-topic.pdf` (the number sets the topic order).
-2. Run `python3 scripts/pdf_to_csv.py` (needs `poppler-utils`). This regenerates `data/vocab.csv` and `site/js/vocab.js`.
-3. Corrections to the source sets go in `OVERRIDES` in the script, so they survive re-imports.
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for running locally, previewing a branch without merging, and adding topics.
 
 ## Deploying
 

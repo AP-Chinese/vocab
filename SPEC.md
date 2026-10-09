@@ -180,3 +180,4 @@ Buttons: **Retake quiz** (no limit; keeps the name and reshuffles), **Back to to
 - Saving progress locally
 - Pre-recorded or generated audio
 - A verification code on the results screen that the teacher can check, to make faked screenshots harder
+- A dev/admin panel (e.g. branch preview links, jumping straight to any screen). Anything that can show a results screen without taking the quiz must not be reachable by students, or it becomes a way to fake a PASS screenshot.
