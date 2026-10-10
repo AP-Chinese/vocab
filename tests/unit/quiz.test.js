@@ -91,3 +91,19 @@ test("each new quiz (e.g. a retake) has a different order and question types", (
   const retakes = Array.from({ length: 5 }, () => signature(buildQuiz(list)));
   assert.ok(retakes.every((r) => r !== first));
 });
+
+test("import joins English meanings that wrap onto a second line in the PDF", () => {
+  const travel = TOPICS.find((t) => t.id === "travel");
+  const english = (chinese) => travel.words.find((w) => w.chinese === chinese).english;
+  assert.equal(english("独具匠心"), "exquisite workmanship with an ingenious design");
+  assert.equal(english("依山傍水"), "surrounded by hills on one side and water on the other");
+});
+
+test("teacher corrections are applied on import", () => {
+  const word = (topic, chinese) => TOPICS.find((t) => t.id === topic).words.find((w) => w.chinese === chinese);
+  assert.equal(word("family", "祖父").english, "father's father");
+  assert.equal(word("transportation", "交通事故").english, "accident");
+  // Chinese-side correction: 出租汽车 became 出租车, with pinyin generated for the new word.
+  assert.equal(word("transportation", "出租汽车"), undefined);
+  assert.deepEqual(word("transportation", "出租车"), { chinese: "出租车", pinyin: "chū zū chē", english: "taxi" });
+});
