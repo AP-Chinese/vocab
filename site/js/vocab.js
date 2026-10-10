@@ -6,190 +6,232 @@ export const TOPICS = [
     "words": [
       {
         "chinese": "课程",
+        "pinyin": "kè chéng",
         "english": "course; curriculum; class"
       },
       {
         "chinese": "必修课",
+        "pinyin": "bì xiū kè",
         "english": "core course/required course"
       },
       {
         "chinese": "选修课",
+        "pinyin": "xuǎn xiū kè",
         "english": "elective course"
       },
       {
         "chinese": "基础课",
+        "pinyin": "jī chǔ kè",
         "english": "basic course"
       },
       {
         "chinese": "课外活动",
+        "pinyin": "kè wài huó dòng",
         "english": "extracurricular activities"
       },
       {
         "chinese": "作业",
+        "pinyin": "zuò yè",
         "english": "homework"
       },
       {
         "chinese": "成绩",
+        "pinyin": "chéng jì",
         "english": "grade; score"
       },
       {
         "chinese": "学分",
+        "pinyin": "xué fēn",
         "english": "credit"
       },
       {
         "chinese": "写作",
+        "pinyin": "xiě zuò",
         "english": "writing; composition"
       },
       {
         "chinese": "体育",
+        "pinyin": "tǐ yù",
         "english": "sport"
       },
       {
         "chinese": "世界文学",
+        "pinyin": "shì jiè wén xué",
         "english": "world literature"
       },
       {
         "chinese": "英国文学",
+        "pinyin": "yīng guó wén xué",
         "english": "English literature"
       },
       {
         "chinese": "社会学科",
+        "pinyin": "shè huì xué kē",
         "english": "social studies"
       },
       {
         "chinese": "历史",
+        "pinyin": "lì shǐ",
         "english": "history"
       },
       {
         "chinese": "世界史",
+        "pinyin": "shì jiè shǐ",
         "english": "world history"
       },
       {
         "chinese": "欧洲史",
+        "pinyin": "ōu zhōu shǐ",
         "english": "European history"
       },
       {
         "chinese": "美国史",
+        "pinyin": "měi guó shǐ",
         "english": "U.S. history"
       },
       {
         "chinese": "政府",
+        "pinyin": "zhèng fǔ",
         "english": "government"
       },
       {
         "chinese": "经济学",
+        "pinyin": "jīng jì xué",
         "english": "economics"
       },
       {
         "chinese": "社会学",
+        "pinyin": "shè huì xué",
         "english": "sociology"
       },
       {
         "chinese": "心理学",
+        "pinyin": "xīn lǐ xué",
         "english": "psychology"
       },
       {
         "chinese": "艺术",
+        "pinyin": "yì shù",
         "english": "arts"
       },
       {
         "chinese": "辩论",
+        "pinyin": "biàn lùn",
         "english": "debate"
       },
       {
         "chinese": "乐队",
+        "pinyin": "yuè duì",
         "english": "band"
       },
       {
         "chinese": "爵士",
+        "pinyin": "jué shì",
         "english": "jazz"
       },
       {
         "chinese": "管弦乐队",
+        "pinyin": "guǎn xián yuè duì",
         "english": "orchestra"
       },
       {
         "chinese": "戏剧",
+        "pinyin": "xì jù",
         "english": "drama"
       },
       {
         "chinese": "舞蹈",
+        "pinyin": "wǔ dǎo",
         "english": "dance"
       },
       {
         "chinese": "形象艺术",
+        "pinyin": "xíng xiàng yì shù",
         "english": "graphic arts"
       },
       {
         "chinese": "年鉴",
+        "pinyin": "nián jiàn",
         "english": "yearbook"
       },
       {
         "chinese": "数学",
+        "pinyin": "shù xué",
         "english": "mathematics"
       },
       {
         "chinese": "代数学",
+        "pinyin": "dài shù xué",
         "english": "algebra"
       },
       {
         "chinese": "几何学",
+        "pinyin": "jǐ hé xué",
         "english": "geometry"
       },
       {
-        "chinese": "数学分析",
-        "english": "math analysis"
-      },
-      {
         "chinese": "统计学",
+        "pinyin": "tǒng jì xué",
         "english": "statistics"
       },
       {
         "chinese": "微积分",
+        "pinyin": "wēi jī fēn",
         "english": "calculus"
       },
       {
         "chinese": "科学",
+        "pinyin": "kē xué",
         "english": "science"
       },
       {
         "chinese": "生物学",
+        "pinyin": "shēng wù xué",
         "english": "biology"
       },
       {
         "chinese": "化学",
+        "pinyin": "huà xué",
         "english": "chemistry"
       },
       {
         "chinese": "物理学",
+        "pinyin": "wù lǐ xué",
         "english": "physics"
       },
       {
         "chinese": "环境科学",
+        "pinyin": "huán jìng kē xué",
         "english": "environmental science"
       },
       {
         "chinese": "解剖学",
+        "pinyin": "jiě pōu xué",
         "english": "anatomy"
       },
       {
         "chinese": "生理学",
+        "pinyin": "shēng lǐ xué",
         "english": "physiology"
       },
       {
         "chinese": "体育教育",
+        "pinyin": "tǐ yù jiào yù",
         "english": "physical education"
       },
       {
         "chinese": "计算机学",
+        "pinyin": "jì suàn jī xué",
         "english": "computer science"
       },
       {
         "chinese": "电脑",
+        "pinyin": "diàn nǎo",
         "english": "computer"
       },
       {
         "chinese": "医学",
+        "pinyin": "yī xué",
         "english": "medicine"
       }
     ]

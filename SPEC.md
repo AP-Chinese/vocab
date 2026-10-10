@@ -27,7 +27,7 @@ The assignment is for students with low reading scores on the mock AP tests. The
 - Customizing the quiz format
 - Mixing several topics in one session
 - Direct links to a single topic
-- Pinyin
+- Pinyin anywhere in the quiz (questions, feedback, or results). Pinyin appears only on the flashcard back.
 - Showing which words were missed on the results screen
 - Editing the word list in the app (the list is fixed)
 - Polished laptop layout (it should work in a desktop browser, but phones come first)
@@ -81,7 +81,7 @@ Home and Topic both have a small **Report a problem** link at the bottom, which 
 
 - The topic's words are **shuffled each time** the deck opens.
 - **Front:** the Chinese word (large) and a 🔊 play-audio button.
-- **Back:** the English meaning.
+- **Back:** two lines, the pinyin with tone marks on top (e.g. `kè chéng`) and the English meaning below.
 - Tapping the card flips it, and tapping again flips it back.
 - **Previous** and **Next** buttons. Moving to another card always shows its front.
 - **Next is disabled until the current card has been flipped**, so students have to check the meaning before moving on. A card that has already been flipped once (e.g. after going back with Previous) doesn't need flipping again.
@@ -97,6 +97,8 @@ Home and Topic both have a small **Report a problem** link at the bottom, which 
 - The name is kept only in memory for this quiz.
 
 #### 4b. Questions
+
+**No pinyin anywhere in the quiz:** not in questions, answer options, feedback, or results.
 
 - **Every word in the topic is asked exactly once.**
 - The words are shuffled, then split half and half between the two question types. If the count is odd, multiple choice gets the extra word (e.g. 41 words → 21 multiple choice + 20 short answer). The two types are mixed together in random order.
@@ -183,7 +185,6 @@ A 5-word "🧪 Test topic (preview only)" (`site/js/dev-topics.js`) makes it qui
 ## Possible later work
 
 - Spaced repetition
-- Pinyin toggle
 - Topic-specific links
 - Saving progress locally
 - Pre-recorded or generated audio

@@ -6,6 +6,7 @@ Why the app is built the way it is. When a decision changes, update its entry ra
 
 ```
 data/source/NN-topic.pdf ──scripts/import_vocab.py──► site/js/vocab.js  (the word list the app loads)
+                                                          └─scripts/export_csv.js──► exports/vocab.csv  (on demand, not committed)
 site/
   index.html          loads js/app.js
   styles.css          all styling
@@ -34,10 +35,12 @@ The app is small (a few hundred lines), and having no build step means the files
 
 ## 3. Word list pipeline
 
-- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync.
+- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync. A CSV can still be exported on demand (`npm run export:csv`). It's generated from `vocab.js` and isn't committed, so it can't drift.
 - Generated files are committed, so there's no build step.
-- Teacher-approved corrections (e.g. 电脑 → "computer") go in `OVERRIDES` in the script, so they survive re-imports.
-- Never edit `vocab.js` by hand. The next import overwrites them.
+- Teacher-approved changes to the source sets live in the script, so they survive re-imports: corrections in `OVERRIDES` (e.g. 电脑 → "computer") and removed words in `EXCLUDE` (e.g. 数学分析 "math analysis").
+- **Pinyin is generated**, because the Knowt sets don't include it. The script uses pypinyin (pinned in `scripts/requirements.txt`), whose word dictionary picks the right reading for characters with more than one (乐队 yuè duì, 数学 shù xué). Every School 学校 reading was checked by hand. New topics should be reviewed too, with corrections going in `PINYIN_OVERRIDES`. It's written one syllable per character with tone marks (`kè chéng`), which tests enforce.
+- Pinyin is shown only on the flashcard back. The quiz deliberately never renders it, and a browser test fails if any word's pinyin appears on a quiz screen.
+- Never edit `vocab.js` by hand. The next import overwrites it.
 
 ## 4. Topics are identified by ID, not position
 
@@ -100,7 +103,7 @@ Decisions inside the rules:
 
 ## 12. Deploying
 
-Only `main` deploys, through GitHub Actions to GitHub Pages, and only after the tests pass. The site is published from the `AP-Chinese-Vocab` organization, so the link (https://ap-chinese-vocab.github.io/vocab/) doesn't show a personal username.
+Only `main` deploys, through GitHub Actions to GitHub Pages, and only after the tests pass. The site is published from the `ap-chinese` organization, so the link (https://ap-chinese.github.io/vocab/) doesn't show a personal username.
 
 ## Known weak spots
 

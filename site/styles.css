@@ -176,6 +176,9 @@ button:disabled { opacity: 0.45; cursor: default; }
 .chinese { font-family: var(--cjk); font-size: 3rem; font-weight: 600; line-height: 1.2; }
 .english { font-size: 1.6rem; font-weight: 500; }
 
+/* Flashcards only. Pinyin never appears anywhere in the quiz. */
+.pinyin { color: var(--muted); font-size: 1.4rem; margin-bottom: -8px; }
+
 .done { justify-content: center; }
 .done-title { margin: 0; text-align: center; font-size: 1.2rem; font-weight: 600; }
 

@@ -14,12 +14,12 @@ The app is plain HTML, CSS, and JavaScript modules: no framework and no build st
 [raw.githack.com](https://raw.githack.com) serves files straight from GitHub with the right content types, so the static site runs as-is from any commit:
 
 ```
-https://raw.githack.com/AP-Chinese-Vocab/vocab/<commit-sha>/site/index.html
+https://raw.githack.com/ap-chinese/vocab/<commit-sha>/site/index.html
 ```
 
 - Use the **full commit hash** (`git rev-parse HEAD`), not the branch name. Branch names with a slash (like `claude/…`) don't work in the URL, and a commit link always shows exactly that version.
 - Push the commit first. githack fetches from GitHub, not from your computer.
-- The `raw.githack.com` domain is only for development. It doesn't tell us whether WeChat will open the real link, and it isn't for students. Their link is the GitHub Pages one: https://ap-chinese-vocab.github.io/vocab/.
+- The `raw.githack.com` domain is only for development. It doesn't tell us whether WeChat will open the real link, and it isn't for students. Their link is the GitHub Pages one: https://ap-chinese.github.io/vocab/.
 
 ## Running locally
 
@@ -48,13 +48,25 @@ Notes:
 - The tests pin the random order, the clock (Oct 9, 2026, 7:42 PM Eastern), and fake a Chinese voice, so every run looks the same.
 - Screenshots are captured in the Claude Code cloud environment (Linux). On another computer fonts render slightly differently, so the visual tests may fail there even when nothing changed. CI on GitHub skips them for the same reason and runs only the unit and functional tests.
 
+## Exporting the word list to CSV
+
+```sh
+npm run export:csv                    # writes exports/vocab.csv
+npm run export:csv -- ~/Desktop/vocab.csv
+```
+
+It exports exactly what the app uses (from `site/js/vocab.js`): every topic with its ID, Chinese, pinyin, and English, with overrides and removed words already applied. The preview-only test topic isn't included. The file opens directly in Excel or Google Sheets, with Chinese and tone marks intact.
+
+The CSV is a snapshot to look at or share, not a place to make changes. `exports/` isn't committed. To change words, edit the PDFs or the lists in `scripts/import_vocab.py`, then re-import.
+
 ## Adding a topic
 
 Nothing in the app is specific to one topic. Topics and words come entirely from `site/js/vocab.js`, which is generated:
 
 1. Export the Knowt set as PDF and commit it as `data/source/NN-topic.pdf`. The number sets the order on the home screen, e.g. `02-family.pdf`.
-2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title (e.g. `School 学校`).
+2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils` and `pip install -r scripts/requirements.txt`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title (e.g. `School 学校`).
 3. Run `npm test`. It checks every topic has at least 4 words, no blanks, and no duplicate Chinese.
 4. Check the word count against the Knowt set, and check for words that share an English meaning (the app handles them, but they may be mistakes in the source set).
+5. Review the generated pinyin, especially characters with more than one reading (e.g. 乐 yuè/lè, 行 xíng/háng, 长 cháng/zhǎng). Put corrections in `PINYIN_OVERRIDES` in the script.
 
-Corrections to the source sets go in `OVERRIDES` in the script, so they survive re-imports.
+Changes to the source sets go in the script, so they survive re-imports: corrections in `OVERRIDES`, and words to remove in `EXCLUDE`.
