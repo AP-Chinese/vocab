@@ -19,11 +19,12 @@ export function normalizeAnswer(text) {
 
 // Every word is asked once: half multiple choice (it gets the extra word when
 // the count is odd), half short answer, in random order.
-export function buildQuiz(words, random = Math.random) {
+// `variants` gives extra spellings to accept for short answers (see answer-rules.js).
+export function buildQuiz(words, random = Math.random, variants = () => []) {
   const shuffled = shuffle(words, random);
   const mcCount = Math.ceil(shuffled.length / 2);
   const questions = shuffled.map((word, i) =>
-    i < mcCount ? multipleChoice(word, words, random) : shortAnswer(word, words),
+    i < mcCount ? multipleChoice(word, words, random) : shortAnswer(word, words, variants),
   );
   return shuffle(questions, random);
 }
@@ -43,10 +44,24 @@ function multipleChoice(word, words, random) {
   };
 }
 
-function shortAnswer(word, words) {
-  // Any word in the topic with the identical English meaning is accepted.
-  const accepted = words.filter((w) => w.english === word.english).map((w) => normalizeAnswer(w.chinese));
-  return { type: "sa", word, accepted };
+function shortAnswer(word, words, variants) {
+  return { type: "sa", word, accepted: acceptedAnswers(word, words, variants) };
+}
+
+// Typed answers accepted for `word`: any word in the topic with the identical English meaning,
+// plus the topic's lenient spellings (normalized).
+export function acceptedAnswers(word, words, variants = () => []) {
+  const official = words.filter((w) => w.english === word.english).map((w) => w.chinese);
+  // A lenient spelling never counts if it's exactly a different word in this topic.
+  const otherWords = new Set(words.map((w) => w.chinese).filter((c) => !official.includes(c)));
+  const lenient = official.flatMap(variants).filter((v) => !otherWords.has(v));
+  return [...new Set([...official, ...lenient].map(normalizeAnswer))];
+}
+
+// True when a correct typed answer isn't the official spelling (e.g. 物理 for 物理学), so the
+// feedback can show the textbook form.
+export function isAlternateSpelling(question, answer) {
+  return question.type === "sa" && isCorrect(question, answer) && normalizeAnswer(answer) !== normalizeAnswer(question.word.chinese);
 }
 
 export function isCorrect(question, answer) {
