@@ -128,6 +128,7 @@ No partial credit. Alternates are accepted only in two cases:
   - The rule is skipped when fewer than 2 characters would remain (数学, 化学, 医学, 科学) and for 文学 words (世界文学, 英国文学).
   - The teacher excluded 经济学 and 社会学, because 经济 and 社会 alone mean "economy" and "society".
   - A lenient spelling never counts if it's exactly a different word in the same topic.
+  - The full list of affected words is in [docs/ANSWER-RULES.md](docs/ANSWER-RULES.md), generated from the code.
 
 When an answer is accepted through a lenient spelling or an alternate word, the feedback says ✅ Correct and shows "Textbook answer: 物理学", so students still see the official form.
 

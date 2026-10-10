@@ -65,3 +65,9 @@ test("grading and the 'textbook answer' flag", () => {
   assert.ok(isCorrect(q, " 物理科学。") && isAlternateSpelling(q, "物理科学"));
   assert.ok(!isCorrect(q, "物") && !isAlternateSpelling(q, "物"));
 });
+
+test("docs/ANSWER-RULES.md is up to date (run `npm run docs:rules` after changing rules or words)", async () => {
+  const { readFileSync } = await import("node:fs");
+  const { OUT_FILE, renderTable } = await import("../../scripts/answer_rules_table.js");
+  assert.equal(readFileSync(OUT_FILE, "utf8"), renderTable());
+});
