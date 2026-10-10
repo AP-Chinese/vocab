@@ -1,5 +1,7 @@
 # AP Chinese Vocab
 
+**Live site: https://ap-chinese.github.io/vocab/**
+
 A mobile-first flashcard and quiz site for AP Chinese vocabulary. Students pick a topic, study flip cards (with audio), and take a quiz. The results screen is meant to be screenshotted and sent to the teacher. See [SPEC.md](SPEC.md).
 
 It's a static site with no backend and no build step. Everything lives in `site/`.
