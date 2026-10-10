@@ -28,6 +28,11 @@ OVERRIDES = {
     ("School 学校", "电脑"): "computer",
 }
 
+# Teacher-approved removals from the source sets: (topic, chinese).
+EXCLUDE = {
+    ("School 学校", "数学分析"),  # math analysis
+}
+
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
 PINYIN_OVERRIDES = {}
 
@@ -77,6 +82,8 @@ def parse_pdf(path, topic):
         chinese, english = match.groups()
         # Skip the page header ("10/9/26, 6:50 PM   School 学校"): its left side has no Chinese.
         if not HAS_CJK.search(chinese):
+            continue
+        if (topic, chinese) in EXCLUDE:
             continue
         english = OVERRIDES.get((topic, chinese), normalize_english(english))
         rows.append((chinese, english))

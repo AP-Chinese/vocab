@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => setUp(page));
 
 test("home lists every topic with its word count", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("link", { name: /School 学校\s*47 words/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /School 学校\s*46 words/ })).toBeVisible();
   await expect(page.getByRole("link", { name: /Test topic.*5 words/ })).toBeVisible();
 });
 

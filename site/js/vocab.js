@@ -170,11 +170,6 @@ export const TOPICS = [
         "english": "geometry"
       },
       {
-        "chinese": "数学分析",
-        "pinyin": "shù xué fēn xī",
-        "english": "math analysis"
-      },
-      {
         "chinese": "统计学",
         "pinyin": "tǒng jì xué",
         "english": "statistics"
