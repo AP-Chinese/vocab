@@ -24,16 +24,27 @@ export function renderTable(topics = TOPICS) {
     const config = TOPIC_RULES[topic.id];
     if (!config) continue;
     const variants = answerVariants(topic.id);
-    const rows = [];
+    const lenient = [];
+    const exact = [];
     for (const word of topic.words) {
       const extra = acceptedAnswers(word, topic.words, variants).filter((a) => a !== word.chinese);
-      const excluded = config.some(({ rule, except = [] }) => except.includes(word.chinese) && RULES[rule](word.chinese).length);
-      if (extra.length) rows.push(`| ${word.chinese} | ${word.english} | ${extra.join(", ")} |`);
-      else if (excluded) rows.push(`| ${word.chinese} | ${word.english} | *(exact only: excluded by the teacher)* |`);
+      if (extra.length) {
+        lenient.push(`| ${word.chinese} | ${word.english} | ${extra.join(", ")} |`);
+        continue;
+      }
+      // Words a rule is about but leaves exact, and why.
+      for (const { rule, except = [] } of config) {
+        const result = RULES[rule].apply(word.chinese);
+        if (!result) continue;
+        const reason = except.includes(word.chinese) ? "excluded by the teacher" : (result.skip ?? "would match another word in this topic");
+        exact.push(`| ${word.chinese} | ${word.english} | ${reason} |`);
+        break;
+      }
     }
-    lines.push("", `## ${topic.name} (\`${topic.id}\`)`, "", `Rules: ${config.map((c) => `\`${c.rule}\``).join(", ")}`, "");
-    lines.push("| Word | English | Also accepted |", "|---|---|---|", ...rows, "");
-    lines.push(`All other ${topic.name} words are graded exactly.`);
+    lines.push("", `## ${topic.name} (\`${topic.id}\`)`, "", `Rules: ${config.map((c) => `\`${c.rule}\``).join(", ")}`);
+    lines.push("", "### Also accepts other spellings", "", "| Word | English | Also accepted |", "|---|---|---|", ...lenient);
+    lines.push("", "### Exact only: the rule deliberately doesn't apply", "", "| Word | English | Why |", "|---|---|---|", ...exact);
+    lines.push("", `All other ${topic.name} words are graded exactly too. The rule isn't about them.`);
   }
   return lines.join("\n") + "\n";
 }

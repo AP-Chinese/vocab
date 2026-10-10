@@ -4,20 +4,21 @@
 // TOPIC_RULES lists which rules each topic uses (by topic ID), plus words the teacher excluded from
 // them. A topic that isn't listed is graded exactly. Multiple choice is never affected.
 
+// Each rule's apply(answer) returns null when the rule isn't about that word, { skip: reason } when it
+// deliberately leaves the word exact, or { variants: [...] } with the extra spellings to accept.
+// The skip reasons appear in docs/ANSWER-RULES.md.
 export const RULES = {
   // 物理学 also accepts 物理 and 物理科学. 环境科学 also accepts 环境学.
-  // Skipped when fewer than 2 characters would remain (数学, 化学, 医学, 科学) and for 文学
-  // ("literature", where 学 isn't an "-ology" ending).
-  "xue-suffix"(answer) {
-    if (answer.endsWith("科学")) {
-      const stem = answer.slice(0, -2);
-      return stem.length >= 2 ? [`${stem}学`] : [];
-    }
-    if (answer.endsWith("学") && !answer.endsWith("文学")) {
-      const stem = answer.slice(0, -1);
-      return stem.length >= 2 ? [stem, `${stem}科学`] : [];
-    }
-    return [];
+  "xue-suffix": {
+    apply(answer) {
+      if (!answer.endsWith("学")) return null;
+      const scienceEnding = answer.endsWith("科学");
+      const stem = answer.slice(0, scienceEnding ? -2 : -1);
+      if (stem.length < 2) return { skip: "too short: fewer than 2 characters would be left" };
+      if (scienceEnding) return { variants: [`${stem}学`] };
+      if (answer.endsWith("文学")) return { skip: "文学 means \"literature\", so its 学 isn't an \"-ology\" ending" };
+      return { variants: [stem, `${stem}科学`] };
+    },
   },
 };
 
@@ -32,5 +33,5 @@ export const TOPIC_RULES = {
 export function answerVariants(topicId) {
   const rules = TOPIC_RULES[topicId] ?? [];
   return (answer) =>
-    rules.flatMap(({ rule, except = [] }) => (except.includes(answer) ? [] : RULES[rule](answer)));
+    rules.flatMap(({ rule, except = [] }) => (except.includes(answer) ? [] : (RULES[rule].apply(answer)?.variants ?? [])));
 }
