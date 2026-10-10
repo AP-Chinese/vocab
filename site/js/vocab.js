@@ -251,9 +251,9 @@ export const TOPICS = [
         "english": "visa"
       },
       {
-        "chinese": "领事馆",
-        "pinyin": "lǐng shì guǎn",
-        "english": "consulate"
+        "chinese": "大使馆",
+        "pinyin": "dà shǐ guǎn",
+        "english": "embassy"
       },
       {
         "chinese": "游客",
@@ -263,7 +263,10 @@ export const TOPICS = [
       {
         "chinese": "游览区",
         "pinyin": "yóu lǎn qū",
-        "english": "sightseeing district"
+        "english": "sightseeing district",
+        "alsoAccepted": [
+          "景区"
+        ]
       },
       {
         "chinese": "旅游景点",
@@ -298,12 +301,19 @@ export const TOPICS = [
       {
         "chinese": "订",
         "pinyin": "dìng",
-        "english": "reserve"
+        "english": "reserve",
+        "alsoAccepted": [
+          "预定",
+          "定"
+        ]
       },
       {
         "chinese": "机票",
         "pinyin": "jī piào",
-        "english": "plane ticket"
+        "english": "plane ticket",
+        "alsoAccepted": [
+          "飞机票"
+        ]
       },
       {
         "chinese": "国际航班",
@@ -338,7 +348,10 @@ export const TOPICS = [
       {
         "chinese": "飞行",
         "pinyin": "fēi xíng",
-        "english": "flight; flying"
+        "english": "flight; flying",
+        "alsoAccepted": [
+          "航班"
+        ]
       },
       {
         "chinese": "起飞",
@@ -363,17 +376,15 @@ export const TOPICS = [
       {
         "chinese": "旅馆",
         "pinyin": "lǚ guǎn",
-        "english": "hotel"
+        "english": "hotel",
+        "alsoAccepted": [
+          "酒店"
+        ]
       },
       {
         "chinese": "汽车旅馆",
         "pinyin": "qì chē lǚ guǎn",
         "english": "motel"
-      },
-      {
-        "chinese": "特快车",
-        "pinyin": "tè kuài chē",
-        "english": "express train"
       },
       {
         "chinese": "登记",
@@ -396,29 +407,9 @@ export const TOPICS = [
         "english": "double room"
       },
       {
-        "chinese": "独具匠心",
-        "pinyin": "dú jù jiàng xīn",
-        "english": "exquisite workmanship with an ingenious design"
-      },
-      {
-        "chinese": "湖光山色",
-        "pinyin": "hú guāng shān sè",
-        "english": "landscape of lakes and hills"
-      },
-      {
-        "chinese": "依山傍水",
-        "pinyin": "yī shān bàng shuǐ",
-        "english": "surrounded by hills on one side and water on the other"
-      },
-      {
-        "chinese": "景色如画",
-        "pinyin": "jǐng sè rú huà",
-        "english": "picturesque views"
-      },
-      {
-        "chinese": "山清水秀",
-        "pinyin": "shān qīng shuǐ xiù",
-        "english": "beautiful mountains and clear waters"
+        "chinese": "高铁",
+        "pinyin": "gāo tiě",
+        "english": "high-speed rail"
       }
     ]
   },

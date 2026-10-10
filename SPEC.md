@@ -120,8 +120,9 @@ Home and Topic both have a small **Report a problem** link at the bottom, which 
 - Remove all whitespace
 - Remove ASCII and full-width punctuation (e.g. `，。！？、；：,.!?;:`)
 
-No partial credit. Alternates are accepted only in two cases:
+No partial credit. Alternates are accepted only in these cases:
 - A word in the same topic with the identical English meaning (see Content).
+- **Other answers the teacher lists for a word** (`ALSO_ACCEPTED` in the import script), e.g. Travel's 旅馆 "hotel" also accepts 酒店.
 - **Lenient spellings, turned on per topic** (`site/js/answer-rules.js`). Topics not listed there are graded exactly. School 学校 uses the **学 rule**:
   - A word ending in 学 also accepts the word without 学, or with 科学 in its place: 物理学 → 物理 / 物理科学.
   - A word ending in 科学 also accepts 学 in its place: 环境科学 → 环境学.

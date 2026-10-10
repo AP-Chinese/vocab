@@ -71,3 +71,19 @@ test("docs/ANSWER-RULES.md is up to date (run `npm run docs:rules` after changin
   const { OUT_FILE, renderTable } = await import("../../scripts/answer_rules_table.js");
   assert.equal(readFileSync(OUT_FILE, "utf8"), renderTable());
 });
+
+test("Travel: the teacher's other accepted answers count when typing", () => {
+  const travel = TOPICS.find((t) => t.id === "travel");
+  const accepts = (chinese) =>
+    acceptedAnswers(travel.words.find((w) => w.chinese === chinese), travel.words, answerVariants("travel")).sort();
+  assert.deepEqual(accepts("订"), ["订", "预定", "定"].sort());
+  assert.deepEqual(accepts("旅馆"), ["旅馆", "酒店"].sort());
+  assert.deepEqual(accepts("机票"), ["机票", "飞机票"].sort());
+  assert.deepEqual(accepts("游览区"), ["游览区", "景区"].sort());
+  assert.deepEqual(accepts("飞行"), ["飞行", "航班"].sort());
+  assert.deepEqual(accepts("护照"), ["护照"]); // everything else stays exact
+
+  const word = travel.words.find((w) => w.chinese === "旅馆");
+  const q = { type: "sa", word, accepted: accepts("旅馆") };
+  assert.ok(isCorrect(q, "酒店") && isAlternateSpelling(q, "酒店")); // feedback shows the textbook answer 旅馆
+});
