@@ -38,6 +38,7 @@ npm start      # serves site/ at http://localhost:8080
 
 | command | what it runs |
 |---|---|
+| `npm run test:import` | The PDF import in `scripts/test_import_vocab.py`: reading every card, joining wrapped English lines, and every correction matching a word. Needs `poppler-utils` and pypinyin, so it runs before commits but not in GitHub CI. |
 | `npm run test:unit` | Quiz rules in `tests/unit/`: every word asked once, the half-and-half split, 4 distinct choices, answer grading, the 90% pass mark, and checks on the word list. |
 | `npm run test:e2e` | Browser tests in `tests/e2e/` on an iPhone SE and a Pixel 7 screen: using the flashcards, audio, name entry, typing answers (including the pinyin-keyboard Enter guard), feedback, pass/fail results, and retakes. Also the visual tests below. |
 | `npm run test:update-screenshots` | Re-captures the screenshots after an intended design change. Review the new images before committing. |
@@ -70,4 +71,4 @@ Nothing in the app is specific to one topic. Topics and words come entirely from
 5. Review the generated pinyin, especially characters with more than one reading (e.g. 乐 yuè/lè, 行 xíng/háng, 长 cháng/zhǎng). Put corrections in `PINYIN_OVERRIDES` in the script.
 6. Typed answers for the new topic are graded exactly. To turn on lenient spellings (like School's 学 rule), add the topic's ID to `TOPIC_RULES` in `site/js/answer-rules.js`, with any words the teacher wants excluded, and add a test listing what each affected word accepts (see `tests/unit/answer-rules.test.js`). Then run `npm run docs:rules` to regenerate the table in [ANSWER-RULES.md](ANSWER-RULES.md). The tests fail until you do.
 
-Changes to the source sets go in the script, keyed by topic ID, so they survive re-imports and renames: English corrections in `OVERRIDES`, Chinese corrections in `CHINESE_OVERRIDES` (e.g. 出租汽车 → 出租车), words to remove in `EXCLUDE`, display names in `TOPIC_NAMES`, and pinyin fixes in `PINYIN_OVERRIDES`. Long English meanings that wrap onto a second line in the PDF are joined back together automatically.
+Changes to the source sets go in the script, keyed by topic ID, so they survive re-imports and renames: English corrections in `OVERRIDES`, Chinese corrections in `CHINESE_OVERRIDES` (e.g. 出租汽车 → 出租车), words to remove in `EXCLUDE`, display names in `TOPIC_NAMES`, pinyin fixes in `PINYIN_OVERRIDES`, words that aren't in the PDF in `ADDITIONS`, and other typed answers to accept for a word in `ALSO_ACCEPTED` (e.g. 酒店 for 旅馆). The import stops with an error if any of these refers to a word that doesn't exist, so a typo can't silently do nothing. Long English meanings that wrap onto a second line in the PDF are joined back together automatically.

@@ -48,10 +48,13 @@ function shortAnswer(word, words, variants) {
   return { type: "sa", word, accepted: acceptedAnswers(word, words, variants) };
 }
 
-// Typed answers accepted for `word`: any word in the topic with the identical English meaning,
-// plus the topic's lenient spellings (normalized).
+// Typed answers accepted for `word`: any word in the topic with the identical English meaning, the
+// teacher's other accepted answers for them (`alsoAccepted` in vocab.js), and the topic's lenient
+// spellings (normalized).
 export function acceptedAnswers(word, words, variants = () => []) {
-  const official = words.filter((w) => w.english === word.english).map((w) => w.chinese);
+  const official = words
+    .filter((w) => w.english === word.english)
+    .flatMap((w) => [w.chinese, ...(w.alsoAccepted ?? [])]);
   // A lenient spelling never counts if it's exactly a different word in this topic.
   const otherWords = new Set(words.map((w) => w.chinese).filter((c) => !official.includes(c)));
   const lenient = official.flatMap(variants).filter((v) => !otherWords.has(v));
