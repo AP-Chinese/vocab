@@ -120,7 +120,17 @@ Home and Topic both have a small **Report a problem** link at the bottom, which 
 - Remove all whitespace
 - Remove ASCII and full-width punctuation (e.g. `，。！？、；：,.!?;:`)
 
-No partial credit. The only alternates accepted are words in the same topic with the identical English meaning (see Content).
+No partial credit. Alternates are accepted only in two cases:
+- A word in the same topic with the identical English meaning (see Content).
+- **Lenient spellings, turned on per topic** (`site/js/answer-rules.js`). Topics not listed there are graded exactly. School 学校 uses the **学 rule**:
+  - A word ending in 学 also accepts the word without 学, or with 科学 in its place: 物理学 → 物理 / 物理科学.
+  - A word ending in 科学 also accepts 学 in its place: 环境科学 → 环境学.
+  - The rule is skipped when fewer than 2 characters would remain (数学, 化学, 医学, 科学) and for 文学 words (世界文学, 英国文学).
+  - The teacher excluded 经济学 and 社会学, because 经济 and 社会 alone mean "economy" and "society".
+  - A lenient spelling never counts if it's exactly a different word in the same topic.
+  - The full list of affected words is in [docs/ANSWER-RULES.md](docs/ANSWER-RULES.md), generated from the code.
+
+When an answer is accepted through a lenient spelling or an alternate word, the feedback says ✅ Correct and shows "Textbook answer: 物理学", so students still see the official form.
 
 **Feedback after each question**
 - Show ✅ Correct or ❌ Incorrect right away.

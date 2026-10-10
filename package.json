@@ -9,7 +9,8 @@
     "test:e2e": "playwright test",
     "test:update-screenshots": "playwright test --grep @visual --update-snapshots",
     "prepare": "git config core.hooksPath .githooks",
-    "export:csv": "node scripts/export_csv.js"
+    "export:csv": "node scripts/export_csv.js",
+    "docs:rules": "node scripts/answer_rules_table.js"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1"

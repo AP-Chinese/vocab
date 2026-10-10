@@ -1,5 +1,6 @@
 import { TOPICS as VOCAB_TOPICS } from "./vocab.js";
-import { PASS_PERCENT, buildQuiz, isCorrect, isPass, percent, shuffle } from "./quiz.js";
+import { PASS_PERCENT, buildQuiz, isAlternateSpelling, isCorrect, isPass, percent, shuffle } from "./quiz.js";
+import { answerVariants } from "./answer-rules.js";
 import { initSpeech, speak } from "./speech.js";
 
 // Preview-only topics; the file is absent from the deployed site, so this falls back to none.
@@ -155,7 +156,7 @@ function startQuiz() {
   state = {
     screen: "quiz",
     topic,
-    questions: buildQuiz(topic.words),
+    questions: buildQuiz(topic.words, Math.random, answerVariants(topic.id)),
     current: 0,
     correctCount: 0,
     answer: null, // { given, correct } once the current question is answered
@@ -194,7 +195,7 @@ function renderQuestion() {
       <div class="feedback ${answer.correct ? "is-correct" : "is-incorrect"}">
         <p class="verdict">${answer.correct ? "✅ Correct" : "❌ Incorrect"}</p>
         <p class="answer-line">
-          ${answer.correct ? "" : "Correct answer: "}<span class="chinese-inline">${esc(q.word.chinese)}</span>
+          ${answer.correct ? (answer.alternate ? "Textbook answer: " : "") : "Correct answer: "}<span class="chinese-inline">${esc(q.word.chinese)}</span>
           ${speakButton(q.word.chinese)}
         </p>
         <button type="button" class="big-btn primary" data-action="quiz-next">${current + 1 === questions.length ? "See results" : "Next ›"}</button>
@@ -219,7 +220,7 @@ function submitAnswer(given) {
   const q = state.questions[state.current];
   const correct = isCorrect(q, given);
   if (correct) state.correctCount++;
-  state.answer = { given, correct };
+  state.answer = { given, correct, alternate: isAlternateSpelling(q, given) };
   renderQuestion();
 }
 

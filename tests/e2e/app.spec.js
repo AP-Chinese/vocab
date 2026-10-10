@@ -171,3 +171,33 @@ test("pinyin never appears during the quiz, including feedback and results", asy
   }
   await expectNoPinyin(); // results
 });
+
+test("School accepts a shortened 学 answer and shows the textbook answer", async ({ page }) => {
+  const { TOPICS } = await import("../../site/js/vocab.js");
+  const school = TOPICS.find((t) => t.id === "school");
+  const chineseFor = Object.fromEntries(school.words.map((w) => [w.english, w.chinese]));
+  const shortened = { 物理学: "物理", 生物学: "生物", 心理学: "心理", 统计学: "统计", 计算机学: "计算机" };
+
+  await page.goto("/#/topic/school/quiz");
+  await page.getByLabel("Your name").fill("Test Student");
+  await page.getByRole("button", { name: "Start" }).click();
+  // Answer correctly until a typed question for one of the words above comes up.
+  for (let i = 0; i < school.words.length; i++) {
+    const right = chineseFor[await page.locator(".prompt").textContent()];
+    if ((await page.locator("#answer").count()) && shortened[right]) {
+      await page.locator("#answer").fill(shortened[right]);
+      await page.getByRole("button", { name: "Submit" }).click();
+      await expect(page.locator(".feedback")).toContainText("✅ Correct");
+      await expect(page.locator(".feedback")).toContainText(`Textbook answer: ${right}`);
+      return;
+    }
+    if (await page.locator(".options").count()) {
+      await page.locator(".option", { hasText: new RegExp(`^${right}$`) }).click();
+    } else {
+      await page.locator("#answer").fill(right);
+      await page.getByRole("button", { name: "Submit" }).click();
+    }
+    await page.locator('[data-action="quiz-next"]').click();
+  }
+  throw new Error("No typed question for a shortened word came up");
+});

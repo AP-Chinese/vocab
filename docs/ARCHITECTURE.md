@@ -14,6 +14,7 @@ site/
   js/quiz.js          quiz rules: shuffling, building questions, grading, pass mark (no page code)
   js/speech.js        text-to-speech and voice choice
   js/vocab.js         generated word list
+  js/answer-rules.js  lenient spellings for typed answers, turned on per topic
   js/dev-topics.js    preview-only test topic (deleted on deploy)
 tests/unit/           Node's built-in test runner
 tests/e2e/            Playwright browser tests + screenshots/
@@ -69,6 +70,7 @@ Decisions inside the rules:
 - **Odd word count:** multiple choice gets the extra word.
 - **Wrong options (distractors)** come from the same topic and never share the correct word's English meaning, so only one option is ever correct.
 - **Shared meanings:** if two words share an English meaning, either one is accepted when typing.
+- **Lenient spellings are general rules, turned on per topic.** `site/js/answer-rules.js` holds named rules (`RULES`, e.g. the 学 rule) and a table of which topic IDs use which rules, each with an optional list of excluded words (`TOPIC_RULES`). This avoids one-off rules for individual words, and a new topic is graded exactly until it's listed. The quiz itself (`acceptedAnswers` in `quiz.js`) only receives a function giving extra spellings, so the rules stay separate from quiz logic. Unit tests list every School word the 学 rule changes and exactly what it adds, so any change to a rule or exclusion shows up as a failing test. `docs/ANSWER-RULES.md` is a readable table of every affected word, generated from the code (`npm run docs:rules`). A test fails if it's out of date, so it can't drift.
 - **Grading typed answers:** exact match after normalizing Unicode and removing whitespace and punctuation (ASCII and full-width).
 - **Pass mark:** checked with whole-number math (`correct × 100 ≥ total × 90`), so 37/42 can't round its way to a pass. The percentage shown is rounded down, so it never looks like a pass when it isn't.
 - **Every new quiz (including a retake) reshuffles** both the order and which words are multiple choice vs. typed. Flashcards reshuffle every time the deck opens.

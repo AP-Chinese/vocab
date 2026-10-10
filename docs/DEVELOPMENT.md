@@ -68,5 +68,6 @@ Nothing in the app is specific to one topic. Topics and words come entirely from
 3. Run `npm test`. It checks every topic has at least 4 words, no blanks, and no duplicate Chinese.
 4. Check the word count against the Knowt set, and check for words that share an English meaning (the app handles them, but they may be mistakes in the source set).
 5. Review the generated pinyin, especially characters with more than one reading (e.g. 乐 yuè/lè, 行 xíng/háng, 长 cháng/zhǎng). Put corrections in `PINYIN_OVERRIDES` in the script.
+6. Typed answers for the new topic are graded exactly. To turn on lenient spellings (like School's 学 rule), add the topic's ID to `TOPIC_RULES` in `site/js/answer-rules.js`, with any words the teacher wants excluded, and add a test listing what each affected word accepts (see `tests/unit/answer-rules.test.js`). Then run `npm run docs:rules` to regenerate the table in [ANSWER-RULES.md](ANSWER-RULES.md). The tests fail until you do.
 
 Changes to the source sets go in the script, so they survive re-imports: corrections in `OVERRIDES`, and words to remove in `EXCLUDE`.
