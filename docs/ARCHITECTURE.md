@@ -6,6 +6,7 @@ Why the app is built the way it is. When a decision changes, update its entry ra
 
 ```
 data/source/NN-topic.pdf ──scripts/import_vocab.py──► site/js/vocab.js  (the word list the app loads)
+                                                          └─scripts/export_csv.js──► exports/vocab.csv  (on demand, not committed)
 site/
   index.html          loads js/app.js
   styles.css          all styling
@@ -34,7 +35,7 @@ The app is small (a few hundred lines), and having no build step means the files
 
 ## 3. Word list pipeline
 
-- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync.
+- The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync. A CSV can still be exported on demand (`npm run export:csv`). It's generated from `vocab.js` and isn't committed, so it can't drift.
 - Generated files are committed, so there's no build step.
 - Teacher-approved changes to the source sets live in the script, so they survive re-imports: corrections in `OVERRIDES` (e.g. 电脑 → "computer") and removed words in `EXCLUDE` (e.g. 数学分析 "math analysis").
 - **Pinyin is generated**, because the Knowt sets don't include it. The script uses pypinyin (pinned in `scripts/requirements.txt`), whose word dictionary picks the right reading for characters with more than one (乐队 yuè duì, 数学 shù xué). Every School 学校 reading was checked by hand. New topics should be reviewed too, with corrections going in `PINYIN_OVERRIDES`. It's written one syllable per character with tone marks (`kè chéng`), which tests enforce.

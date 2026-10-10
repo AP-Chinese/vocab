@@ -48,6 +48,17 @@ Notes:
 - The tests pin the random order, the clock (Oct 9, 2026, 7:42 PM Eastern), and fake a Chinese voice, so every run looks the same.
 - Screenshots are captured in the Claude Code cloud environment (Linux). On another computer fonts render slightly differently, so the visual tests may fail there even when nothing changed. CI on GitHub skips them for the same reason and runs only the unit and functional tests.
 
+## Exporting the word list to CSV
+
+```sh
+npm run export:csv                    # writes exports/vocab.csv
+npm run export:csv -- ~/Desktop/vocab.csv
+```
+
+It exports exactly what the app uses (from `site/js/vocab.js`): every topic with its ID, Chinese, pinyin, and English, with overrides and removed words already applied. The preview-only test topic isn't included. The file opens directly in Excel or Google Sheets, with Chinese and tone marks intact.
+
+The CSV is a snapshot to look at or share, not a place to make changes. `exports/` isn't committed. To change words, edit the PDFs or the lists in `scripts/import_vocab.py`, then re-import.
+
 ## Adding a topic
 
 Nothing in the app is specific to one topic. Topics and words come entirely from `site/js/vocab.js`, which is generated:
