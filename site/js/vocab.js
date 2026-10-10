@@ -333,7 +333,7 @@ export const TOPICS = [
       {
         "chinese": "单程旅行",
         "pinyin": "dān chéng lǚ xíng",
-        "english": "outbound journey"
+        "english": "one-way trip"
       },
       {
         "chinese": "飞行",
@@ -434,7 +434,7 @@ export const TOPICS = [
       {
         "chinese": "交通管理",
         "pinyin": "jiāo tōng guǎn lǐ",
-        "english": "Traffic Control"
+        "english": "traffic control"
       },
       {
         "chinese": "交通规则",
@@ -444,7 +444,7 @@ export const TOPICS = [
       {
         "chinese": "交通事故",
         "pinyin": "jiāo tōng shì gù",
-        "english": "Accident"
+        "english": "accident"
       },
       {
         "chinese": "公共汽车",
@@ -457,8 +457,8 @@ export const TOPICS = [
         "english": "cable car; trolley bus; tram"
       },
       {
-        "chinese": "出租汽车",
-        "pinyin": "chū zū qì chē",
+        "chinese": "出租车",
+        "pinyin": "chū zū chē",
         "english": "taxi"
       },
       {
@@ -554,7 +554,7 @@ export const TOPICS = [
       {
         "chinese": "水泄不通",
         "pinyin": "shuǐ xiè bù tōng",
-        "english": "to overwhelm"
+        "english": "jam-packed"
       },
       {
         "chinese": "高峰时间",
@@ -599,7 +599,7 @@ export const TOPICS = [
       {
         "chinese": "有效",
         "pinyin": "yǒu xiào",
-        "english": "efficient"
+        "english": "effective"
       },
       {
         "chinese": "能源",
@@ -655,7 +655,7 @@ export const TOPICS = [
       {
         "chinese": "祖父",
         "pinyin": "zǔ fù",
-        "english": "fathers's father"
+        "english": "father's father"
       },
       {
         "chinese": "祖母",
@@ -1076,7 +1076,7 @@ export const TOPICS = [
       {
         "chinese": "纯净水",
         "pinyin": "chún jìng shuǐ",
-        "english": "spring water"
+        "english": "purified water"
       },
       {
         "chinese": "绿茶",
@@ -1106,7 +1106,7 @@ export const TOPICS = [
       {
         "chinese": "白酒",
         "pinyin": "bái jiǔ",
-        "english": "alcohol"
+        "english": "baijiu (Chinese liquor)"
       },
       {
         "chinese": "葡萄酒",

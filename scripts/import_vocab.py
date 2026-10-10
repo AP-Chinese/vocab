@@ -26,6 +26,19 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 # Teacher-approved corrections to the source sets: (topic ID, chinese) -> english.
 OVERRIDES = {
     ("school", "电脑"): "computer",
+    ("travel", "单程旅行"): "one-way trip",  # was "outbound journey"
+    ("transportation", "交通管理"): "traffic control",  # was capitalized
+    ("transportation", "交通事故"): "accident",  # was capitalized
+    ("transportation", "水泄不通"): "jam-packed",  # was "to overwhelm"
+    ("transportation", "有效"): "effective",  # was "efficient"
+    ("family", "祖父"): "father's father",  # was "fathers's father"
+    ("food", "纯净水"): "purified water",  # was "spring water"
+    ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
+}
+
+# Teacher-approved corrections to the Chinese side: (topic ID, chinese) -> chinese.
+CHINESE_OVERRIDES = {
+    ("transportation", "出租汽车"): "出租车",
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -128,7 +141,7 @@ def parse_pdf(path, title):
 def apply_changes(topic, rows):
     """Applies the teacher-approved removals and corrections for this topic ID."""
     return [
-        (chinese, OVERRIDES.get((topic, chinese), normalize_english(english)))
+        (CHINESE_OVERRIDES.get((topic, chinese), chinese), OVERRIDES.get((topic, chinese), normalize_english(english)))
         for chinese, english in rows
         if (topic, chinese) not in EXCLUDE
     ]
