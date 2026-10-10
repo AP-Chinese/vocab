@@ -91,3 +91,10 @@ test("each new quiz (e.g. a retake) has a different order and question types", (
   const retakes = Array.from({ length: 5 }, () => signature(buildQuiz(list)));
   assert.ok(retakes.every((r) => r !== first));
 });
+
+test("import joins English meanings that wrap onto a second line in the PDF", () => {
+  const travel = TOPICS.find((t) => t.id === "travel");
+  const english = (chinese) => travel.words.find((w) => w.chinese === chinese).english;
+  assert.equal(english("独具匠心"), "exquisite workmanship with an ingenious design");
+  assert.equal(english("依山傍水"), "surrounded by hills on one side and water on the other");
+});

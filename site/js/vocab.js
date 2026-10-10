@@ -235,5 +235,909 @@ export const TOPICS = [
         "english": "medicine"
       }
     ]
+  },
+  {
+    "id": "travel",
+    "name": "Travel 旅游",
+    "words": [
+      {
+        "chinese": "护照",
+        "pinyin": "hù zhào",
+        "english": "passport"
+      },
+      {
+        "chinese": "签证",
+        "pinyin": "qiān zhèng",
+        "english": "visa"
+      },
+      {
+        "chinese": "领事馆",
+        "pinyin": "lǐng shì guǎn",
+        "english": "consulate"
+      },
+      {
+        "chinese": "游客",
+        "pinyin": "yóu kè",
+        "english": "tourist"
+      },
+      {
+        "chinese": "游览区",
+        "pinyin": "yóu lǎn qū",
+        "english": "sightseeing district"
+      },
+      {
+        "chinese": "旅游景点",
+        "pinyin": "lǚ yóu jǐng diǎn",
+        "english": "tourist attraction"
+      },
+      {
+        "chinese": "自然景观",
+        "pinyin": "zì rán jǐng guān",
+        "english": "natural splendor"
+      },
+      {
+        "chinese": "纪念品",
+        "pinyin": "jì niàn pǐn",
+        "english": "souvenir"
+      },
+      {
+        "chinese": "国家公园",
+        "pinyin": "guó jiā gōng yuán",
+        "english": "national park"
+      },
+      {
+        "chinese": "旅行社",
+        "pinyin": "lǚ xíng shè",
+        "english": "travel agency"
+      },
+      {
+        "chinese": "导游",
+        "pinyin": "dǎo yóu",
+        "english": "tour guide"
+      },
+      {
+        "chinese": "订",
+        "pinyin": "dìng",
+        "english": "reserve"
+      },
+      {
+        "chinese": "机票",
+        "pinyin": "jī piào",
+        "english": "plane ticket"
+      },
+      {
+        "chinese": "国际航班",
+        "pinyin": "guó jì háng bān",
+        "english": "international flight"
+      },
+      {
+        "chinese": "国内航班",
+        "pinyin": "guó nèi háng bān",
+        "english": "domestic flight"
+      },
+      {
+        "chinese": "航班号",
+        "pinyin": "háng bān hào",
+        "english": "flight number"
+      },
+      {
+        "chinese": "行李",
+        "pinyin": "xíng li",
+        "english": "luggage"
+      },
+      {
+        "chinese": "往返旅行",
+        "pinyin": "wǎng fǎn lǚ xíng",
+        "english": "round trip"
+      },
+      {
+        "chinese": "单程旅行",
+        "pinyin": "dān chéng lǚ xíng",
+        "english": "outbound journey"
+      },
+      {
+        "chinese": "飞行",
+        "pinyin": "fēi xíng",
+        "english": "flight; flying"
+      },
+      {
+        "chinese": "起飞",
+        "pinyin": "qǐ fēi",
+        "english": "take off"
+      },
+      {
+        "chinese": "到达",
+        "pinyin": "dào dá",
+        "english": "arrive"
+      },
+      {
+        "chinese": "远足",
+        "pinyin": "yuǎn zú",
+        "english": "excursion; outing"
+      },
+      {
+        "chinese": "探险",
+        "pinyin": "tàn xiǎn",
+        "english": "expedition"
+      },
+      {
+        "chinese": "旅馆",
+        "pinyin": "lǚ guǎn",
+        "english": "hotel"
+      },
+      {
+        "chinese": "汽车旅馆",
+        "pinyin": "qì chē lǚ guǎn",
+        "english": "motel"
+      },
+      {
+        "chinese": "特快车",
+        "pinyin": "tè kuài chē",
+        "english": "express train"
+      },
+      {
+        "chinese": "登记",
+        "pinyin": "dēng jì",
+        "english": "check-in"
+      },
+      {
+        "chinese": "结账",
+        "pinyin": "jié zhàng",
+        "english": "check-out"
+      },
+      {
+        "chinese": "单人房",
+        "pinyin": "dān rén fáng",
+        "english": "single room"
+      },
+      {
+        "chinese": "双人房",
+        "pinyin": "shuāng rén fáng",
+        "english": "double room"
+      },
+      {
+        "chinese": "独具匠心",
+        "pinyin": "dú jù jiàng xīn",
+        "english": "exquisite workmanship with an ingenious design"
+      },
+      {
+        "chinese": "湖光山色",
+        "pinyin": "hú guāng shān sè",
+        "english": "landscape of lakes and hills"
+      },
+      {
+        "chinese": "依山傍水",
+        "pinyin": "yī shān bàng shuǐ",
+        "english": "surrounded by hills on one side and water on the other"
+      },
+      {
+        "chinese": "景色如画",
+        "pinyin": "jǐng sè rú huà",
+        "english": "picturesque views"
+      },
+      {
+        "chinese": "山清水秀",
+        "pinyin": "shān qīng shuǐ xiù",
+        "english": "beautiful mountains and clear waters"
+      }
+    ]
+  },
+  {
+    "id": "transportation",
+    "name": "Transportation 交通",
+    "words": [
+      {
+        "chinese": "交通",
+        "pinyin": "jiāo tōng",
+        "english": "transportation"
+      },
+      {
+        "chinese": "交通管理",
+        "pinyin": "jiāo tōng guǎn lǐ",
+        "english": "Traffic Control"
+      },
+      {
+        "chinese": "交通规则",
+        "pinyin": "jiāo tōng guī zé",
+        "english": "traffic regulation"
+      },
+      {
+        "chinese": "交通事故",
+        "pinyin": "jiāo tōng shì gù",
+        "english": "Accident"
+      },
+      {
+        "chinese": "公共汽车",
+        "pinyin": "gōng gòng qì chē",
+        "english": "bus"
+      },
+      {
+        "chinese": "电车",
+        "pinyin": "diàn chē",
+        "english": "cable car; trolley bus; tram"
+      },
+      {
+        "chinese": "出租汽车",
+        "pinyin": "chū zū qì chē",
+        "english": "taxi"
+      },
+      {
+        "chinese": "计程车",
+        "pinyin": "jì chéng chē",
+        "english": "taxi"
+      },
+      {
+        "chinese": "卡车",
+        "pinyin": "kǎ chē",
+        "english": "truck"
+      },
+      {
+        "chinese": "地铁",
+        "pinyin": "dì tiě",
+        "english": "subway"
+      },
+      {
+        "chinese": "火车",
+        "pinyin": "huǒ chē",
+        "english": "train"
+      },
+      {
+        "chinese": "飞机",
+        "pinyin": "fēi jī",
+        "english": "airplane"
+      },
+      {
+        "chinese": "船",
+        "pinyin": "chuán",
+        "english": "boat, ship"
+      },
+      {
+        "chinese": "自行车",
+        "pinyin": "zì xíng chē",
+        "english": "bicycle"
+      },
+      {
+        "chinese": "摩托车",
+        "pinyin": "mó tuō chē",
+        "english": "motorcycle"
+      },
+      {
+        "chinese": "停车场",
+        "pinyin": "tíng chē chǎng",
+        "english": "parking lot"
+      },
+      {
+        "chinese": "车站",
+        "pinyin": "chē zhàn",
+        "english": "station"
+      },
+      {
+        "chinese": "码头",
+        "pinyin": "mǎ tou",
+        "english": "dock, pier, wharf"
+      },
+      {
+        "chinese": "港口",
+        "pinyin": "gǎng kǒu",
+        "english": "port, harbor"
+      },
+      {
+        "chinese": "机场",
+        "pinyin": "jī chǎng",
+        "english": "airport"
+      },
+      {
+        "chinese": "加油站",
+        "pinyin": "jiā yóu zhàn",
+        "english": "gas station"
+      },
+      {
+        "chinese": "人行道",
+        "pinyin": "rén xíng dào",
+        "english": "sidewalk"
+      },
+      {
+        "chinese": "限速",
+        "pinyin": "xiàn sù",
+        "english": "speed limit"
+      },
+      {
+        "chinese": "交通堵塞",
+        "pinyin": "jiāo tōng dǔ sè",
+        "english": "traffic jam"
+      },
+      {
+        "chinese": "畅通无阻",
+        "pinyin": "chàng tōng wú zǔ",
+        "english": "unobstructed; unimpeded"
+      },
+      {
+        "chinese": "水泄不通",
+        "pinyin": "shuǐ xiè bù tōng",
+        "english": "to overwhelm"
+      },
+      {
+        "chinese": "高峰时间",
+        "pinyin": "gāo fēng shí jiān",
+        "english": "rush hour"
+      },
+      {
+        "chinese": "街道",
+        "pinyin": "jiē dào",
+        "english": "street"
+      },
+      {
+        "chinese": "线路",
+        "pinyin": "xiàn lù",
+        "english": "route"
+      },
+      {
+        "chinese": "公共",
+        "pinyin": "gōng gòng",
+        "english": "public"
+      },
+      {
+        "chinese": "改善",
+        "pinyin": "gǎi shàn",
+        "english": "to improve"
+      },
+      {
+        "chinese": "状况",
+        "pinyin": "zhuàng kuàng",
+        "english": "state, situation"
+      },
+      {
+        "chinese": "条件",
+        "pinyin": "tiáo jiàn",
+        "english": "condition"
+      },
+      {
+        "chinese": "道路",
+        "pinyin": "dào lù",
+        "english": "road"
+      },
+      {
+        "chinese": "有效",
+        "pinyin": "yǒu xiào",
+        "english": "efficient"
+      },
+      {
+        "chinese": "能源",
+        "pinyin": "néng yuán",
+        "english": "energy"
+      },
+      {
+        "chinese": "减少",
+        "pinyin": "jiǎn shǎo",
+        "english": "to reduce"
+      },
+      {
+        "chinese": "污染",
+        "pinyin": "wū rǎn",
+        "english": "pollution"
+      }
+    ]
+  },
+  {
+    "id": "family",
+    "name": "Family 家庭",
+    "words": [
+      {
+        "chinese": "家庭生活",
+        "pinyin": "jiā tíng shēng huó",
+        "english": "family life"
+      },
+      {
+        "chinese": "代",
+        "pinyin": "dài",
+        "english": "generation"
+      },
+      {
+        "chinese": "出身",
+        "pinyin": "chū shēn",
+        "english": "origin"
+      },
+      {
+        "chinese": "后代",
+        "pinyin": "hòu dài",
+        "english": "descendants; later generations"
+      },
+      {
+        "chinese": "血缘",
+        "pinyin": "xuè yuán",
+        "english": "consanguinity, blood relationship"
+      },
+      {
+        "chinese": "成员",
+        "pinyin": "chéng yuán",
+        "english": "member"
+      },
+      {
+        "chinese": "祖父",
+        "pinyin": "zǔ fù",
+        "english": "fathers's father"
+      },
+      {
+        "chinese": "祖母",
+        "pinyin": "zǔ mǔ",
+        "english": "father's mother"
+      },
+      {
+        "chinese": "外祖父",
+        "pinyin": "wài zǔ fù",
+        "english": "mother's father"
+      },
+      {
+        "chinese": "外祖母",
+        "pinyin": "wài zǔ mǔ",
+        "english": "mother's mother"
+      },
+      {
+        "chinese": "父母",
+        "pinyin": "fù mǔ",
+        "english": "parents"
+      },
+      {
+        "chinese": "父亲",
+        "pinyin": "fù qīn",
+        "english": "father"
+      },
+      {
+        "chinese": "母亲",
+        "pinyin": "mǔ qīn",
+        "english": "mother"
+      },
+      {
+        "chinese": "继父",
+        "pinyin": "jì fù",
+        "english": "stepfather"
+      },
+      {
+        "chinese": "继母",
+        "pinyin": "jì mǔ",
+        "english": "stepmother"
+      },
+      {
+        "chinese": "养父",
+        "pinyin": "yǎng fù",
+        "english": "adopted father"
+      },
+      {
+        "chinese": "养母",
+        "pinyin": "yǎng mǔ",
+        "english": "adopted mother"
+      },
+      {
+        "chinese": "哥哥",
+        "pinyin": "gē ge",
+        "english": "older brother"
+      },
+      {
+        "chinese": "姐姐",
+        "pinyin": "jiě jie",
+        "english": "older sister"
+      },
+      {
+        "chinese": "弟弟",
+        "pinyin": "dì di",
+        "english": "younger brother"
+      },
+      {
+        "chinese": "妹妹",
+        "pinyin": "mèi mei",
+        "english": "younger sister"
+      },
+      {
+        "chinese": "亲属",
+        "pinyin": "qīn shǔ",
+        "english": "relations; relatives"
+      },
+      {
+        "chinese": "亲戚",
+        "pinyin": "qīn qi",
+        "english": "relative"
+      },
+      {
+        "chinese": "姑母",
+        "pinyin": "gū mǔ",
+        "english": "father's sister"
+      },
+      {
+        "chinese": "姨妈",
+        "pinyin": "yí mā",
+        "english": "mother's sister"
+      },
+      {
+        "chinese": "大伯",
+        "pinyin": "dà bó",
+        "english": "father's elder brother"
+      },
+      {
+        "chinese": "叔叔",
+        "pinyin": "shū shu",
+        "english": "father's younger brother"
+      },
+      {
+        "chinese": "舅舅",
+        "pinyin": "jiù jiu",
+        "english": "mother's brother"
+      },
+      {
+        "chinese": "子女",
+        "pinyin": "zǐ nǚ",
+        "english": "children"
+      },
+      {
+        "chinese": "尊敬",
+        "pinyin": "zūn jìng",
+        "english": "respect"
+      },
+      {
+        "chinese": "长辈",
+        "pinyin": "zhǎng bèi",
+        "english": "elder generation; elder member of a family"
+      },
+      {
+        "chinese": "晚辈",
+        "pinyin": "wǎn bèi",
+        "english": "younger generation"
+      },
+      {
+        "chinese": "平辈",
+        "pinyin": "píng bèi",
+        "english": "person of the same generation"
+      },
+      {
+        "chinese": "平等",
+        "pinyin": "píng děng",
+        "english": "equality"
+      },
+      {
+        "chinese": "期望",
+        "pinyin": "qī wàng",
+        "english": "hope for and expect"
+      },
+      {
+        "chinese": "单亲",
+        "pinyin": "dān qīn",
+        "english": "single parent"
+      },
+      {
+        "chinese": "夫妇",
+        "pinyin": "fū fù",
+        "english": "husband and wife"
+      },
+      {
+        "chinese": "婚姻",
+        "pinyin": "hūn yīn",
+        "english": "marriage"
+      }
+    ]
+  },
+  {
+    "id": "food",
+    "name": "Food 饮食",
+    "words": [
+      {
+        "chinese": "中餐",
+        "pinyin": "zhōng cān",
+        "english": "Chinese food"
+      },
+      {
+        "chinese": "西餐",
+        "pinyin": "xī cān",
+        "english": "Western food"
+      },
+      {
+        "chinese": "素菜",
+        "pinyin": "sù cài",
+        "english": "vegetarian; vegetable dishes"
+      },
+      {
+        "chinese": "荤菜",
+        "pinyin": "hūn cài",
+        "english": "meat or fish dishes"
+      },
+      {
+        "chinese": "青菜",
+        "pinyin": "qīng cài",
+        "english": "green leafy vegetable"
+      },
+      {
+        "chinese": "肉",
+        "pinyin": "ròu",
+        "english": "meat"
+      },
+      {
+        "chinese": "鸡",
+        "pinyin": "jī",
+        "english": "chicken"
+      },
+      {
+        "chinese": "牛肉",
+        "pinyin": "niú ròu",
+        "english": "beef"
+      },
+      {
+        "chinese": "猪肉",
+        "pinyin": "zhū ròu",
+        "english": "pork"
+      },
+      {
+        "chinese": "羊肉",
+        "pinyin": "yáng ròu",
+        "english": "lamb; mutton"
+      },
+      {
+        "chinese": "烤鸭",
+        "pinyin": "kǎo yā",
+        "english": "roast duck"
+      },
+      {
+        "chinese": "鱼",
+        "pinyin": "yú",
+        "english": "fish"
+      },
+      {
+        "chinese": "家常豆腐",
+        "pinyin": "jiā cháng dòu fu",
+        "english": "homestyle tofu"
+      },
+      {
+        "chinese": "糖醋鱼",
+        "pinyin": "táng cù yú",
+        "english": "fish in sweet and sour sauce"
+      },
+      {
+        "chinese": "酸辣汤",
+        "pinyin": "suān là tāng",
+        "english": "hot and sour soup"
+      },
+      {
+        "chinese": "米饭",
+        "pinyin": "mǐ fàn",
+        "english": "rice"
+      },
+      {
+        "chinese": "饺子",
+        "pinyin": "jiǎo zi",
+        "english": "dumpling"
+      },
+      {
+        "chinese": "面包",
+        "pinyin": "miàn bāo",
+        "english": "bread"
+      },
+      {
+        "chinese": "面条",
+        "pinyin": "miàn tiáo",
+        "english": "noodles"
+      },
+      {
+        "chinese": "比萨饼",
+        "pinyin": "bǐ sà bǐng",
+        "english": "pizza"
+      },
+      {
+        "chinese": "空心粉",
+        "pinyin": "kōng xīn fěn",
+        "english": "spaghetti"
+      },
+      {
+        "chinese": "汉堡包",
+        "pinyin": "hàn bǎo bāo",
+        "english": "hamburger"
+      },
+      {
+        "chinese": "三明治",
+        "pinyin": "sān míng zhì",
+        "english": "sandwich"
+      },
+      {
+        "chinese": "油",
+        "pinyin": "yóu",
+        "english": "oil; oily"
+      },
+      {
+        "chinese": "盐",
+        "pinyin": "yán",
+        "english": "salt"
+      },
+      {
+        "chinese": "糖",
+        "pinyin": "táng",
+        "english": "sugar"
+      },
+      {
+        "chinese": "醋",
+        "pinyin": "cù",
+        "english": "vinegar"
+      },
+      {
+        "chinese": "酱油",
+        "pinyin": "jiàng yóu",
+        "english": "soy sauce"
+      },
+      {
+        "chinese": "味精",
+        "pinyin": "wèi jīng",
+        "english": "monosodium glutamate (MSG)"
+      },
+      {
+        "chinese": "味道",
+        "pinyin": "wèi dao",
+        "english": "taste; flavor"
+      },
+      {
+        "chinese": "酸",
+        "pinyin": "suān",
+        "english": "sour"
+      },
+      {
+        "chinese": "甜",
+        "pinyin": "tián",
+        "english": "sweet"
+      },
+      {
+        "chinese": "苦",
+        "pinyin": "kǔ",
+        "english": "bitter"
+      },
+      {
+        "chinese": "辣",
+        "pinyin": "là",
+        "english": "spicy"
+      },
+      {
+        "chinese": "香",
+        "pinyin": "xiāng",
+        "english": "fragrant; nice-smelling"
+      },
+      {
+        "chinese": "腻",
+        "pinyin": "nì",
+        "english": "greasy (food)"
+      },
+      {
+        "chinese": "淡",
+        "pinyin": "dàn",
+        "english": "bland"
+      },
+      {
+        "chinese": "咸",
+        "pinyin": "xián",
+        "english": "salty"
+      },
+      {
+        "chinese": "清淡",
+        "pinyin": "qīng dàn",
+        "english": "light in flavor"
+      },
+      {
+        "chinese": "新鲜",
+        "pinyin": "xīn xiān",
+        "english": "fresh"
+      },
+      {
+        "chinese": "嫩",
+        "pinyin": "nèn",
+        "english": "tender"
+      },
+      {
+        "chinese": "老",
+        "pinyin": "lǎo",
+        "english": "tough"
+      },
+      {
+        "chinese": "饿",
+        "pinyin": "è",
+        "english": "hungry"
+      },
+      {
+        "chinese": "渴",
+        "pinyin": "kě",
+        "english": "thirsty"
+      },
+      {
+        "chinese": "好吃",
+        "pinyin": "hǎo chī",
+        "english": "delicious"
+      },
+      {
+        "chinese": "难吃",
+        "pinyin": "nán chī",
+        "english": "not tasty"
+      },
+      {
+        "chinese": "牛奶",
+        "pinyin": "niú nǎi",
+        "english": "milk"
+      },
+      {
+        "chinese": "酸奶",
+        "pinyin": "suān nǎi",
+        "english": "yogurt"
+      },
+      {
+        "chinese": "饮料",
+        "pinyin": "yǐn liào",
+        "english": "beverage"
+      },
+      {
+        "chinese": "矿泉水",
+        "pinyin": "kuàng quán shuǐ",
+        "english": "mineral water"
+      },
+      {
+        "chinese": "汽水",
+        "pinyin": "qì shuǐ",
+        "english": "soda"
+      },
+      {
+        "chinese": "纯净水",
+        "pinyin": "chún jìng shuǐ",
+        "english": "spring water"
+      },
+      {
+        "chinese": "绿茶",
+        "pinyin": "lǜ chá",
+        "english": "green tea"
+      },
+      {
+        "chinese": "红茶",
+        "pinyin": "hóng chá",
+        "english": "black tea"
+      },
+      {
+        "chinese": "冰茶",
+        "pinyin": "bīng chá",
+        "english": "iced tea"
+      },
+      {
+        "chinese": "柠檬茶",
+        "pinyin": "níng méng chá",
+        "english": "lemon tea"
+      },
+      {
+        "chinese": "酒",
+        "pinyin": "jiǔ",
+        "english": "liquor"
+      },
+      {
+        "chinese": "白酒",
+        "pinyin": "bái jiǔ",
+        "english": "alcohol"
+      },
+      {
+        "chinese": "葡萄酒",
+        "pinyin": "pú tao jiǔ",
+        "english": "wine"
+      },
+      {
+        "chinese": "啤酒",
+        "pinyin": "pí jiǔ",
+        "english": "beer"
+      },
+      {
+        "chinese": "香槟酒",
+        "pinyin": "xiāng bīn jiǔ",
+        "english": "champagne"
+      },
+      {
+        "chinese": "果汁",
+        "pinyin": "guǒ zhī",
+        "english": "juice"
+      },
+      {
+        "chinese": "苹果汁",
+        "pinyin": "píng guǒ zhī",
+        "english": "apple juice"
+      },
+      {
+        "chinese": "橙汁",
+        "pinyin": "chéng zhī",
+        "english": "orange juice"
+      }
+    ]
   }
 ];

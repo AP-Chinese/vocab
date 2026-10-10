@@ -64,10 +64,10 @@ The CSV is a snapshot to look at or share, not a place to make changes. `exports
 Nothing in the app is specific to one topic. Topics and words come entirely from `site/js/vocab.js`, which is generated:
 
 1. Export the Knowt set as PDF and commit it as `data/source/NN-topic.pdf`. The number sets the order on the home screen, e.g. `02-family.pdf`.
-2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils` and `pip install -r scripts/requirements.txt`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title (e.g. `School 学校`).
+2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils` and `pip install -r scripts/requirements.txt`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title, unless `TOPIC_NAMES` in the script sets one (titles from Knowt are often inconsistent, e.g. "ap chinese: travel"). The script also prints a short review: words with the same English meaning and duplicate words.
 3. Run `npm test`. It checks every topic has at least 4 words, no blanks, and no duplicate Chinese.
 4. Check the word count against the Knowt set, and check for words that share an English meaning (the app handles them, but they may be mistakes in the source set).
 5. Review the generated pinyin, especially characters with more than one reading (e.g. 乐 yuè/lè, 行 xíng/háng, 长 cháng/zhǎng). Put corrections in `PINYIN_OVERRIDES` in the script.
 6. Typed answers for the new topic are graded exactly. To turn on lenient spellings (like School's 学 rule), add the topic's ID to `TOPIC_RULES` in `site/js/answer-rules.js`, with any words the teacher wants excluded, and add a test listing what each affected word accepts (see `tests/unit/answer-rules.test.js`). Then run `npm run docs:rules` to regenerate the table in [ANSWER-RULES.md](ANSWER-RULES.md). The tests fail until you do.
 
-Changes to the source sets go in the script, so they survive re-imports: corrections in `OVERRIDES`, and words to remove in `EXCLUDE`.
+Changes to the source sets go in the script, keyed by topic ID, so they survive re-imports and renames: corrections in `OVERRIDES`, words to remove in `EXCLUDE`, display names in `TOPIC_NAMES`, and pinyin fixes in `PINYIN_OVERRIDES`. Long English meanings that wrap onto a second line in the PDF are joined back together automatically.

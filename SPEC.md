@@ -38,7 +38,7 @@ The assignment is for students with low reading scores on the mock AP tests. The
 
 The vocabulary comes from Knowt flashcard sets, one per topic. Each set is exported as a PDF with two columns (Chinese, English) and committed to `data/source/`, named `NN-topic.pdf` (e.g. `01-school.pdf`). The number sets the topic order.
 
-`scripts/import_vocab.py` extracts every PDF into `site/js/vocab.js`, the word list the site loads. Each topic gets an `id` from its file name (`school`, used in links), and its display name comes from the PDF title (e.g. `School 学校`). The word list will not change after this one-time import.
+`scripts/import_vocab.py` extracts every PDF into `site/js/vocab.js`, the word list the site loads. Each topic gets an `id` from its file name (`school`, used in links), and its display name comes from the PDF title (e.g. `School 学校`) unless the script sets a cleaner one (e.g. `Travel 旅游` instead of "ap chinese: travel"). The word list will not change after this one-time import.
 
 | column    | example                   | notes                                         |
 |-----------|---------------------------|-----------------------------------------------|
