@@ -29,6 +29,9 @@ test.describe("flashcards", () => {
     await expect(next).toBeDisabled(); // must see the answer first
     await card.click({ position: { x: 20, y: 20 } });
     await expect(card).toHaveClass(/flipped/);
+    const word = TEST_TOPIC.words.find((w) => w.chinese === chinese);
+    await expect(page.locator(".card-back .pinyin")).toHaveText(word.pinyin); // pinyin above the English
+    await expect(page.locator(".card-back .english")).toHaveText(word.english);
     await card.click({ position: { x: 20, y: 20 } }); // flipping back keeps Next enabled
     await expect(next).toBeEnabled();
     await next.click();
@@ -151,4 +154,20 @@ test("topics are linked by name, and unknown topic links fall back to Home", asy
 
   await page.goto("/#/topic/0/quiz"); // an old position-based link
   await expect(page.getByRole("heading", { name: "AP Chinese Vocab" })).toBeVisible();
+});
+
+test("pinyin never appears during the quiz, including feedback and results", async ({ page }) => {
+  const allPinyin = TEST_TOPIC.words.map((w) => w.pinyin);
+  const expectNoPinyin = async () => {
+    const text = await page.locator("#app").innerText();
+    for (const p of allPinyin) expect(text).not.toContain(p);
+  };
+  await startQuiz(page);
+  for (let i = 0; i < TEST_TOPIC.words.length; i++) {
+    await expectNoPinyin(); // question
+    await answer(page, { correct: i % 2 === 0 });
+    await expectNoPinyin(); // feedback (both correct and incorrect)
+    await page.locator('[data-action="quiz-next"]').click();
+  }
+  await expectNoPinyin(); // results
 });

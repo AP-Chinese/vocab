@@ -6,11 +6,11 @@ export const DEV_TOPICS = [
     id: "test",
     name: "🧪 Test topic (preview only)",
     words: [
-      { chinese: "你好", english: "hello" },
-      { chinese: "谢谢", english: "thank you" },
-      { chinese: "学生", english: "student" },
-      { chinese: "老师", english: "teacher" },
-      { chinese: "朋友", english: "friend" },
+      { chinese: "你好", pinyin: "nǐ hǎo", english: "hello" },
+      { chinese: "谢谢", pinyin: "xiè xie", english: "thank you" },
+      { chinese: "学生", pinyin: "xué shēng", english: "student" },
+      { chinese: "老师", pinyin: "lǎo shī", english: "teacher" },
+      { chinese: "朋友", pinyin: "péng you", english: "friend" },
     ],
   },
 ];

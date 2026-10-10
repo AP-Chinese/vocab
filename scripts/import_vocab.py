@@ -4,14 +4,20 @@ Each PDF is one topic. Files are processed in filename order (e.g. 01-school.pdf
 The topic's ID for links comes from the file name ("school"), and its display name
 from the PDF title (e.g. "School 学校").
 
+The PDFs have no pinyin, so it's generated with pypinyin, which uses a word dictionary to pick
+the right reading for characters with several (乐队 yuè duì, 数学 shù xué). Review new topics'
+pinyin anyway, and put corrections in PINYIN_OVERRIDES.
+
 Usage: python3 scripts/import_vocab.py
-Requires poppler-utils (pdftotext, pdfinfo).
+Requires poppler-utils (pdftotext, pdfinfo) and pypinyin (pip install -r scripts/requirements.txt).
 """
 import json
 import re
 import subprocess
 import sys
 from pathlib import Path
+
+from pypinyin import Style, lazy_pinyin
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIR = ROOT / "data" / "source"
@@ -21,6 +27,9 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 OVERRIDES = {
     ("School 学校", "电脑"): "computer",
 }
+
+# Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
+PINYIN_OVERRIDES = {}
 
 # A card row: Chinese term, a wide gap, then the English definition.
 ROW = re.compile(r"^\s*(\S.*?)\s{2,}(\S.*?)\s*$")
@@ -42,6 +51,13 @@ def topic_id(path):
     if not topic:
         sys.exit(f"{path.name}: file name needs a topic after the number, e.g. 02-family.pdf")
     return topic
+
+
+def to_pinyin(chinese):
+    if chinese in PINYIN_OVERRIDES:
+        return PINYIN_OVERRIDES[chinese]
+    # Tone marks, one syllable per character, e.g. 课程 -> "kè chéng".
+    return " ".join(lazy_pinyin(chinese, style=Style.TONE))
 
 
 def normalize_english(text):
@@ -75,7 +91,8 @@ def main():
     for pdf in pdfs:
         topic = pdf_title(pdf)
         rows = parse_pdf(pdf, topic)
-        topics.append({"id": topic_id(pdf), "name": topic, "words": [{"chinese": c, "english": e} for c, e in rows]})
+        words = [{"chinese": c, "pinyin": to_pinyin(c), "english": e} for c, e in rows]
+        topics.append({"id": topic_id(pdf), "name": topic, "words": words})
         print(f"{pdf.name}: {topic!r} -> {len(rows)} words")
     JS_FILE.parent.mkdir(parents=True, exist_ok=True)
     JS_FILE.write_text(

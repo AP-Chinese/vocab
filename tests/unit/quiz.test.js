@@ -74,7 +74,12 @@ test("vocab data is well formed", () => {
     assert.match(topic.id, /^[a-z0-9]+(-[a-z0-9]+)*$/, `${topic.name}: ID must be link-safe`);
     assert.ok(topic.name);
     assert.ok(topic.words.length >= 4, `${topic.name} needs at least 4 words for multiple choice`);
-    for (const w of topic.words) assert.ok(w.chinese.trim() && w.english.trim(), JSON.stringify(w));
+    for (const w of topic.words) {
+      assert.ok(w.chinese.trim() && w.english.trim(), JSON.stringify(w));
+      // Pinyin has one syllable per character, written with tone marks (no tone numbers).
+      assert.equal(w.pinyin.split(" ").length, [...w.chinese].length, `${w.chinese}: pinyin "${w.pinyin}"`);
+      assert.doesNotMatch(w.pinyin, /\d/, `${w.chinese}: use tone marks, not numbers`);
+    }
     assert.equal(new Set(topic.words.map((w) => w.chinese)).size, topic.words.length, `${topic.name} has duplicate Chinese`);
   }
 });

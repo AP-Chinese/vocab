@@ -37,7 +37,9 @@ The app is small (a few hundred lines), and having no build step means the files
 - The **Knowt PDFs are the source of truth**. The script turns them into `site/js/vocab.js`, which the app imports directly. There's deliberately only one generated copy. An earlier `data/vocab.csv` was dropped (Oct 2026) because a second copy could drift out of sync.
 - Generated files are committed, so there's no build step.
 - Teacher-approved corrections (e.g. 电脑 → "computer") go in `OVERRIDES` in the script, so they survive re-imports.
-- Never edit `vocab.js` by hand. The next import overwrites them.
+- **Pinyin is generated**, because the Knowt sets don't include it. The script uses pypinyin (pinned in `scripts/requirements.txt`), whose word dictionary picks the right reading for characters with more than one (乐队 yuè duì, 数学 shù xué). Every School 学校 reading was checked by hand. New topics should be reviewed too, with corrections going in `PINYIN_OVERRIDES`. It's written one syllable per character with tone marks (`kè chéng`), which tests enforce.
+- Pinyin is shown only on the flashcard back. The quiz deliberately never renders it, and a browser test fails if any word's pinyin appears on a quiz screen.
+- Never edit `vocab.js` by hand. The next import overwrites it.
 
 ## 4. Topics are identified by ID, not position
 

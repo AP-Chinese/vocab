@@ -123,6 +123,7 @@ function renderCards() {
             ${speakButton(word.chinese)}
           </div>
           <div class="card-face card-back">
+            <span class="pinyin">${esc(word.pinyin)}</span>
             <span class="english">${esc(word.english)}</span>
           </div>
         </div>
