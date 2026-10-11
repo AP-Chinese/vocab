@@ -23,19 +23,6 @@ function speakButton(chinese) {
   return `<button type="button" class="speak-btn" data-action="speak" data-text="${esc(chinese)}" aria-label="Play audio">🔊</button>`;
 }
 
-// Shown under the flashcards, whether or not this device has a Chinese voice (no voice = no 🔊 buttons).
-function soundHelp() {
-  return `
-    <details class="sound-help">
-      <summary>No sound, or no 🔊 button?</summary>
-      <p>Turn your volume up and make sure your phone isn't on silent. If it still doesn't work, your device needs a Chinese voice:</p>
-      <p><strong>Android:</strong> open Settings, search for <em>text-to-speech</em>, and open <em>Text-to-speech output</em>. Tap ⚙️ next to <em>Speech Services by Google</em>, then <em>Install voice data</em> → <em>Chinese (China)</em>.</p>
-      <p><strong>Windows:</strong> Settings → <em>Time &amp; language</em> → <em>Speech</em> → <em>Add voices</em> → <em>Chinese (Simplified, China)</em>.</p>
-      <p><strong>iPhone / iPad:</strong> Settings → <em>Accessibility</em> → <em>Spoken Content</em> → <em>Voices</em> → <em>Chinese (China)</em>.</p>
-      <p>Then close this page and open it again.</p>
-    </details>`;
-}
-
 // Shown on Home and Topic only, so it never clutters a results screenshot.
 function footer() {
   return `
@@ -147,7 +134,6 @@ function renderCards() {
         <button type="button" class="btn" data-action="cards-prev" ${index === 0 ? "disabled" : ""}>‹ Previous</button>
         <button type="button" class="btn primary" data-action="cards-next" ${revealed.has(index) ? "" : "disabled"}>Next ›</button>
       </div>
-      ${soundHelp()}
     </main>`);
 }
 
