@@ -556,7 +556,10 @@ export const TOPICS = [
       {
         "chinese": "线路",
         "pinyin": "xiàn lù",
-        "english": "route"
+        "english": "route",
+        "alsoAccepted": [
+          "路线"
+        ]
       },
       {
         "chinese": "公共",

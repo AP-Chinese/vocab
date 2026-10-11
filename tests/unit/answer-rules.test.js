@@ -99,5 +99,6 @@ test("Transportation: the teacher's other accepted answers count when typing", (
   assert.deepEqual(accepts("交通事故"), ["交通事故", "事故"].sort());
   assert.deepEqual(accepts("交通管理"), ["交通管理", "交通控制"].sort());
   assert.deepEqual(accepts("条件"), ["条件", "情况"].sort());
+  assert.deepEqual(accepts("线路"), ["线路", "路线"].sort());
   assert.deepEqual(accepts("状况"), ["状况"]); // everything else stays exact
 });

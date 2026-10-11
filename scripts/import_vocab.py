@@ -59,6 +59,7 @@ ALSO_ACCEPTED = {
     ("transportation", "交通事故"): ["事故"],
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],
+    ("transportation", "线路"): ["路线"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.

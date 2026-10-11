@@ -66,6 +66,7 @@ Rules: none
 | 交通事故 | accident | 事故 |
 | 出租车 | taxi | 计程车 |
 | 计程车 | taxi | 出租车 |
+| 线路 | route | 路线 |
 | 条件 | condition | 情况 |
 
 All other Transportation 交通 words are graded exactly.
