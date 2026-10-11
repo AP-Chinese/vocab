@@ -29,7 +29,6 @@ OVERRIDES = {
     ("travel", "单程旅行"): "one-way trip",  # was "outbound journey"
     ("transportation", "交通管理"): "traffic control",  # was capitalized
     ("transportation", "交通事故"): "accident",  # was capitalized
-    ("transportation", "水泄不通"): "jam-packed",  # was "to overwhelm"
     ("transportation", "有效"): "effective",  # was "efficient"
     ("family", "祖父"): "father's father",  # was "fathers's father"
     ("food", "纯净水"): "purified water",  # was "spring water"
@@ -57,6 +56,9 @@ ALSO_ACCEPTED = {
     ("travel", "机票"): ["飞机票"],
     ("travel", "游览区"): ["景区"],
     ("travel", "飞行"): ["航班"],
+    ("transportation", "交通事故"): ["事故"],
+    ("transportation", "交通管理"): ["交通控制"],
+    ("transportation", "条件"): ["情况"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -77,6 +79,8 @@ EXCLUDE = {
     ("travel", "依山傍水"),
     ("travel", "景色如画"),
     ("travel", "山清水秀"),
+    ("transportation", "畅通无阻"),  # unobstructed; unimpeded
+    ("transportation", "水泄不通"),  # jam-packed
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
