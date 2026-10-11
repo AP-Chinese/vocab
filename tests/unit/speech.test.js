@@ -84,6 +84,15 @@ test("Chrome on Android uses the phone's Mandarin voice", async () => {
   assert.equal(await pickVoice(platforms.chromeAndroid), "Chinese China");
 });
 
+test("recognizes every way browsers write Mainland Mandarin, and nothing else", async () => {
+  for (const lang of ["zh", "zh-CN", "zh_CN", "zh-Hans", "zh-Hans-CN", "zh_CN_#Hans", "ZH-cn"]) {
+    assert.equal(await pickVoice([v("Mandarin", lang)]), "Mandarin", lang);
+  }
+  for (const lang of ["zh-HK", "zh-TW", "zh_HK_#Hans", "zh_SG_#Hans", "zh-Hant", "zh_TW_#Hant", "yue_HK_#Hant", "zhx"]) {
+    assert.equal(await pickVoice([v("Other", lang)]), null, lang);
+  }
+});
+
 test("Safari on iPhone and Mac uses Tingting", async () => {
   assert.equal(await pickVoice(platforms.safariApple), "Tingting");
 });

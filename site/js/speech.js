@@ -25,11 +25,17 @@ function rank(v) {
   return online + 1;
 }
 
+// Mainland Mandarin: "zh", "zh-CN", "zh_CN", "zh-Hans-CN", and Android's "zh_CN_#Hans".
+// Not Hong Kong, Taiwan or other regions ("zh_HK_#Hans", "zh-TW"), and not Cantonese ("yue_HK").
+function isMandarin(lang) {
+  const [language, ...rest] = lang.split(/[-_#]+/);
+  return language.toLowerCase() === "zh" && rest.every((part) => /^(cn|hans)$/i.test(part));
+}
+
 function findChineseVoice() {
-  // Mainland Mandarin: "zh", "zh-CN", "zh_CN", "zh-Hans-CN" (not zh-HK or zh-TW).
   const mandarin = synth
     .getVoices()
-    .filter((v) => /^zh([-_](CN|Hans)\b.*)?$/i.test(v.lang) && !broken.has(v.voiceURI ?? v.name));
+    .filter((v) => isMandarin(v.lang) && !broken.has(v.voiceURI ?? v.name));
   // Stable sort: within a rank, keep the browser's order (its default voice comes first).
   return mandarin.sort((a, b) => rank(a) - rank(b))[0] ?? null;
 }

@@ -1,6 +1,6 @@
 // Voice lists shaped like what speechSynthesis.getVoices() returns on each platform (name, lang, localService).
-// Trimmed to the Chinese voices plus an English one. These are reconstructed, not captured from devices,
-// so the Android list especially may differ by phone; replace them with real captures when we have them.
+// Trimmed to the Chinese voices plus an English one. The Android list was captured from an Android emulator;
+// the others are reconstructed, so replace them with real captures when we have them.
 
 const voice = (name, lang, localService) => ({ name, lang, localService, voiceURI: name });
 
@@ -32,12 +32,20 @@ export const edgeWindows = [
   voice("Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)", "zh-HK", false),
 ];
 
-// Chrome on Android: the phone's own Google text-to-speech voices, all installed on the device.
+// Chrome on Android: captured from an Android emulator (Pixel, Speech Services by Google), trimmed to
+// the Chinese voices plus English. Note Android's "zh_CN_#Hans" format, which issue #10 tripped on.
 export const chromeAndroid = [
-  voice("English United States", "en-US", true),
-  voice("Chinese China", "zh-CN", true),
-  voice("Chinese Hong Kong", "zh-HK", true),
-  voice("Chinese Taiwan", "zh-TW", true),
+  voice("English United States", "en_US", true),
+  voice("Cantonese Hong Kong", "yue_HK_#Hant", true),
+  voice("Chinese China", "zh_CN_#Hans", true),
+  voice("Chinese Hong Kong", "zh_HK_#Hans", true),
+  voice("Chinese Macao", "zh_MO_#Hans", true),
+  voice("Chinese Malaysia", "zh_MY_#Hans", true),
+  voice("Chinese Singapore", "zh_SG_#Hans", true),
+  voice("Chinese Hong Kong", "zh_HK_#Hant", true),
+  voice("Chinese Macao", "zh_MO_#Hant", true),
+  voice("Chinese Malaysia", "zh_MY_#Hant", true),
+  voice("Chinese Taiwan", "zh_TW_#Hant", true),
 ];
 
 // Safari on iPhone and Mac.
