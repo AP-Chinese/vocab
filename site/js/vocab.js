@@ -425,7 +425,10 @@ export const TOPICS = [
       {
         "chinese": "交通管理",
         "pinyin": "jiāo tōng guǎn lǐ",
-        "english": "traffic control"
+        "english": "traffic control",
+        "alsoAccepted": [
+          "交通控制"
+        ]
       },
       {
         "chinese": "交通规则",
@@ -435,7 +438,10 @@ export const TOPICS = [
       {
         "chinese": "交通事故",
         "pinyin": "jiāo tōng shì gù",
-        "english": "accident"
+        "english": "accident",
+        "alsoAccepted": [
+          "事故"
+        ]
       },
       {
         "chinese": "公共汽车",
@@ -538,16 +544,6 @@ export const TOPICS = [
         "english": "traffic jam"
       },
       {
-        "chinese": "畅通无阻",
-        "pinyin": "chàng tōng wú zǔ",
-        "english": "unobstructed; unimpeded"
-      },
-      {
-        "chinese": "水泄不通",
-        "pinyin": "shuǐ xiè bù tōng",
-        "english": "jam-packed"
-      },
-      {
         "chinese": "高峰时间",
         "pinyin": "gāo fēng shí jiān",
         "english": "rush hour"
@@ -560,7 +556,10 @@ export const TOPICS = [
       {
         "chinese": "线路",
         "pinyin": "xiàn lù",
-        "english": "route"
+        "english": "route",
+        "alsoAccepted": [
+          "路线"
+        ]
       },
       {
         "chinese": "公共",
@@ -580,7 +579,10 @@ export const TOPICS = [
       {
         "chinese": "条件",
         "pinyin": "tiáo jiàn",
-        "english": "condition"
+        "english": "condition",
+        "alsoAccepted": [
+          "情况"
+        ]
       },
       {
         "chinese": "道路",
