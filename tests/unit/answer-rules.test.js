@@ -102,3 +102,15 @@ test("Transportation: the teacher's other accepted answers count when typing", (
   assert.deepEqual(accepts("线路"), ["线路", "路线"].sort());
   assert.deepEqual(accepts("状况"), ["状况"]); // everything else stays exact
 });
+
+test("Family: the teacher's other accepted answers count when typing", () => {
+  const family = TOPICS.find((t) => t.id === "family");
+  const accepts = (chinese) =>
+    acceptedAnswers(family.words.find((w) => w.chinese === chinese), family.words, answerVariants("family")).sort();
+  assert.deepEqual(accepts("祖父"), ["祖父", "爷爷"].sort());
+  assert.deepEqual(accepts("祖母"), ["祖母", "奶奶"].sort());
+  assert.deepEqual(accepts("外祖父"), ["外祖父", "姥爷", "外公"].sort());
+  assert.deepEqual(accepts("外祖母"), ["外祖母", "外婆", "姥姥"].sort());
+  assert.deepEqual(accepts("子女"), ["子女", "孩子"].sort());
+  assert.deepEqual(accepts("父亲"), ["父亲"]); // everything else stays exact
+});
