@@ -692,7 +692,10 @@ export const TOPICS = [
       {
         "chinese": "母亲",
         "pinyin": "mǔ qīn",
-        "english": "mother"
+        "english": "mother",
+        "alsoAccepted": [
+          "妈妈"
+        ]
       },
       {
         "chinese": "继父",
@@ -745,8 +748,8 @@ export const TOPICS = [
         "english": "father's sister"
       },
       {
-        "chinese": "姨妈",
-        "pinyin": "yí mā",
+        "chinese": "姨姨",
+        "pinyin": "yí yi",
         "english": "mother's sister"
       },
       {
@@ -785,7 +788,10 @@ export const TOPICS = [
       {
         "chinese": "晚辈",
         "pinyin": "wǎn bèi",
-        "english": "younger generation"
+        "english": "younger generation",
+        "alsoAccepted": [
+          "后辈"
+        ]
       },
       {
         "chinese": "平辈",
@@ -800,7 +806,10 @@ export const TOPICS = [
       {
         "chinese": "期望",
         "pinyin": "qī wàng",
-        "english": "hope for and expect"
+        "english": "hope for and expect",
+        "alsoAccepted": [
+          "希望"
+        ]
       },
       {
         "chinese": "单亲",
@@ -810,7 +819,10 @@ export const TOPICS = [
       {
         "chinese": "夫妇",
         "pinyin": "fū fù",
-        "english": "husband and wife"
+        "english": "husband and wife",
+        "alsoAccepted": [
+          "夫妻"
+        ]
       },
       {
         "chinese": "婚姻",

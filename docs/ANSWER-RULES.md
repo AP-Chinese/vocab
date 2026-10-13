@@ -83,6 +83,10 @@ Rules: none
 | 祖母 | father's mother | 奶奶 |
 | 外祖父 | mother's father | 姥爷, 外公 |
 | 外祖母 | mother's mother | 外婆, 姥姥 |
+| 母亲 | mother | 妈妈 |
 | 子女 | children | 孩子 |
+| 晚辈 | younger generation | 后辈 |
+| 期望 | hope for and expect | 希望 |
+| 夫妇 | husband and wife | 夫妻 |
 
 All other Family 家庭 words are graded exactly.
