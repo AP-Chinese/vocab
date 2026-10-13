@@ -118,6 +118,10 @@ EXCLUDE = {
     ("transportation", "水泄不通"),  # jam-packed
     ("clothing", "物美价廉"),  # idiom: attractive goods at inexpensive prices
     ("art", "丰富多彩"),  # idiom: rich and colorful
+    ("festivities", "五颜六色"),  # idiom: colorful
+    ("festivities", "美味佳肴"),  # idiom: delicious food
+    ("festivities", "前期白怪"),  # typo in the PDF for 千奇百怪; teacher said to remove it
+    ("entertainment", "艺人"),  # actor; artist (演员 stays)
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough
 }

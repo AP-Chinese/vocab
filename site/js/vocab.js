@@ -1947,11 +1947,6 @@ export const TOPICS = [
         "english": "rich, sumptuous"
       },
       {
-        "chinese": "美味佳肴",
-        "pinyin": "měi wèi jiā yáo",
-        "english": "delicious food"
-      },
-      {
         "chinese": "火鸡",
         "pinyin": "huǒ jī",
         "english": "turkey"
@@ -1965,16 +1960,6 @@ export const TOPICS = [
         "chinese": "服饰",
         "pinyin": "fú shì",
         "english": "dress and personal adornment"
-      },
-      {
-        "chinese": "五颜六色",
-        "pinyin": "wǔ yán liù sè",
-        "english": "colorful"
-      },
-      {
-        "chinese": "前期白怪",
-        "pinyin": "qián qī bái guài",
-        "english": "all kinds of strange sights and happenings"
       },
       {
         "chinese": "面具",
@@ -2121,11 +2106,6 @@ export const TOPICS = [
         "chinese": "导演",
         "pinyin": "dǎo yǎn",
         "english": "director"
-      },
-      {
-        "chinese": "艺人",
-        "pinyin": "yì rén",
-        "english": "actor; artist"
       },
       {
         "chinese": "演员",
