@@ -118,3 +118,16 @@ test("Family: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("母亲"), ["母亲", "妈妈"].sort());
   assert.deepEqual(accepts("父亲"), ["父亲"]); // everything else stays exact
 });
+
+test("Food: the teacher's other accepted answers count when typing", () => {
+  const food = TOPICS.find((t) => t.id === "food");
+  const accepts = (chinese) =>
+    acceptedAnswers(food.words.find((w) => w.chinese === chinese), food.words, answerVariants("food")).sort();
+  assert.deepEqual(accepts("腻"), ["腻", "油腻"].sort());
+  assert.deepEqual(accepts("橙汁"), ["橙汁", "橘子汁"].sort());
+  assert.deepEqual(accepts("汉堡包"), ["汉堡包", "汉堡"].sort());
+  assert.deepEqual(accepts("好吃"), ["好吃", "美味"].sort());
+  assert.deepEqual(accepts("香槟酒"), ["香槟酒", "香槟"].sort());
+  assert.deepEqual(accepts("难吃"), ["难吃", "不好吃"].sort());
+  assert.deepEqual(accepts("苹果汁"), ["苹果汁"]); // everything else stays exact
+});

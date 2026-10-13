@@ -126,6 +126,12 @@ test("teacher's Family changes: 亲属 removed, 伯伯, 姑姑 and 姨姨", () =
   assert.deepEqual(word("姨姨"), { chinese: "姨姨", pinyin: "yí yi", english: "mother's sister" });
 });
 
+test("teacher's Food changes: 老 (tough) removed", () => {
+  const food = TOPICS.find((t) => t.id === "food");
+  assert.equal(food.words.find((w) => w.chinese === "老"), undefined);
+  assert.ok(food.words.some((w) => w.chinese === "嫩")); // its neighbor "tender" stays
+});
+
 test("teacher's Sports changes: 橄榄球 is American football", () => {
   const sports = TOPICS.find((t) => t.id === "sports");
   assert.equal(sports.words.find((w) => w.chinese === "橄榄球").english, "American football");
