@@ -1156,5 +1156,568 @@ export const TOPICS = [
         "english": "orange juice"
       }
     ]
+  },
+  {
+    "id": "sports",
+    "name": "Sports 体育",
+    "words": [
+      {
+        "chinese": "跑步",
+        "pinyin": "pǎo bù",
+        "english": "running"
+      },
+      {
+        "chinese": "体操",
+        "pinyin": "tǐ cāo",
+        "english": "gymnastics"
+      },
+      {
+        "chinese": "跨栏",
+        "pinyin": "kuà lán",
+        "english": "hurdle race"
+      },
+      {
+        "chinese": "铁饼",
+        "pinyin": "tiě bǐng",
+        "english": "discus"
+      },
+      {
+        "chinese": "摔跤",
+        "pinyin": "shuāi jiāo",
+        "english": "wrestling"
+      },
+      {
+        "chinese": "滑冰",
+        "pinyin": "huá bīng",
+        "english": "skating"
+      },
+      {
+        "chinese": "足球",
+        "pinyin": "zú qiú",
+        "english": "soccer"
+      },
+      {
+        "chinese": "垒球",
+        "pinyin": "lěi qiú",
+        "english": "softball"
+      },
+      {
+        "chinese": "网球",
+        "pinyin": "wǎng qiú",
+        "english": "tennis"
+      },
+      {
+        "chinese": "排球",
+        "pinyin": "pái qiú",
+        "english": "volleyball"
+      },
+      {
+        "chinese": "棒球",
+        "pinyin": "bàng qiú",
+        "english": "baseball"
+      },
+      {
+        "chinese": "旱冰",
+        "pinyin": "hàn bīng",
+        "english": "roller skating"
+      },
+      {
+        "chinese": "手球",
+        "pinyin": "shǒu qiú",
+        "english": "handball"
+      },
+      {
+        "chinese": "铅球",
+        "pinyin": "qiān qiú",
+        "english": "shot put"
+      },
+      {
+        "chinese": "篮球",
+        "pinyin": "lán qiú",
+        "english": "basketball"
+      },
+      {
+        "chinese": "橄榄球",
+        "pinyin": "gǎn lǎn qiú",
+        "english": "rugby; football"
+      },
+      {
+        "chinese": "羽毛球",
+        "pinyin": "yǔ máo qiú",
+        "english": "badminton"
+      },
+      {
+        "chinese": "曲棍球",
+        "pinyin": "qū gùn qiú",
+        "english": "hockey"
+      },
+      {
+        "chinese": "乒乓球",
+        "pinyin": "pīng pāng qiú",
+        "english": "ping pong"
+      },
+      {
+        "chinese": "高尔夫球",
+        "pinyin": "gāo ěr fū qiú",
+        "english": "golf"
+      },
+      {
+        "chinese": "比赛",
+        "pinyin": "bǐ sài",
+        "english": "competition"
+      },
+      {
+        "chinese": "教练",
+        "pinyin": "jiào liàn",
+        "english": "coach"
+      },
+      {
+        "chinese": "运动员",
+        "pinyin": "yùn dòng yuán",
+        "english": "athlete"
+      },
+      {
+        "chinese": "队",
+        "pinyin": "duì",
+        "english": "team"
+      },
+      {
+        "chinese": "输",
+        "pinyin": "shū",
+        "english": "lose"
+      },
+      {
+        "chinese": "赢",
+        "pinyin": "yíng",
+        "english": "win"
+      }
+    ]
+  },
+  {
+    "id": "clothing",
+    "name": "Clothing 服装",
+    "words": [
+      {
+        "chinese": "衣服",
+        "pinyin": "yī fú",
+        "english": "clothes"
+      },
+      {
+        "chinese": "衬衫",
+        "pinyin": "chèn shān",
+        "english": "shirt"
+      },
+      {
+        "chinese": "裤子",
+        "pinyin": "kù zi",
+        "english": "pants"
+      },
+      {
+        "chinese": "牛仔裤",
+        "pinyin": "niú zǎi kù",
+        "english": "jeans"
+      },
+      {
+        "chinese": "裙子",
+        "pinyin": "qún zi",
+        "english": "skirt"
+      },
+      {
+        "chinese": "大衣",
+        "pinyin": "dà yī",
+        "english": "overcoat"
+      },
+      {
+        "chinese": "夹克",
+        "pinyin": "jiá kè",
+        "english": "jacket"
+      },
+      {
+        "chinese": "外套",
+        "pinyin": "wài tào",
+        "english": "coat"
+      },
+      {
+        "chinese": "内衣",
+        "pinyin": "nèi yī",
+        "english": "underwear"
+      },
+      {
+        "chinese": "西装",
+        "pinyin": "xī zhuāng",
+        "english": "suit"
+      },
+      {
+        "chinese": "运动服",
+        "pinyin": "yùn dòng fú",
+        "english": "sportswear; athletic clothing"
+      },
+      {
+        "chinese": "毛衣",
+        "pinyin": "máo yī",
+        "english": "sweater"
+      },
+      {
+        "chinese": "体恤衫",
+        "pinyin": "tǐ xù shān",
+        "english": "t-shirt"
+      },
+      {
+        "chinese": "帽子",
+        "pinyin": "mào zi",
+        "english": "hat"
+      },
+      {
+        "chinese": "围巾",
+        "pinyin": "wéi jīn",
+        "english": "scarf"
+      },
+      {
+        "chinese": "鞋子",
+        "pinyin": "xié zi",
+        "english": "shoes"
+      },
+      {
+        "chinese": "袜子",
+        "pinyin": "wà zi",
+        "english": "socks"
+      },
+      {
+        "chinese": "领带",
+        "pinyin": "lǐng dài",
+        "english": "tie"
+      },
+      {
+        "chinese": "件",
+        "pinyin": "jiàn",
+        "english": "a measure word, typically for garments above the waist, such as shirts, blouses, dresses"
+      },
+      {
+        "chinese": "条",
+        "pinyin": "tiáo",
+        "english": "a measure word, typically for garments below the waist, such as pants, skirts"
+      },
+      {
+        "chinese": "套",
+        "pinyin": "tào",
+        "english": "suite; set"
+      },
+      {
+        "chinese": "双",
+        "pinyin": "shuāng",
+        "english": "a pair"
+      },
+      {
+        "chinese": "顶",
+        "pinyin": "dǐng",
+        "english": "a measure for hats"
+      },
+      {
+        "chinese": "大小",
+        "pinyin": "dà xiǎo",
+        "english": "size"
+      },
+      {
+        "chinese": "长短",
+        "pinyin": "cháng duǎn",
+        "english": "length"
+      },
+      {
+        "chinese": "厚薄",
+        "pinyin": "hòu báo",
+        "english": "thickness"
+      },
+      {
+        "chinese": "样式",
+        "pinyin": "yàng shì",
+        "english": "style"
+      },
+      {
+        "chinese": "合适",
+        "pinyin": "hé shì",
+        "english": "suitable"
+      },
+      {
+        "chinese": "穿",
+        "pinyin": "chuān",
+        "english": "to wear (essentials, e.g., shirt, shoes)"
+      },
+      {
+        "chinese": "戴",
+        "pinyin": "dài",
+        "english": "to wear (accessories, e.g., hat, jewelry)"
+      },
+      {
+        "chinese": "颜色",
+        "pinyin": "yán sè",
+        "english": "color"
+      },
+      {
+        "chinese": "黄",
+        "pinyin": "huáng",
+        "english": "yellow"
+      },
+      {
+        "chinese": "绿",
+        "pinyin": "lǜ",
+        "english": "green"
+      },
+      {
+        "chinese": "红",
+        "pinyin": "hóng",
+        "english": "red"
+      },
+      {
+        "chinese": "蓝",
+        "pinyin": "lán",
+        "english": "blue"
+      },
+      {
+        "chinese": "灰",
+        "pinyin": "huī",
+        "english": "grey"
+      },
+      {
+        "chinese": "紫",
+        "pinyin": "zǐ",
+        "english": "purple"
+      },
+      {
+        "chinese": "黑",
+        "pinyin": "hēi",
+        "english": "black"
+      },
+      {
+        "chinese": "白",
+        "pinyin": "bái",
+        "english": "white"
+      },
+      {
+        "chinese": "粉红",
+        "pinyin": "fěn hóng",
+        "english": "pink"
+      },
+      {
+        "chinese": "咖啡色",
+        "pinyin": "kā fēi sè",
+        "english": "brown; coffee color"
+      },
+      {
+        "chinese": "牌子",
+        "pinyin": "pái zi",
+        "english": "brand"
+      },
+      {
+        "chinese": "名牌",
+        "pinyin": "míng pái",
+        "english": "name brand"
+      },
+      {
+        "chinese": "质量",
+        "pinyin": "zhì liàng",
+        "english": "quality"
+      },
+      {
+        "chinese": "打折",
+        "pinyin": "dǎ zhé",
+        "english": "discount"
+      },
+      {
+        "chinese": "物美价廉",
+        "pinyin": "wù měi jià lián",
+        "english": "attractive goods at inexpensive prices"
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "name": "Art 艺术",
+    "words": [
+      {
+        "chinese": "艺术",
+        "pinyin": "yì shù",
+        "english": "art"
+      },
+      {
+        "chinese": "艺术作品",
+        "pinyin": "yì shù zuò pǐn",
+        "english": "work of art"
+      },
+      {
+        "chinese": "艺术家",
+        "pinyin": "yì shù jiā",
+        "english": "artist"
+      },
+      {
+        "chinese": "绘画",
+        "pinyin": "huì huà",
+        "english": "painting, drawing"
+      },
+      {
+        "chinese": "音乐",
+        "pinyin": "yīn yuè",
+        "english": "music"
+      },
+      {
+        "chinese": "舞蹈",
+        "pinyin": "wǔ dǎo",
+        "english": "dance"
+      },
+      {
+        "chinese": "建筑",
+        "pinyin": "jiàn zhù",
+        "english": "building, architecture"
+      },
+      {
+        "chinese": "动画",
+        "pinyin": "dòng huà",
+        "english": "cartoon"
+      },
+      {
+        "chinese": "漫画",
+        "pinyin": "màn huà",
+        "english": "caricature"
+      },
+      {
+        "chinese": "摄影",
+        "pinyin": "shè yǐng",
+        "english": "photography"
+      },
+      {
+        "chinese": "画家",
+        "pinyin": "huà jiā",
+        "english": "painter"
+      },
+      {
+        "chinese": "模特",
+        "pinyin": "mó tè",
+        "english": "model"
+      },
+      {
+        "chinese": "画像",
+        "pinyin": "huà xiàng",
+        "english": "portrait"
+      },
+      {
+        "chinese": "油画",
+        "pinyin": "yóu huà",
+        "english": "oil painting"
+      },
+      {
+        "chinese": "风景画",
+        "pinyin": "fēng jǐng huà",
+        "english": "landscape"
+      },
+      {
+        "chinese": "工艺品",
+        "pinyin": "gōng yì pǐn",
+        "english": "craftwork"
+      },
+      {
+        "chinese": "园林",
+        "pinyin": "yuán lín",
+        "english": "garden"
+      },
+      {
+        "chinese": "文房四宝",
+        "pinyin": "wén fáng sì bǎo",
+        "english": "the four treasures of the study: writing brush, ink stick, ink slab, paper"
+      },
+      {
+        "chinese": "琴棋书画",
+        "pinyin": "qín qí shū huà",
+        "english": "the four arts traditionally studied by the educated (chess, the guqin/zither, painting, and calligraphy)"
+      },
+      {
+        "chinese": "书法",
+        "pinyin": "shū fǎ",
+        "english": "calligraphy"
+      },
+      {
+        "chinese": "剪纸",
+        "pinyin": "jiǎn zhǐ",
+        "english": "paper-cut"
+      },
+      {
+        "chinese": "风筝",
+        "pinyin": "fēng zhēng",
+        "english": "kite"
+      },
+      {
+        "chinese": "对联",
+        "pinyin": "duì lián",
+        "english": "antithetical couplet"
+      },
+      {
+        "chinese": "刺绣",
+        "pinyin": "cì xiù",
+        "english": "embroidery"
+      },
+      {
+        "chinese": "中国结",
+        "pinyin": "zhōng guó jié",
+        "english": "Chinese knot"
+      },
+      {
+        "chinese": "陶器",
+        "pinyin": "táo qì",
+        "english": "ceramics"
+      },
+      {
+        "chinese": "瓷器",
+        "pinyin": "cí qì",
+        "english": "porcelain"
+      },
+      {
+        "chinese": "武术",
+        "pinyin": "wǔ shù",
+        "english": "martial arts"
+      },
+      {
+        "chinese": "京剧",
+        "pinyin": "jīng jù",
+        "english": "Beijing opera"
+      },
+      {
+        "chinese": "丰富多彩",
+        "pinyin": "fēng fù duō cǎi",
+        "english": "rich and colorful"
+      },
+      {
+        "chinese": "宝贵",
+        "pinyin": "bǎo guì",
+        "english": "valuable"
+      },
+      {
+        "chinese": "财富",
+        "pinyin": "cái fù",
+        "english": "wealth"
+      },
+      {
+        "chinese": "喜爱",
+        "pinyin": "xǐ ài",
+        "english": "like, favor"
+      },
+      {
+        "chinese": "经典",
+        "pinyin": "jīng diǎn",
+        "english": "classics"
+      },
+      {
+        "chinese": "演出",
+        "pinyin": "yǎn chū",
+        "english": "performance"
+      },
+      {
+        "chinese": "博物馆",
+        "pinyin": "bó wù guǎn",
+        "english": "museum"
+      },
+      {
+        "chinese": "美术馆",
+        "pinyin": "měi shù guǎn",
+        "english": "pinacotheca"
+      }
+    ]
   }
 ];

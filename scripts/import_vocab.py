@@ -34,6 +34,9 @@ OVERRIDES = {
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
+    # The PDF wraps these two meanings across each other, so the text came out mixed up
+    ("art", "文房四宝"): "the four treasures of the study: writing brush, ink stick, ink slab, paper",
+    ("art", "琴棋书画"): "the four arts traditionally studied by the educated (chess, the guqin/zither, painting, and calligraphy)",
 }
 
 # Teacher-approved corrections to the Chinese side: (topic ID, chinese) -> chinese.
@@ -80,6 +83,9 @@ TOPIC_NAMES = {
     "transportation": "Transportation 交通",  # "交通Transportation"
     "family": "Family 家庭",  # "Family"
     "food": "Food 饮食",  # "AP Chinese: Food"
+    "sports": "Sports 体育",  # "ap chinese: sports"
+    "clothing": "Clothing 服装",  # "AP Chinese Clothing"
+    "art": "Art 艺术",  # "AP Chinese: Art"
 }
 
 # Teacher-approved removals from the source sets: (topic ID, chinese).
