@@ -145,7 +145,7 @@ Rules: none
 | 舞蹈 | dance | 跳舞 |
 | 动画 | cartoon | 卡通 |
 | 园林 | garden | 花园 |
-| 宝贵 | valuable | 宝贵的, 值钱的 |
+| 宝贵 | valuable | 宝贵的, 值钱的, 珍贵的 |
 | 喜爱 | like, favor | 喜欢 |
 | 演出 | performance | 表演 |
 

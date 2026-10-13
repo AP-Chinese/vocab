@@ -153,7 +153,7 @@ test("Art: the teacher's other accepted answers count when typing", () => {
   const accepts = (chinese) =>
     acceptedAnswers(art.words.find((w) => w.chinese === chinese), art.words, answerVariants("art")).sort();
   assert.deepEqual(accepts("舞蹈"), ["舞蹈", "跳舞"].sort());
-  assert.deepEqual(accepts("宝贵"), ["宝贵", "宝贵的", "值钱的"].sort());
+  assert.deepEqual(accepts("宝贵"), ["宝贵", "宝贵的", "值钱的", "珍贵的"].sort());
   assert.deepEqual(accepts("喜爱"), ["喜爱", "喜欢"].sort());
   assert.deepEqual(accepts("园林"), ["园林", "花园"].sort());
   assert.deepEqual(accepts("演出"), ["演出", "表演"].sort());

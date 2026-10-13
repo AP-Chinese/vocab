@@ -1720,7 +1720,8 @@ export const TOPICS = [
         "english": "valuable",
         "alsoAccepted": [
           "宝贵的",
-          "值钱的"
+          "值钱的",
+          "珍贵的"
         ]
       },
       {
