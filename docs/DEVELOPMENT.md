@@ -64,7 +64,7 @@ The CSV is a snapshot to look at or share, not a place to make changes. `exports
 
 Nothing in the app is specific to one topic. Topics and words come entirely from `site/js/vocab.js`, which is generated:
 
-1. Export the Knowt set as PDF and commit it as `data/source/NN-topic.pdf`. The number sets the order on the home screen, e.g. `02-family.pdf`.
+1. Find the topic and its Knowt link in the [topics and Knowt links spreadsheet](https://docs.google.com/spreadsheets/d/1C6bYt2_OcZBz5QFcayTcZdQ9pD7hT1K3z8NuXuq272U/edit?gid=0#gid=0). Export the Knowt set as PDF and commit it as `data/source/NN-topic.pdf`. The number sets the order on the home screen, e.g. `02-family.pdf`.
 2. Run `python3 scripts/import_vocab.py` (needs `poppler-utils` and `pip install -r scripts/requirements.txt`). It reads every PDF in `data/source/` and regenerates `site/js/vocab.js`. The topic name shown in the app is the PDF's title, unless `TOPIC_NAMES` in the script sets one (titles from Knowt are often inconsistent, e.g. "ap chinese: travel"). The script also prints a short review: words with the same English meaning and duplicate words.
 3. Run `npm test`. It checks every topic has at least 4 words, no blanks, and no duplicate Chinese.
 4. Check the word count against the Knowt set, and check for words that share an English meaning (the app handles them, but they may be mistakes in the source set).
