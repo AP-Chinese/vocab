@@ -107,3 +107,29 @@ Rules: none
 | 橙汁 | orange juice | 橘子汁 |
 
 All other Food 饮食 words are graded exactly.
+
+## Clothing 服装 (`clothing`)
+
+Rules: `se-suffix`
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 衬衫 | shirt | 衬衣 |
+| 运动服 | sportswear; athletic clothing | 运动衣 |
+| 长短 | length | 长度 |
+| 厚薄 | thickness | 厚度 |
+| 样式 | style | 风格 |
+| 黄 | yellow | 黄色 |
+| 绿 | green | 绿色 |
+| 红 | red | 红色 |
+| 蓝 | blue | 蓝色 |
+| 灰 | grey | 灰色 |
+| 紫 | purple | 紫色 |
+| 黑 | black | 黑色 |
+| 白 | white | 白色 |
+| 粉红 | pink | 粉红色 |
+| 咖啡色 | brown; coffee color | 棕色, 棕 |
+
+All other Clothing 服装 words are graded exactly.

@@ -131,3 +131,19 @@ test("Food: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("难吃"), ["难吃", "不好吃"].sort());
   assert.deepEqual(accepts("苹果汁"), ["苹果汁"]); // everything else stays exact
 });
+
+test("Clothing: the 色 rule and the teacher's other accepted answers count when typing", () => {
+  const clothing = TOPICS.find((t) => t.id === "clothing");
+  const accepts = (chinese) =>
+    acceptedAnswers(clothing.words.find((w) => w.chinese === chinese), clothing.words, answerVariants("clothing")).sort();
+  for (const color of ["黄", "绿", "红", "蓝", "灰", "紫", "黑", "白", "粉红"]) {
+    assert.deepEqual(accepts(color), [color, `${color}色`].sort(), color);
+  }
+  assert.deepEqual(accepts("咖啡色"), ["咖啡色", "棕色", "棕"].sort());
+  assert.deepEqual(accepts("颜色"), ["颜色"]);
+  assert.deepEqual(accepts("衬衫"), ["衬衫", "衬衣"].sort());
+  assert.deepEqual(accepts("样式"), ["样式", "风格"].sort());
+  assert.deepEqual(accepts("厚薄"), ["厚薄", "厚度"].sort());
+  assert.deepEqual(accepts("长短"), ["长短", "长度"].sort());
+  assert.deepEqual(accepts("运动服"), ["运动服", "运动衣"].sort());
+});
