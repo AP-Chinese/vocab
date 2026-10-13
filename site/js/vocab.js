@@ -1239,7 +1239,7 @@ export const TOPICS = [
       {
         "chinese": "橄榄球",
         "pinyin": "gǎn lǎn qiú",
-        "english": "rugby; football"
+        "english": "American football"
       },
       {
         "chinese": "羽毛球",
@@ -1521,11 +1521,6 @@ export const TOPICS = [
         "chinese": "打折",
         "pinyin": "dǎ zhé",
         "english": "discount"
-      },
-      {
-        "chinese": "物美价廉",
-        "pinyin": "wù měi jià lián",
-        "english": "attractive goods at inexpensive prices"
       }
     ]
   },
@@ -1679,11 +1674,6 @@ export const TOPICS = [
         "english": "Beijing opera"
       },
       {
-        "chinese": "丰富多彩",
-        "pinyin": "fēng fù duō cǎi",
-        "english": "rich and colorful"
-      },
-      {
         "chinese": "宝贵",
         "pinyin": "bǎo guì",
         "english": "valuable"
@@ -1716,7 +1706,7 @@ export const TOPICS = [
       {
         "chinese": "美术馆",
         "pinyin": "měi shù guǎn",
-        "english": "pinacotheca"
+        "english": "art museum"
       }
     ]
   }

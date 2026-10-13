@@ -125,3 +125,21 @@ test("teacher's Family changes: 亲属 removed, 伯伯, 姑姑 and 姨姨", () =
   assert.deepEqual(word("姑姑"), { chinese: "姑姑", pinyin: "gū gu", english: "father's sister" });
   assert.deepEqual(word("姨姨"), { chinese: "姨姨", pinyin: "yí yi", english: "mother's sister" });
 });
+
+test("teacher's Sports changes: 橄榄球 is American football", () => {
+  const sports = TOPICS.find((t) => t.id === "sports");
+  assert.equal(sports.words.find((w) => w.chinese === "橄榄球").english, "American football");
+});
+
+test("teacher's Clothing changes: idiom removed", () => {
+  const clothing = TOPICS.find((t) => t.id === "clothing");
+  assert.ok(!clothing.words.some((w) => w.chinese === "物美价廉"));
+  assert.equal(clothing.words.length, 45);
+});
+
+test("teacher's Art changes: idiom removed, 美术馆 is art museum", () => {
+  const art = TOPICS.find((t) => t.id === "art");
+  assert.ok(!art.words.some((w) => w.chinese === "丰富多彩"));
+  assert.equal(art.words.find((w) => w.chinese === "美术馆").english, "art museum");
+  assert.equal(art.words.length, 36);
+});
