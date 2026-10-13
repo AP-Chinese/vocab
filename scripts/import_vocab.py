@@ -100,6 +100,8 @@ TOPIC_NAMES = {
     "sports": "Sports 体育",  # "ap chinese: sports"
     "clothing": "Clothing 服装",  # "AP Chinese Clothing"
     "art": "Art 艺术",  # "AP Chinese: Art"
+    "festivities": "Festivities 节日",  # "AP Chinese: Festivities"
+    "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
 
 # Teacher-approved removals from the source sets: (topic ID, chinese).

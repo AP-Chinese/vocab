@@ -1741,5 +1741,402 @@ export const TOPICS = [
         "english": "art museum"
       }
     ]
+  },
+  {
+    "id": "festivities",
+    "name": "Festivities 节日",
+    "words": [
+      {
+        "chinese": "习俗",
+        "pinyin": "xí sú",
+        "english": "custom"
+      },
+      {
+        "chinese": "特色",
+        "pinyin": "tè sè",
+        "english": "special features"
+      },
+      {
+        "chinese": "喜庆",
+        "pinyin": "xǐ qìng",
+        "english": "auspicious occasion"
+      },
+      {
+        "chinese": "祝愿",
+        "pinyin": "zhù yuàn",
+        "english": "to wish"
+      },
+      {
+        "chinese": "春节",
+        "pinyin": "chūn jié",
+        "english": "Spring Festival"
+      },
+      {
+        "chinese": "除夕",
+        "pinyin": "chú xī",
+        "english": "Chinese New Year's Eve"
+      },
+      {
+        "chinese": "鞭炮",
+        "pinyin": "biān pào",
+        "english": "firecracker"
+      },
+      {
+        "chinese": "拜年",
+        "pinyin": "bài nián",
+        "english": "to wish somebody a happy Chinese New Year; to pay a Chinese New Year's call"
+      },
+      {
+        "chinese": "压岁钱",
+        "pinyin": "yā suì qián",
+        "english": "money given to children as a lunar New Year gift"
+      },
+      {
+        "chinese": "红包",
+        "pinyin": "hóng bāo",
+        "english": "a traditional Chinese red packet with money inside"
+      },
+      {
+        "chinese": "团圆饭",
+        "pinyin": "tuán yuán fàn",
+        "english": "family reunion dinner"
+      },
+      {
+        "chinese": "年糕",
+        "pinyin": "nián gāo",
+        "english": "Chinese New Year cake"
+      },
+      {
+        "chinese": "元宵节",
+        "pinyin": "yuán xiāo jié",
+        "english": "the Lantern Festival"
+      },
+      {
+        "chinese": "元宵",
+        "pinyin": "yuán xiāo",
+        "english": "sweet dumplings made of glutinous rice"
+      },
+      {
+        "chinese": "花灯",
+        "pinyin": "huā dēng",
+        "english": "festive lantern"
+      },
+      {
+        "chinese": "灯谜",
+        "pinyin": "dēng mí",
+        "english": "lantern riddle"
+      },
+      {
+        "chinese": "端午节",
+        "pinyin": "duān wǔ jié",
+        "english": "Dragon Boat Festival"
+      },
+      {
+        "chinese": "粽子",
+        "pinyin": "zòng zi",
+        "english": "a kind of dumpling wrapped in bamboo leaves eaten during the Dragon Boat Festival"
+      },
+      {
+        "chinese": "龙舟",
+        "pinyin": "lóng zhōu",
+        "english": "dragon boat"
+      },
+      {
+        "chinese": "中秋节",
+        "pinyin": "zhōng qiū jié",
+        "english": "Mid-Autumn Festival"
+      },
+      {
+        "chinese": "月饼",
+        "pinyin": "yuè bǐng",
+        "english": "moon cake"
+      },
+      {
+        "chinese": "赏月",
+        "pinyin": "shǎng yuè",
+        "english": "to enjoy looking at the moon"
+      },
+      {
+        "chinese": "想念",
+        "pinyin": "xiǎng niàn",
+        "english": "miss"
+      },
+      {
+        "chinese": "故乡",
+        "pinyin": "gù xiāng",
+        "english": "hometown"
+      },
+      {
+        "chinese": "合家团圆",
+        "pinyin": "hé jiā tuán yuán",
+        "english": "family reunion"
+      },
+      {
+        "chinese": "联欢",
+        "pinyin": "lián huān",
+        "english": "to have a get-together; to have a party"
+      },
+      {
+        "chinese": "晚会",
+        "pinyin": "wǎn huì",
+        "english": "evening party"
+      },
+      {
+        "chinese": "剪纸",
+        "pinyin": "jiǎn zhǐ",
+        "english": "paper cutting"
+      },
+      {
+        "chinese": "年画",
+        "pinyin": "nián huà",
+        "english": "New Year paintings"
+      },
+      {
+        "chinese": "舞狮",
+        "pinyin": "wǔ shī",
+        "english": "lion dance"
+      },
+      {
+        "chinese": "舞龙",
+        "pinyin": "wǔ lóng",
+        "english": "dragon dance"
+      },
+      {
+        "chinese": "圣诞节",
+        "pinyin": "shèng dàn jié",
+        "english": "Christmas"
+      },
+      {
+        "chinese": "基督教",
+        "pinyin": "jī dū jiào",
+        "english": "Christianity"
+      },
+      {
+        "chinese": "平安夜",
+        "pinyin": "píng ān yè",
+        "english": "Christmas Eve"
+      },
+      {
+        "chinese": "礼拜",
+        "pinyin": "lǐ bài",
+        "english": "religious service"
+      },
+      {
+        "chinese": "欢乐",
+        "pinyin": "huān lè",
+        "english": "happy; joyful"
+      },
+      {
+        "chinese": "礼物",
+        "pinyin": "lǐ wù",
+        "english": "present"
+      },
+      {
+        "chinese": "感恩节",
+        "pinyin": "gǎn ēn jié",
+        "english": "Thanksgiving"
+      },
+      {
+        "chinese": "古老",
+        "pinyin": "gǔ lǎo",
+        "english": "ancient"
+      },
+      {
+        "chinese": "丰盛",
+        "pinyin": "fēng shèng",
+        "english": "rich, sumptuous"
+      },
+      {
+        "chinese": "美味佳肴",
+        "pinyin": "měi wèi jiā yáo",
+        "english": "delicious food"
+      },
+      {
+        "chinese": "火鸡",
+        "pinyin": "huǒ jī",
+        "english": "turkey"
+      },
+      {
+        "chinese": "万圣节",
+        "pinyin": "wàn shèng jié",
+        "english": "Halloween"
+      },
+      {
+        "chinese": "服饰",
+        "pinyin": "fú shì",
+        "english": "dress and personal adornment"
+      },
+      {
+        "chinese": "五颜六色",
+        "pinyin": "wǔ yán liù sè",
+        "english": "colorful"
+      },
+      {
+        "chinese": "前期白怪",
+        "pinyin": "qián qī bái guài",
+        "english": "all kinds of strange sights and happenings"
+      },
+      {
+        "chinese": "面具",
+        "pinyin": "miàn jù",
+        "english": "mask"
+      },
+      {
+        "chinese": "糖果",
+        "pinyin": "táng guǒ",
+        "english": "candy"
+      },
+      {
+        "chinese": "情人节",
+        "pinyin": "qíng rén jié",
+        "english": "Valentine's Day"
+      },
+      {
+        "chinese": "巧克力",
+        "pinyin": "qiǎo kè lì",
+        "english": "chocolate"
+      },
+      {
+        "chinese": "鲜花",
+        "pinyin": "xiān huā",
+        "english": "fresh flowers"
+      },
+      {
+        "chinese": "母亲节",
+        "pinyin": "mǔ qīn jié",
+        "english": "Mother's Day"
+      },
+      {
+        "chinese": "父亲节",
+        "pinyin": "fù qīn jié",
+        "english": "Father's Day"
+      }
+    ]
+  },
+  {
+    "id": "entertainment",
+    "name": "Entertainment 娱乐",
+    "words": [
+      {
+        "chinese": "节目",
+        "pinyin": "jié mù",
+        "english": "program"
+      },
+      {
+        "chinese": "新闻",
+        "pinyin": "xīn wén",
+        "english": "news"
+      },
+      {
+        "chinese": "商业片",
+        "pinyin": "shāng yè piàn",
+        "english": "commercial film"
+      },
+      {
+        "chinese": "艺术片",
+        "pinyin": "yì shù piàn",
+        "english": "art film"
+      },
+      {
+        "chinese": "纪录片",
+        "pinyin": "jì lù piàn",
+        "english": "documentary"
+      },
+      {
+        "chinese": "卡通片",
+        "pinyin": "kǎ tōng piàn",
+        "english": "cartoon"
+      },
+      {
+        "chinese": "科幻片",
+        "pinyin": "kē huàn piàn",
+        "english": "science fiction film"
+      },
+      {
+        "chinese": "恐怖片",
+        "pinyin": "kǒng bù piàn",
+        "english": "horror movie"
+      },
+      {
+        "chinese": "悲剧片",
+        "pinyin": "bēi jù piàn",
+        "english": "tragedy film"
+      },
+      {
+        "chinese": "喜剧片",
+        "pinyin": "xǐ jù piàn",
+        "english": "comedy film"
+      },
+      {
+        "chinese": "功夫片",
+        "pinyin": "gōng fū piàn",
+        "english": "kung fu movie"
+      },
+      {
+        "chinese": "惊险片",
+        "pinyin": "jīng xiǎn piàn",
+        "english": "adventure film"
+      },
+      {
+        "chinese": "连续剧",
+        "pinyin": "lián xù jù",
+        "english": "series drama"
+      },
+      {
+        "chinese": "肥皂剧",
+        "pinyin": "féi zào jù",
+        "english": "soap opera"
+      },
+      {
+        "chinese": "脱口秀",
+        "pinyin": "tuō kǒu xiù",
+        "english": "talk show"
+      },
+      {
+        "chinese": "古典音乐",
+        "pinyin": "gǔ diǎn yīn yuè",
+        "english": "classical music"
+      },
+      {
+        "chinese": "摇滚乐",
+        "pinyin": "yáo gǔn yuè",
+        "english": "rock music"
+      },
+      {
+        "chinese": "爵士乐",
+        "pinyin": "jué shì yuè",
+        "english": "jazz"
+      },
+      {
+        "chinese": "电影院",
+        "pinyin": "diàn yǐng yuàn",
+        "english": "movie theater"
+      },
+      {
+        "chinese": "礼堂",
+        "pinyin": "lǐ táng",
+        "english": "auditorium"
+      },
+      {
+        "chinese": "导演",
+        "pinyin": "dǎo yǎn",
+        "english": "director"
+      },
+      {
+        "chinese": "艺人",
+        "pinyin": "yì rén",
+        "english": "actor; artist"
+      },
+      {
+        "chinese": "演员",
+        "pinyin": "yǎn yuán",
+        "english": "actor; actress; performer"
+      },
+      {
+        "chinese": "演技",
+        "pinyin": "yǎn jì",
+        "english": "acting skill"
+      }
+    ]
   }
 ];
