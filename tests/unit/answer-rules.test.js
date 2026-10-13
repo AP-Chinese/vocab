@@ -112,5 +112,9 @@ test("Family: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("外祖父"), ["外祖父", "姥爷", "外公"].sort());
   assert.deepEqual(accepts("外祖母"), ["外祖母", "外婆", "姥姥"].sort());
   assert.deepEqual(accepts("子女"), ["子女", "孩子"].sort());
+  assert.deepEqual(accepts("期望"), ["期望", "希望"].sort());
+  assert.deepEqual(accepts("夫妇"), ["夫妇", "夫妻"].sort());
+  assert.deepEqual(accepts("晚辈"), ["晚辈", "后辈"].sort());
+  assert.deepEqual(accepts("母亲"), ["母亲", "妈妈"].sort());
   assert.deepEqual(accepts("父亲"), ["父亲"]); // everything else stays exact
 });

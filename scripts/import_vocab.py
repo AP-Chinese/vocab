@@ -42,6 +42,7 @@ CHINESE_OVERRIDES = {
     ("travel", "领事馆"): "大使馆",
     ("family", "大伯"): "伯伯",  # father's elder brother
     ("family", "姑母"): "姑姑",  # father's sister
+    ("family", "姨妈"): "姨姨",  # mother's sister
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -67,6 +68,10 @@ ALSO_ACCEPTED = {
     ("family", "外祖父"): ["姥爷", "外公"],
     ("family", "外祖母"): ["外婆", "姥姥"],
     ("family", "子女"): ["孩子"],
+    ("family", "期望"): ["希望"],
+    ("family", "夫妇"): ["夫妻"],
+    ("family", "晚辈"): ["后辈"],
+    ("family", "母亲"): ["妈妈"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -105,6 +110,7 @@ PINYIN_OVERRIDES = {
     "舅舅": "jiù jiu",
     "伯伯": "bó bo",
     "姑姑": "gū gu",
+    "姨姨": "yí yi",
     "亲戚": "qīn qi",
     "行李": "xíng li",
     "码头": "mǎ tou",
