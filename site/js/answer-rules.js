@@ -20,13 +20,23 @@ export const RULES = {
       return { variants: [stem, `${stem}科学`] };
     },
   },
+  // 黄 also accepts 黄色. Only the listed color words; 咖啡色 and 颜色 already end in 色 or aren't a color.
+  "se-suffix": {
+    apply(answer) {
+      if (!COLOR_WORDS.includes(answer)) return null;
+      return { variants: [`${answer}色`] };
+    },
+  },
 };
+
+const COLOR_WORDS = ["黄", "绿", "红", "蓝", "灰", "紫", "黑", "白", "粉红"];
 
 export const TOPIC_RULES = {
   school: [
     // 经济 and 社会 alone mean "economy" and "society", so those words must keep their 学.
     { rule: "xue-suffix", except: ["经济学", "社会学"] },
   ],
+  clothing: [{ rule: "se-suffix" }],
 };
 
 // Returns a function giving the extra spellings to accept for one of this topic's words.

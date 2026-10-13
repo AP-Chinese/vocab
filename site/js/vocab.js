@@ -1318,7 +1318,10 @@ export const TOPICS = [
       {
         "chinese": "衬衫",
         "pinyin": "chèn shān",
-        "english": "shirt"
+        "english": "shirt",
+        "alsoAccepted": [
+          "衬衣"
+        ]
       },
       {
         "chinese": "裤子",
@@ -1363,7 +1366,10 @@ export const TOPICS = [
       {
         "chinese": "运动服",
         "pinyin": "yùn dòng fú",
-        "english": "sportswear; athletic clothing"
+        "english": "sportswear; athletic clothing",
+        "alsoAccepted": [
+          "运动衣"
+        ]
       },
       {
         "chinese": "毛衣",
@@ -1433,17 +1439,26 @@ export const TOPICS = [
       {
         "chinese": "长短",
         "pinyin": "cháng duǎn",
-        "english": "length"
+        "english": "length",
+        "alsoAccepted": [
+          "长度"
+        ]
       },
       {
         "chinese": "厚薄",
         "pinyin": "hòu báo",
-        "english": "thickness"
+        "english": "thickness",
+        "alsoAccepted": [
+          "厚度"
+        ]
       },
       {
         "chinese": "样式",
         "pinyin": "yàng shì",
-        "english": "style"
+        "english": "style",
+        "alsoAccepted": [
+          "风格"
+        ]
       },
       {
         "chinese": "合适",
@@ -1513,7 +1528,11 @@ export const TOPICS = [
       {
         "chinese": "咖啡色",
         "pinyin": "kā fēi sè",
-        "english": "brown; coffee color"
+        "english": "brown; coffee color",
+        "alsoAccepted": [
+          "棕色",
+          "棕"
+        ]
       },
       {
         "chinese": "牌子",

@@ -83,6 +83,12 @@ ALSO_ACCEPTED = {
     ("food", "好吃"): ["美味"],
     ("food", "香槟酒"): ["香槟"],
     ("food", "难吃"): ["不好吃"],
+    ("clothing", "咖啡色"): ["棕色", "棕"],
+    ("clothing", "衬衫"): ["衬衣"],
+    ("clothing", "样式"): ["风格"],
+    ("clothing", "厚薄"): ["厚度"],
+    ("clothing", "长短"): ["长度"],
+    ("clothing", "运动服"): ["运动衣"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
