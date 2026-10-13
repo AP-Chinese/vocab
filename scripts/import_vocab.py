@@ -89,6 +89,12 @@ ALSO_ACCEPTED = {
     ("clothing", "厚薄"): ["厚度"],
     ("clothing", "长短"): ["长度"],
     ("clothing", "运动服"): ["运动衣"],
+    ("art", "舞蹈"): ["跳舞"],
+    ("art", "宝贵"): ["宝贵的", "值钱的"],
+    ("art", "喜爱"): ["喜欢"],
+    ("art", "园林"): ["花园"],
+    ("art", "演出"): ["表演"],
+    ("art", "动画"): ["卡通"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.

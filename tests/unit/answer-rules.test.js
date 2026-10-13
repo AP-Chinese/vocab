@@ -147,3 +147,16 @@ test("Clothing: the 色 rule and the teacher's other accepted answers count when
   assert.deepEqual(accepts("长短"), ["长短", "长度"].sort());
   assert.deepEqual(accepts("运动服"), ["运动服", "运动衣"].sort());
 });
+
+test("Art: the teacher's other accepted answers count when typing", () => {
+  const art = TOPICS.find((t) => t.id === "art");
+  const accepts = (chinese) =>
+    acceptedAnswers(art.words.find((w) => w.chinese === chinese), art.words, answerVariants("art")).sort();
+  assert.deepEqual(accepts("舞蹈"), ["舞蹈", "跳舞"].sort());
+  assert.deepEqual(accepts("宝贵"), ["宝贵", "宝贵的", "值钱的"].sort());
+  assert.deepEqual(accepts("喜爱"), ["喜爱", "喜欢"].sort());
+  assert.deepEqual(accepts("园林"), ["园林", "花园"].sort());
+  assert.deepEqual(accepts("演出"), ["演出", "表演"].sort());
+  assert.deepEqual(accepts("动画"), ["动画", "卡通"].sort());
+  assert.deepEqual(accepts("美术馆"), ["美术馆"]); // everything else stays exact
+});
