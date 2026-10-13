@@ -23,7 +23,7 @@ Flashcard and quiz site for AP Chinese vocabulary, used by high school students 
   - An "also accept" answer is already the word itself.
   - A word isn't in the topic.
   - An English meaning matches more than one word.
-- Add tests for each round of teacher feedback, like the Travel and Transportation tests:
+- Add tests for each round of teacher feedback, like the Travel and Transportation tests. Keep one test per topic in each file: add a later round's changes to that topic's existing test instead of starting a new one.
   - Extra accepted answers go in `tests/unit/answer-rules.test.js`.
   - Removals and additions go in `tests/unit/quiz.test.js`.
 - If a topic's word count changes, the Home screenshots (which show word counts) need refreshing. Run `npm run test:update-screenshots`, check that only `home.png` changed, and look at the new image.
