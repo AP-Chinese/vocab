@@ -133,3 +133,20 @@ Rules: `se-suffix`
 | 咖啡色 | brown; coffee color | 棕色, 棕 |
 
 All other Clothing 服装 words are graded exactly.
+
+## Art 艺术 (`art`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 舞蹈 | dance | 跳舞 |
+| 动画 | cartoon | 卡通 |
+| 园林 | garden | 花园 |
+| 宝贵 | valuable | 宝贵的, 值钱的 |
+| 喜爱 | like, favor | 喜欢 |
+| 演出 | performance | 表演 |
+
+All other Art 艺术 words are graded exactly.
