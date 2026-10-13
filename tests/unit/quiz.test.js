@@ -131,3 +131,21 @@ test("teacher's Food changes: 老 (tough) removed", () => {
   assert.equal(food.words.find((w) => w.chinese === "老"), undefined);
   assert.ok(food.words.some((w) => w.chinese === "嫩")); // its neighbor "tender" stays
 });
+
+test("teacher's Sports changes: 橄榄球 is American football", () => {
+  const sports = TOPICS.find((t) => t.id === "sports");
+  assert.equal(sports.words.find((w) => w.chinese === "橄榄球").english, "American football");
+});
+
+test("teacher's Clothing changes: idiom removed", () => {
+  const clothing = TOPICS.find((t) => t.id === "clothing");
+  assert.ok(!clothing.words.some((w) => w.chinese === "物美价廉"));
+  assert.equal(clothing.words.length, 45);
+});
+
+test("teacher's Art changes: idiom removed, 美术馆 is art museum", () => {
+  const art = TOPICS.find((t) => t.id === "art");
+  assert.ok(!art.words.some((w) => w.chinese === "丰富多彩"));
+  assert.equal(art.words.find((w) => w.chinese === "美术馆").english, "art museum");
+  assert.equal(art.words.length, 36);
+});

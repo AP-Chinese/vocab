@@ -33,7 +33,12 @@ OVERRIDES = {
     ("family", "祖父"): "father's father",  # was "fathers's father"
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
+    ("art", "美术馆"): "art museum",  # was "pinacotheca"
+    ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
+    # The PDF wraps these two meanings across each other, so the text came out mixed up
+    ("art", "文房四宝"): "the four treasures of the study: writing brush, ink stick, ink slab, paper",
+    ("art", "琴棋书画"): "the four arts traditionally studied by the educated (chess, the guqin/zither, painting, and calligraphy)",
 }
 
 # Teacher-approved corrections to the Chinese side: (topic ID, chinese) -> chinese.
@@ -86,6 +91,9 @@ TOPIC_NAMES = {
     "transportation": "Transportation 交通",  # "交通Transportation"
     "family": "Family 家庭",  # "Family"
     "food": "Food 饮食",  # "AP Chinese: Food"
+    "sports": "Sports 体育",  # "ap chinese: sports"
+    "clothing": "Clothing 服装",  # "AP Chinese Clothing"
+    "art": "Art 艺术",  # "AP Chinese: Art"
 }
 
 # Teacher-approved removals from the source sets: (topic ID, chinese).
@@ -100,6 +108,8 @@ EXCLUDE = {
     ("travel", "山清水秀"),
     ("transportation", "畅通无阻"),  # unobstructed; unimpeded
     ("transportation", "水泄不通"),  # jam-packed
+    ("clothing", "物美价廉"),  # idiom: attractive goods at inexpensive prices
+    ("art", "丰富多彩"),  # idiom: rich and colorful
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough
 }
