@@ -648,22 +648,36 @@ export const TOPICS = [
       {
         "chinese": "祖父",
         "pinyin": "zǔ fù",
-        "english": "father's father"
+        "english": "father's father",
+        "alsoAccepted": [
+          "爷爷"
+        ]
       },
       {
         "chinese": "祖母",
         "pinyin": "zǔ mǔ",
-        "english": "father's mother"
+        "english": "father's mother",
+        "alsoAccepted": [
+          "奶奶"
+        ]
       },
       {
         "chinese": "外祖父",
         "pinyin": "wài zǔ fù",
-        "english": "mother's father"
+        "english": "mother's father",
+        "alsoAccepted": [
+          "姥爷",
+          "外公"
+        ]
       },
       {
         "chinese": "外祖母",
         "pinyin": "wài zǔ mǔ",
-        "english": "mother's mother"
+        "english": "mother's mother",
+        "alsoAccepted": [
+          "外婆",
+          "姥姥"
+        ]
       },
       {
         "chinese": "父母",
@@ -721,18 +735,13 @@ export const TOPICS = [
         "english": "younger sister"
       },
       {
-        "chinese": "亲属",
-        "pinyin": "qīn shǔ",
-        "english": "relations; relatives"
-      },
-      {
         "chinese": "亲戚",
         "pinyin": "qīn qi",
         "english": "relative"
       },
       {
-        "chinese": "姑母",
-        "pinyin": "gū mǔ",
+        "chinese": "姑姑",
+        "pinyin": "gū gu",
         "english": "father's sister"
       },
       {
@@ -741,8 +750,8 @@ export const TOPICS = [
         "english": "mother's sister"
       },
       {
-        "chinese": "大伯",
-        "pinyin": "dà bó",
+        "chinese": "伯伯",
+        "pinyin": "bó bo",
         "english": "father's elder brother"
       },
       {
@@ -758,7 +767,10 @@ export const TOPICS = [
       {
         "chinese": "子女",
         "pinyin": "zǐ nǚ",
-        "english": "children"
+        "english": "children",
+        "alsoAccepted": [
+          "孩子"
+        ]
       },
       {
         "chinese": "尊敬",

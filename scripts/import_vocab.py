@@ -40,6 +40,8 @@ OVERRIDES = {
 CHINESE_OVERRIDES = {
     ("transportation", "出租汽车"): "出租车",
     ("travel", "领事馆"): "大使馆",
+    ("family", "大伯"): "伯伯",  # father's elder brother
+    ("family", "姑母"): "姑姑",  # father's sister
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -60,6 +62,11 @@ ALSO_ACCEPTED = {
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],
     ("transportation", "线路"): ["路线"],
+    ("family", "祖父"): ["爷爷"],
+    ("family", "祖母"): ["奶奶"],
+    ("family", "外祖父"): ["姥爷", "外公"],
+    ("family", "外祖母"): ["外婆", "姥姥"],
+    ("family", "子女"): ["孩子"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -82,6 +89,7 @@ EXCLUDE = {
     ("travel", "山清水秀"),
     ("transportation", "畅通无阻"),  # unobstructed; unimpeded
     ("transportation", "水泄不通"),  # jam-packed
+    ("family", "亲属"),  # relations; relatives (亲戚 stays)
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
@@ -95,6 +103,8 @@ PINYIN_OVERRIDES = {
     "妹妹": "mèi mei",
     "叔叔": "shū shu",
     "舅舅": "jiù jiu",
+    "伯伯": "bó bo",
+    "姑姑": "gū gu",
     "亲戚": "qīn qi",
     "行李": "xíng li",
     "码头": "mǎ tou",

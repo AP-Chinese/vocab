@@ -70,3 +70,19 @@ Rules: none
 | 条件 | condition | 情况 |
 
 All other Transportation 交通 words are graded exactly.
+
+## Family 家庭 (`family`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 祖父 | father's father | 爷爷 |
+| 祖母 | father's mother | 奶奶 |
+| 外祖父 | mother's father | 姥爷, 外公 |
+| 外祖母 | mother's mother | 外婆, 姥姥 |
+| 子女 | children | 孩子 |
+
+All other Family 家庭 words are graded exactly.
