@@ -149,3 +149,16 @@ test("teacher's Art changes: idiom removed, 美术馆 is art museum", () => {
   assert.equal(art.words.find((w) => w.chinese === "美术馆").english, "art museum");
   assert.equal(art.words.length, 36);
 });
+
+test("teacher's Festivities changes: idioms and the 前期白怪 typo removed", () => {
+  const festivities = TOPICS.find((t) => t.id === "festivities");
+  for (const removed of ["五颜六色", "美味佳肴", "前期白怪"]) assert.ok(!festivities.words.some((w) => w.chinese === removed), removed);
+  assert.equal(festivities.words.length, 50);
+});
+
+test("teacher's Entertainment changes: 艺人 removed, 演员 stays", () => {
+  const entertainment = TOPICS.find((t) => t.id === "entertainment");
+  assert.ok(!entertainment.words.some((w) => w.chinese === "艺人"));
+  assert.ok(entertainment.words.some((w) => w.chinese === "演员"));
+  assert.equal(entertainment.words.length, 23);
+});
