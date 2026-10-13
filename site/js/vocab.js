@@ -1588,7 +1588,10 @@ export const TOPICS = [
       {
         "chinese": "舞蹈",
         "pinyin": "wǔ dǎo",
-        "english": "dance"
+        "english": "dance",
+        "alsoAccepted": [
+          "跳舞"
+        ]
       },
       {
         "chinese": "建筑",
@@ -1598,7 +1601,10 @@ export const TOPICS = [
       {
         "chinese": "动画",
         "pinyin": "dòng huà",
-        "english": "cartoon"
+        "english": "cartoon",
+        "alsoAccepted": [
+          "卡通"
+        ]
       },
       {
         "chinese": "漫画",
@@ -1643,7 +1649,10 @@ export const TOPICS = [
       {
         "chinese": "园林",
         "pinyin": "yuán lín",
-        "english": "garden"
+        "english": "garden",
+        "alsoAccepted": [
+          "花园"
+        ]
       },
       {
         "chinese": "文房四宝",
@@ -1708,7 +1717,12 @@ export const TOPICS = [
       {
         "chinese": "宝贵",
         "pinyin": "bǎo guì",
-        "english": "valuable"
+        "english": "valuable",
+        "alsoAccepted": [
+          "宝贵的",
+          "值钱的",
+          "珍贵的"
+        ]
       },
       {
         "chinese": "财富",
@@ -1718,7 +1732,10 @@ export const TOPICS = [
       {
         "chinese": "喜爱",
         "pinyin": "xǐ ài",
-        "english": "like, favor"
+        "english": "like, favor",
+        "alsoAccepted": [
+          "喜欢"
+        ]
       },
       {
         "chinese": "经典",
@@ -1728,7 +1745,10 @@ export const TOPICS = [
       {
         "chinese": "演出",
         "pinyin": "yǎn chū",
-        "english": "performance"
+        "english": "performance",
+        "alsoAccepted": [
+          "表演"
+        ]
       },
       {
         "chinese": "博物馆",
