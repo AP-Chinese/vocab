@@ -125,3 +125,9 @@ test("teacher's Family changes: 亲属 removed, 伯伯, 姑姑 and 姨姨", () =
   assert.deepEqual(word("姑姑"), { chinese: "姑姑", pinyin: "gū gu", english: "father's sister" });
   assert.deepEqual(word("姨姨"), { chinese: "姨姨", pinyin: "yí yi", english: "mother's sister" });
 });
+
+test("teacher's Food changes: 老 (tough) removed", () => {
+  const food = TOPICS.find((t) => t.id === "food");
+  assert.equal(food.words.find((w) => w.chinese === "老"), undefined);
+  assert.ok(food.words.some((w) => w.chinese === "嫩")); // its neighbor "tender" stays
+});

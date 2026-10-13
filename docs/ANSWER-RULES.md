@@ -90,3 +90,20 @@ Rules: none
 | 夫妇 | husband and wife | 夫妻 |
 
 All other Family 家庭 words are graded exactly.
+
+## Food 饮食 (`food`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 汉堡包 | hamburger | 汉堡 |
+| 腻 | greasy (food) | 油腻 |
+| 好吃 | delicious | 美味 |
+| 难吃 | not tasty | 不好吃 |
+| 香槟酒 | champagne | 香槟 |
+| 橙汁 | orange juice | 橘子汁 |
+
+All other Food 饮食 words are graded exactly.

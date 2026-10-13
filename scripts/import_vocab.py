@@ -72,6 +72,12 @@ ALSO_ACCEPTED = {
     ("family", "夫妇"): ["夫妻"],
     ("family", "晚辈"): ["后辈"],
     ("family", "母亲"): ["妈妈"],
+    ("food", "腻"): ["油腻"],
+    ("food", "橙汁"): ["橘子汁"],
+    ("food", "汉堡包"): ["汉堡"],
+    ("food", "好吃"): ["美味"],
+    ("food", "香槟酒"): ["香槟"],
+    ("food", "难吃"): ["不好吃"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -95,6 +101,7 @@ EXCLUDE = {
     ("transportation", "畅通无阻"),  # unobstructed; unimpeded
     ("transportation", "水泄不通"),  # jam-packed
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
+    ("food", "老"),  # tough
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).

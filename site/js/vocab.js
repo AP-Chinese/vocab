@@ -943,7 +943,10 @@ export const TOPICS = [
       {
         "chinese": "汉堡包",
         "pinyin": "hàn bǎo bāo",
-        "english": "hamburger"
+        "english": "hamburger",
+        "alsoAccepted": [
+          "汉堡"
+        ]
       },
       {
         "chinese": "三明治",
@@ -1013,7 +1016,10 @@ export const TOPICS = [
       {
         "chinese": "腻",
         "pinyin": "nì",
-        "english": "greasy (food)"
+        "english": "greasy (food)",
+        "alsoAccepted": [
+          "油腻"
+        ]
       },
       {
         "chinese": "淡",
@@ -1041,11 +1047,6 @@ export const TOPICS = [
         "english": "tender"
       },
       {
-        "chinese": "老",
-        "pinyin": "lǎo",
-        "english": "tough"
-      },
-      {
         "chinese": "饿",
         "pinyin": "è",
         "english": "hungry"
@@ -1058,12 +1059,18 @@ export const TOPICS = [
       {
         "chinese": "好吃",
         "pinyin": "hǎo chī",
-        "english": "delicious"
+        "english": "delicious",
+        "alsoAccepted": [
+          "美味"
+        ]
       },
       {
         "chinese": "难吃",
         "pinyin": "nán chī",
-        "english": "not tasty"
+        "english": "not tasty",
+        "alsoAccepted": [
+          "不好吃"
+        ]
       },
       {
         "chinese": "牛奶",
@@ -1138,7 +1145,10 @@ export const TOPICS = [
       {
         "chinese": "香槟酒",
         "pinyin": "xiāng bīn jiǔ",
-        "english": "champagne"
+        "english": "champagne",
+        "alsoAccepted": [
+          "香槟"
+        ]
       },
       {
         "chinese": "果汁",
@@ -1153,7 +1163,10 @@ export const TOPICS = [
       {
         "chinese": "橙汁",
         "pinyin": "chéng zhī",
-        "english": "orange juice"
+        "english": "orange juice",
+        "alsoAccepted": [
+          "橘子汁"
+        ]
       }
     ]
   }
