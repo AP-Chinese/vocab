@@ -1446,7 +1446,7 @@ export const TOPICS = [
       },
       {
         "chinese": "厚薄",
-        "pinyin": "hòu bó",
+        "pinyin": "hòu báo",
         "english": "thickness",
         "alsoAccepted": [
           "厚度"
@@ -2189,7 +2189,10 @@ export const TOPICS = [
       {
         "chinese": "疾病",
         "pinyin": "jí bìng",
-        "english": "disease"
+        "english": "disease",
+        "alsoAccepted": [
+          "病"
+        ]
       },
       {
         "chinese": "心情",
@@ -2242,24 +2245,33 @@ export const TOPICS = [
         "english": "habit; custom; be used to"
       },
       {
-        "chinese": "习气",
-        "pinyin": "xí qì",
+        "chinese": "坏习惯",
+        "pinyin": "huài xí guàn",
         "english": "bad habit; bad practice"
       },
       {
         "chinese": "睡眠",
         "pinyin": "shuì mián",
-        "english": "sleep"
+        "english": "sleep",
+        "alsoAccepted": [
+          "睡觉"
+        ]
       },
       {
         "chinese": "充沛",
         "pinyin": "chōng pèi",
-        "english": "full of (energy); abundant"
+        "english": "full of (energy); abundant",
+        "alsoAccepted": [
+          "精力充沛"
+        ]
       },
       {
         "chinese": "充足",
         "pinyin": "chōng zú",
-        "english": "sufficient"
+        "english": "sufficient",
+        "alsoAccepted": [
+          "足够"
+        ]
       },
       {
         "chinese": "失眠",
@@ -2284,7 +2296,10 @@ export const TOPICS = [
       {
         "chinese": "危害",
         "pinyin": "wēi hài",
-        "english": "harm; danger"
+        "english": "harm; danger",
+        "alsoAccepted": [
+          "危险"
+        ]
       },
       {
         "chinese": "规律",
@@ -2302,19 +2317,12 @@ export const TOPICS = [
         "english": "efficiency"
       },
       {
-        "chinese": "劳累",
-        "pinyin": "láo lèi",
-        "english": "tired, exhausted, fatigued"
-      },
-      {
-        "chinese": "疲惫",
-        "pinyin": "pí bèi",
-        "english": "exhausted"
-      },
-      {
         "chinese": "疲倦",
         "pinyin": "pí juàn",
-        "english": "tired"
+        "english": "tired",
+        "alsoAccepted": [
+          "累"
+        ]
       },
       {
         "chinese": "过度",
@@ -2334,7 +2342,10 @@ export const TOPICS = [
       {
         "chinese": "资源",
         "pinyin": "zī yuán",
-        "english": "natural resources"
+        "english": "natural resources",
+        "alsoAccepted": [
+          "自然资源"
+        ]
       },
       {
         "chinese": "节约",
@@ -2354,7 +2365,10 @@ export const TOPICS = [
       {
         "chinese": "人生",
         "pinyin": "rén shēng",
-        "english": "life"
+        "english": "life",
+        "alsoAccepted": [
+          "生活"
+        ]
       },
       {
         "chinese": "目标",
@@ -2374,7 +2388,10 @@ export const TOPICS = [
       {
         "chinese": "守时",
         "pinyin": "shǒu shí",
-        "english": "to be punctual"
+        "english": "to be punctual",
+        "alsoAccepted": [
+          "准时"
+        ]
       }
     ]
   },
@@ -2429,7 +2446,7 @@ export const TOPICS = [
       },
       {
         "chinese": "分散",
-        "pinyin": "fēn sàn",
+        "pinyin": "fēn sǎn",
         "english": "disperse"
       },
       {

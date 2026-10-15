@@ -55,6 +55,7 @@ CHINESE_OVERRIDES = {
     ("family", "姨妈"): "姨姨",  # mother's sister
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
+    ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -108,6 +109,15 @@ ALSO_ACCEPTED = {
     ("festivities", "元宵"): ["汤圆"],
     ("festivities", "礼拜"): ["宗教仪式"],
     ("festivities", "故乡"): ["家乡"],
+    ("lifestyle", "人生"): ["生活"],
+    ("lifestyle", "充足"): ["足够"],
+    ("lifestyle", "疾病"): ["病"],
+    ("lifestyle", "疲倦"): ["累"],
+    ("lifestyle", "充沛"): ["精力充沛"],
+    ("lifestyle", "守时"): ["准时"],
+    ("lifestyle", "危害"): ["危险"],
+    ("lifestyle", "睡眠"): ["睡觉"],
+    ("lifestyle", "资源"): ["自然资源"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -155,6 +165,8 @@ EXCLUDE = {
     ("entertainment", "艺人"),  # actor; artist (演员 stays)
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough
+    ("lifestyle", "疲惫"),  # exhausted (疲倦 tired stays)
+    ("lifestyle", "劳累"),  # tired, exhausted, fatigued
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
