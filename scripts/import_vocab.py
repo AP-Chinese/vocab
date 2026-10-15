@@ -101,6 +101,9 @@ ALSO_ACCEPTED = {
     ("art", "园林"): ["花园"],
     ("art", "演出"): ["表演"],
     ("art", "动画"): ["卡通"],
+    ("entertainment", "惊险片"): ["探险片"],
+    ("entertainment", "功夫片"): ["武打片"],
+    ("entertainment", "卡通片"): ["卡通"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.

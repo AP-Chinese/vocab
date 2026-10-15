@@ -150,3 +150,17 @@ Rules: none
 | 演出 | performance | 表演 |
 
 All other Art 艺术 words are graded exactly.
+
+## Entertainment 娱乐 (`entertainment`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 卡通片 | cartoon | 卡通 |
+| 功夫片 | kung fu movie | 武打片 |
+| 惊险片 | adventure film | 探险片 |
+
+All other Entertainment 娱乐 words are graded exactly.

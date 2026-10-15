@@ -160,3 +160,17 @@ test("Art: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("动画"), ["动画", "卡通"].sort());
   assert.deepEqual(accepts("美术馆"), ["美术馆"]); // everything else stays exact
 });
+
+test("Entertainment: the teacher's other accepted answers count when typing", () => {
+  const entertainment = TOPICS.find((t) => t.id === "entertainment");
+  const accepts = (chinese) =>
+    acceptedAnswers(
+      entertainment.words.find((w) => w.chinese === chinese),
+      entertainment.words,
+      answerVariants("entertainment"),
+    ).sort();
+  assert.deepEqual(accepts("惊险片"), ["惊险片", "探险片"].sort());
+  assert.deepEqual(accepts("功夫片"), ["功夫片", "武打片"].sort());
+  assert.deepEqual(accepts("卡通片"), ["卡通片", "卡通"].sort());
+  assert.deepEqual(accepts("科幻片"), ["科幻片"]); // everything else stays exact
+});
