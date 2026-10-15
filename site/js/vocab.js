@@ -2138,5 +2138,362 @@ export const TOPICS = [
         "english": "acting skill"
       }
     ]
+  },
+  {
+    "id": "lifestyle",
+    "name": "Lifestyle 生活方式",
+    "words": [
+      {
+        "chinese": "生活方式",
+        "pinyin": "shēng huó fāng shì",
+        "english": "lifestyle"
+      },
+      {
+        "chinese": "风格",
+        "pinyin": "fēng gé",
+        "english": "style"
+      },
+      {
+        "chinese": "财富",
+        "pinyin": "cái fù",
+        "english": "wealth; valuable things"
+      },
+      {
+        "chinese": "健康",
+        "pinyin": "jiàn kāng",
+        "english": "health; healthy"
+      },
+      {
+        "chinese": "文明",
+        "pinyin": "wén míng",
+        "english": "civilization; civilized"
+      },
+      {
+        "chinese": "疾病",
+        "pinyin": "jí bìng",
+        "english": "disease"
+      },
+      {
+        "chinese": "心情",
+        "pinyin": "xīn qíng",
+        "english": "mood"
+      },
+      {
+        "chinese": "宽容",
+        "pinyin": "kuān róng",
+        "english": "tolerance; broad-mindedness"
+      },
+      {
+        "chinese": "气氛",
+        "pinyin": "qì fēn",
+        "english": "atmosphere"
+      },
+      {
+        "chinese": "吸烟",
+        "pinyin": "xī yān",
+        "english": "to smoke"
+      },
+      {
+        "chinese": "喝酒",
+        "pinyin": "hē jiǔ",
+        "english": "to drink alcohol"
+      },
+      {
+        "chinese": "毒品",
+        "pinyin": "dú pǐn",
+        "english": "narcotic drugs; narcotics"
+      },
+      {
+        "chinese": "吸毒",
+        "pinyin": "xī dú",
+        "english": "to take drugs"
+      },
+      {
+        "chinese": "饮食",
+        "pinyin": "yǐn shí",
+        "english": "food and drink; diet"
+      },
+      {
+        "chinese": "卫生",
+        "pinyin": "wèi shēng",
+        "english": "hygiene; health; sanitation"
+      },
+      {
+        "chinese": "习惯",
+        "pinyin": "xí guàn",
+        "english": "habit; custom; be used to"
+      },
+      {
+        "chinese": "习气",
+        "pinyin": "xí qì",
+        "english": "bad habit; bad practice"
+      },
+      {
+        "chinese": "睡眠",
+        "pinyin": "shuì mián",
+        "english": "sleep"
+      },
+      {
+        "chinese": "充沛",
+        "pinyin": "chōng pèi",
+        "english": "full of (energy); abundant"
+      },
+      {
+        "chinese": "充足",
+        "pinyin": "chōng zú",
+        "english": "sufficient"
+      },
+      {
+        "chinese": "失眠",
+        "pinyin": "shī mián",
+        "english": "to suffer from insomnia"
+      },
+      {
+        "chinese": "精力",
+        "pinyin": "jīng lì",
+        "english": "energy, vigor"
+      },
+      {
+        "chinese": "精神",
+        "pinyin": "jīng shén",
+        "english": "spirit"
+      },
+      {
+        "chinese": "行为",
+        "pinyin": "xíng wéi",
+        "english": "behavior"
+      },
+      {
+        "chinese": "危害",
+        "pinyin": "wēi hài",
+        "english": "harm; danger"
+      },
+      {
+        "chinese": "规律",
+        "pinyin": "guī lǜ",
+        "english": "regular pattern"
+      },
+      {
+        "chinese": "紧张",
+        "pinyin": "jǐn zhāng",
+        "english": "nervous"
+      },
+      {
+        "chinese": "效率",
+        "pinyin": "xiào lǜ",
+        "english": "efficiency"
+      },
+      {
+        "chinese": "劳累",
+        "pinyin": "láo lèi",
+        "english": "tired, exhausted, fatigued"
+      },
+      {
+        "chinese": "疲惫",
+        "pinyin": "pí bèi",
+        "english": "exhausted"
+      },
+      {
+        "chinese": "疲倦",
+        "pinyin": "pí juàn",
+        "english": "tired"
+      },
+      {
+        "chinese": "过度",
+        "pinyin": "guò dù",
+        "english": "over, excessive"
+      },
+      {
+        "chinese": "态度",
+        "pinyin": "tài dù",
+        "english": "attitude, approach"
+      },
+      {
+        "chinese": "自觉",
+        "pinyin": "zì jué",
+        "english": "conscious; aware; conscientious"
+      },
+      {
+        "chinese": "资源",
+        "pinyin": "zī yuán",
+        "english": "natural resources"
+      },
+      {
+        "chinese": "节约",
+        "pinyin": "jié yuē",
+        "english": "to save"
+      },
+      {
+        "chinese": "浪费",
+        "pinyin": "làng fèi",
+        "english": "to waste"
+      },
+      {
+        "chinese": "负责",
+        "pinyin": "fù zé",
+        "english": "to take responsibility"
+      },
+      {
+        "chinese": "人生",
+        "pinyin": "rén shēng",
+        "english": "life"
+      },
+      {
+        "chinese": "目标",
+        "pinyin": "mù biāo",
+        "english": "target"
+      },
+      {
+        "chinese": "遵守",
+        "pinyin": "zūn shǒu",
+        "english": "observe (rules, regulations, discipline)"
+      },
+      {
+        "chinese": "公德",
+        "pinyin": "gōng dé",
+        "english": "social morality"
+      },
+      {
+        "chinese": "守时",
+        "pinyin": "shǒu shí",
+        "english": "to be punctual"
+      }
+    ]
+  },
+  {
+    "id": "jobs",
+    "name": "Jobs 工作",
+    "words": [
+      {
+        "chinese": "利",
+        "pinyin": "lì",
+        "english": "advantage, benefit, profit"
+      },
+      {
+        "chinese": "弊",
+        "pinyin": "bì",
+        "english": "disadvantage"
+      },
+      {
+        "chinese": "接触",
+        "pinyin": "jiē chù",
+        "english": "contact"
+      },
+      {
+        "chinese": "复杂",
+        "pinyin": "fù zá",
+        "english": "complicated"
+      },
+      {
+        "chinese": "积累",
+        "pinyin": "jī lěi",
+        "english": "to accumulate"
+      },
+      {
+        "chinese": "经验",
+        "pinyin": "jīng yàn",
+        "english": "experience"
+      },
+      {
+        "chinese": "锻炼",
+        "pinyin": "duàn liàn",
+        "english": "to exercise"
+      },
+      {
+        "chinese": "实践",
+        "pinyin": "shí jiàn",
+        "english": "to practice"
+      },
+      {
+        "chinese": "宝贵",
+        "pinyin": "bǎo guì",
+        "english": "valuable, precious"
+      },
+      {
+        "chinese": "分散",
+        "pinyin": "fēn sǎn",
+        "english": "disperse"
+      },
+      {
+        "chinese": "精力",
+        "pinyin": "jīng lì",
+        "english": "energy"
+      },
+      {
+        "chinese": "赚钱",
+        "pinyin": "zhuàn qián",
+        "english": "to make money"
+      },
+      {
+        "chinese": "减轻",
+        "pinyin": "jiǎn qīng",
+        "english": "to lessen"
+      },
+      {
+        "chinese": "负担",
+        "pinyin": "fù dān",
+        "english": "burden"
+      },
+      {
+        "chinese": "分忧",
+        "pinyin": "fēn yōu",
+        "english": "share someone's cares or burdens"
+      },
+      {
+        "chinese": "学费",
+        "pinyin": "xué fèi",
+        "english": "tuition"
+      },
+      {
+        "chinese": "生活费",
+        "pinyin": "shēng huó fèi",
+        "english": "living expenses"
+      },
+      {
+        "chinese": "零用钱",
+        "pinyin": "líng yòng qián",
+        "english": "pocket money"
+      },
+      {
+        "chinese": "丰富",
+        "pinyin": "fēng fù",
+        "english": "rich"
+      },
+      {
+        "chinese": "考验",
+        "pinyin": "kǎo yàn",
+        "english": "test"
+      },
+      {
+        "chinese": "观察",
+        "pinyin": "guān chá",
+        "english": "to observe"
+      },
+      {
+        "chinese": "基础",
+        "pinyin": "jī chǔ",
+        "english": "foundation"
+      },
+      {
+        "chinese": "独立",
+        "pinyin": "dú lì",
+        "english": "independent"
+      },
+      {
+        "chinese": "耽误",
+        "pinyin": "dān wù",
+        "english": "delay"
+      },
+      {
+        "chinese": "协调",
+        "pinyin": "xié tiáo",
+        "english": "to coordinate"
+      },
+      {
+        "chinese": "安排",
+        "pinyin": "ān pái",
+        "english": "to arrange"
+      }
+    ]
   }
 ];
