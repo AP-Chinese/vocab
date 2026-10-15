@@ -34,6 +34,7 @@ OVERRIDES = {
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
     ("jobs", "弊"): "disadvantage",  # was capitalized
+    ("friendship", "身材"): "stature; figure",  # was capitalized
     ("art", "美术馆"): "art museum",  # was "pinacotheca"
     ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
@@ -111,6 +112,9 @@ TOPIC_NAMES = {
     "festivities": "Festivities 节日",  # "AP Chinese: Festivities"
     "lifestyle": "Lifestyle 生活方式",  # "AP Chinese - Lifestyle"
     "jobs": "Jobs 工作",  # "Jobs"
+    "friendship": "Friendship 友谊",  # "Friendship"
+    "housing": "Housing 住房",  # "Housing"
+    "education": "Education 教育",  # "AP Chinese - Education (pg. 382-383)"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
 

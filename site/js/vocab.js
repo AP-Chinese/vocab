@@ -2495,5 +2495,653 @@ export const TOPICS = [
         "english": "to arrange"
       }
     ]
+  },
+  {
+    "id": "friendship",
+    "name": "Friendship 友谊",
+    "words": [
+      {
+        "chinese": "异性",
+        "pinyin": "yì xìng",
+        "english": "opposite sex"
+      },
+      {
+        "chinese": "因素",
+        "pinyin": "yīn sù",
+        "english": "factor, element"
+      },
+      {
+        "chinese": "恋爱",
+        "pinyin": "liàn ài",
+        "english": "be in love"
+      },
+      {
+        "chinese": "幸福",
+        "pinyin": "xìng fú",
+        "english": "happy; happiness; well-being"
+      },
+      {
+        "chinese": "彼此",
+        "pinyin": "bǐ cǐ",
+        "english": "each other"
+      },
+      {
+        "chinese": "了解",
+        "pinyin": "liǎo jiě",
+        "english": "to understand；know"
+      },
+      {
+        "chinese": "信任",
+        "pinyin": "xìn rèn",
+        "english": "to trust; to have confidence in"
+      },
+      {
+        "chinese": "浪漫",
+        "pinyin": "làng màn",
+        "english": "romantic"
+      },
+      {
+        "chinese": "感情",
+        "pinyin": "gǎn qíng",
+        "english": "feeling; emotion; affection"
+      },
+      {
+        "chinese": "分享",
+        "pinyin": "fēn xiǎng",
+        "english": "to share (joy, happiness, benefit, etc.)"
+      },
+      {
+        "chinese": "优秀",
+        "pinyin": "yōu xiù",
+        "english": "outstanding; excellent"
+      },
+      {
+        "chinese": "性格",
+        "pinyin": "xìng gé",
+        "english": "personality"
+      },
+      {
+        "chinese": "外向",
+        "pinyin": "wài xiàng",
+        "english": "extroverted"
+      },
+      {
+        "chinese": "内向",
+        "pinyin": "nèi xiàng",
+        "english": "introverted"
+      },
+      {
+        "chinese": "脾气",
+        "pinyin": "pí qì",
+        "english": "temperament, temper"
+      },
+      {
+        "chinese": "开朗",
+        "pinyin": "kāi lǎng",
+        "english": "outgoing; cheerful"
+      },
+      {
+        "chinese": "友好",
+        "pinyin": "yǒu hǎo",
+        "english": "friendly; amicable"
+      },
+      {
+        "chinese": "急躁",
+        "pinyin": "jí zào",
+        "english": "impetuous; impatient"
+      },
+      {
+        "chinese": "体贴",
+        "pinyin": "tǐ tiē",
+        "english": "to care for; to be considerate of (someone)"
+      },
+      {
+        "chinese": "温柔",
+        "pinyin": "wēn róu",
+        "english": "gentle, soft"
+      },
+      {
+        "chinese": "温和",
+        "pinyin": "wēn hé",
+        "english": "gentle；soft"
+      },
+      {
+        "chinese": "幽默",
+        "pinyin": "yōu mò",
+        "english": "humorous"
+      },
+      {
+        "chinese": "害羞",
+        "pinyin": "hài xiū",
+        "english": "shy"
+      },
+      {
+        "chinese": "勤奋",
+        "pinyin": "qín fèn",
+        "english": "hardworking; diligent"
+      },
+      {
+        "chinese": "年龄",
+        "pinyin": "nián líng",
+        "english": "age"
+      },
+      {
+        "chinese": "长相",
+        "pinyin": "zhǎng xiàng",
+        "english": "looks, appearance"
+      },
+      {
+        "chinese": "身材",
+        "pinyin": "shēn cái",
+        "english": "stature; figure"
+      },
+      {
+        "chinese": "兴趣",
+        "pinyin": "xìng qù",
+        "english": "interest, hobby"
+      },
+      {
+        "chinese": "习惯",
+        "pinyin": "xí guàn",
+        "english": "habit"
+      },
+      {
+        "chinese": "成熟",
+        "pinyin": "chéng shú",
+        "english": "mature"
+      },
+      {
+        "chinese": "交往",
+        "pinyin": "jiāo wǎng",
+        "english": "to associate / to contact / association / contact；to socialize or have dealings with"
+      },
+      {
+        "chinese": "文化",
+        "pinyin": "wén huà",
+        "english": "culture"
+      },
+      {
+        "chinese": "背景",
+        "pinyin": "bèi jǐng",
+        "english": "background"
+      },
+      {
+        "chinese": "教育",
+        "pinyin": "jiào yù",
+        "english": "education"
+      },
+      {
+        "chinese": "程度",
+        "pinyin": "chéng dù",
+        "english": "degree; level (of education, ability)"
+      },
+      {
+        "chinese": "不同",
+        "pinyin": "bù tóng",
+        "english": "different; not the same"
+      },
+      {
+        "chinese": "相似",
+        "pinyin": "xiāng sì",
+        "english": "to resemble; similar; like; resemblance; similarity"
+      },
+      {
+        "chinese": "沟通",
+        "pinyin": "gōu tōng",
+        "english": "communicate"
+      },
+      {
+        "chinese": "冲突",
+        "pinyin": "chōng tū",
+        "english": "conflict"
+      },
+      {
+        "chinese": "争执",
+        "pinyin": "zhēng zhí",
+        "english": "argue, disagree"
+      },
+      {
+        "chinese": "吵架",
+        "pinyin": "chǎo jià",
+        "english": "quarrel"
+      },
+      {
+        "chinese": "分手",
+        "pinyin": "fēn shǒu",
+        "english": "to break up"
+      },
+      {
+        "chinese": "闹翻",
+        "pinyin": "nào fān",
+        "english": "have a falling out (with somebody)"
+      },
+      {
+        "chinese": "影响",
+        "pinyin": "yǐng xiǎng",
+        "english": "influence, to influence; affect"
+      },
+      {
+        "chinese": "传统",
+        "pinyin": "chuán tǒng",
+        "english": "traditional; tradition"
+      },
+      {
+        "chinese": "保守",
+        "pinyin": "bǎo shǒu",
+        "english": "conservative"
+      },
+      {
+        "chinese": "责任心",
+        "pinyin": "zé rèn xīn",
+        "english": "sense of responsibility (or duty)"
+      }
+    ]
+  },
+  {
+    "id": "housing",
+    "name": "Housing 住房",
+    "words": [
+      {
+        "chinese": "城市",
+        "pinyin": "chéng shì",
+        "english": "city"
+      },
+      {
+        "chinese": "乡村",
+        "pinyin": "xiāng cūn",
+        "english": "countryside"
+      },
+      {
+        "chinese": "镇",
+        "pinyin": "zhèn",
+        "english": "town"
+      },
+      {
+        "chinese": "安全",
+        "pinyin": "ān quán",
+        "english": "safe; safety"
+      },
+      {
+        "chinese": "安静",
+        "pinyin": "ān jìng",
+        "english": "quiet"
+      },
+      {
+        "chinese": "干净",
+        "pinyin": "gān jìng",
+        "english": "clean"
+      },
+      {
+        "chinese": "吵",
+        "pinyin": "chǎo",
+        "english": "noisy"
+      },
+      {
+        "chinese": "理想",
+        "pinyin": "lǐ xiǎng",
+        "english": "ideal"
+      },
+      {
+        "chinese": "位置",
+        "pinyin": "wèi zhì",
+        "english": "location"
+      },
+      {
+        "chinese": "区域",
+        "pinyin": "qū yù",
+        "english": "area; district"
+      },
+      {
+        "chinese": "住宅区",
+        "pinyin": "zhù zhái qū",
+        "english": "residential area"
+      },
+      {
+        "chinese": "市区",
+        "pinyin": "shì qū",
+        "english": "urban"
+      },
+      {
+        "chinese": "郊区",
+        "pinyin": "jiāo qū",
+        "english": "outskirts; suburb"
+      },
+      {
+        "chinese": "村",
+        "pinyin": "cūn",
+        "english": "village"
+      },
+      {
+        "chinese": "公园",
+        "pinyin": "gōng yuán",
+        "english": "park"
+      },
+      {
+        "chinese": "体育馆",
+        "pinyin": "tǐ yù guǎn",
+        "english": "gymnasium"
+      },
+      {
+        "chinese": "购物中心",
+        "pinyin": "gòu wù zhōng xīn",
+        "english": "shopping center"
+      },
+      {
+        "chinese": "图书馆",
+        "pinyin": "tú shū guǎn",
+        "english": "library"
+      },
+      {
+        "chinese": "医院",
+        "pinyin": "yī yuàn",
+        "english": "hospital"
+      },
+      {
+        "chinese": "幼稚园",
+        "pinyin": "yòu zhì yuán",
+        "english": "kindergarten"
+      },
+      {
+        "chinese": "养老院",
+        "pinyin": "yǎng lǎo yuàn",
+        "english": "senior citizen's home"
+      },
+      {
+        "chinese": "学校",
+        "pinyin": "xué xiào",
+        "english": "school"
+      },
+      {
+        "chinese": "教堂",
+        "pinyin": "jiào táng",
+        "english": "church"
+      },
+      {
+        "chinese": "马路",
+        "pinyin": "mǎ lù",
+        "english": "road"
+      },
+      {
+        "chinese": "高速公路",
+        "pinyin": "gāo sù gōng lù",
+        "english": "freeway"
+      },
+      {
+        "chinese": "交通",
+        "pinyin": "jiāo tōng",
+        "english": "transportation"
+      },
+      {
+        "chinese": "方便",
+        "pinyin": "fāng biàn",
+        "english": "convenient"
+      },
+      {
+        "chinese": "风景",
+        "pinyin": "fēng jǐng",
+        "english": "scenery"
+      },
+      {
+        "chinese": "环境",
+        "pinyin": "huán jìng",
+        "english": "environment; surroundings"
+      },
+      {
+        "chinese": "优美",
+        "pinyin": "yōu měi",
+        "english": "beautiful"
+      },
+      {
+        "chinese": "设备",
+        "pinyin": "shè bèi",
+        "english": "facilities; equipment"
+      },
+      {
+        "chinese": "设施",
+        "pinyin": "shè shī",
+        "english": "installations; facilities"
+      },
+      {
+        "chinese": "公寓",
+        "pinyin": "gōng yù",
+        "english": "apartment"
+      },
+      {
+        "chinese": "宿舍",
+        "pinyin": "sù shè",
+        "english": "dorm"
+      },
+      {
+        "chinese": "市场",
+        "pinyin": "shì chǎng",
+        "english": "market"
+      },
+      {
+        "chinese": "剧院",
+        "pinyin": "jù yuàn",
+        "english": "theater"
+      },
+      {
+        "chinese": "博物馆",
+        "pinyin": "bó wù guǎn",
+        "english": "museum"
+      },
+      {
+        "chinese": "动物园",
+        "pinyin": "dòng wù yuán",
+        "english": "zoological garden"
+      },
+      {
+        "chinese": "隔壁",
+        "pinyin": "gé bì",
+        "english": "next door"
+      },
+      {
+        "chinese": "邻居",
+        "pinyin": "lín jū",
+        "english": "neighbor"
+      },
+      {
+        "chinese": "建筑",
+        "pinyin": "jiàn zhù",
+        "english": "architecture"
+      },
+      {
+        "chinese": "树林",
+        "pinyin": "shù lín",
+        "english": "woods"
+      },
+      {
+        "chinese": "河",
+        "pinyin": "hé",
+        "english": "river"
+      },
+      {
+        "chinese": "湖",
+        "pinyin": "hú",
+        "english": "lake"
+      },
+      {
+        "chinese": "海",
+        "pinyin": "hǎi",
+        "english": "ocean"
+      },
+      {
+        "chinese": "海滨",
+        "pinyin": "hǎi bīn",
+        "english": "seashore; seaside"
+      },
+      {
+        "chinese": "山",
+        "pinyin": "shān",
+        "english": "mountain; hill"
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "name": "Education 教育",
+    "words": [
+      {
+        "chinese": "普及教育",
+        "pinyin": "pǔ jí jiào yù",
+        "english": "universal education"
+      },
+      {
+        "chinese": "义务教育",
+        "pinyin": "yì wù jiào yù",
+        "english": "compulsory education"
+      },
+      {
+        "chinese": "优点",
+        "pinyin": "yōu diǎn",
+        "english": "strong point; strengths"
+      },
+      {
+        "chinese": "缺点",
+        "pinyin": "quē diǎn",
+        "english": "shortcomings"
+      },
+      {
+        "chinese": "方式",
+        "pinyin": "fāng shì",
+        "english": "method"
+      },
+      {
+        "chinese": "填鸭式",
+        "pinyin": "tián yā shì",
+        "english": "cramming method (in teaching)"
+      },
+      {
+        "chinese": "启发式",
+        "pinyin": "qǐ fā shì",
+        "english": "elicitation method (in teaching); heuristic method"
+      },
+      {
+        "chinese": "主动性",
+        "pinyin": "zhǔ dòng xìng",
+        "english": "initiative"
+      },
+      {
+        "chinese": "打基础",
+        "pinyin": "dǎ jī chǔ",
+        "english": "establish a foundation"
+      },
+      {
+        "chinese": "上进心",
+        "pinyin": "shàng jìn xīn",
+        "english": "the desire to be better; aspiration"
+      },
+      {
+        "chinese": "督促",
+        "pinyin": "dū cù",
+        "english": "supervise and urge"
+      },
+      {
+        "chinese": "鼓励",
+        "pinyin": "gǔ lì",
+        "english": "to encourage"
+      },
+      {
+        "chinese": "重视",
+        "pinyin": "zhòng shì",
+        "english": "take seriously; view as important"
+      },
+      {
+        "chinese": "发挥",
+        "pinyin": "fā huī",
+        "english": "bring one's (initiative, etc.) into full play"
+      },
+      {
+        "chinese": "想象力",
+        "pinyin": "xiǎng xiàng lì",
+        "english": "imagination"
+      },
+      {
+        "chinese": "创造力",
+        "pinyin": "chuàng zào lì",
+        "english": "creativity"
+      },
+      {
+        "chinese": "死记硬背",
+        "pinyin": "sǐ jì yìng bèi",
+        "english": "mechanical memorizing"
+      },
+      {
+        "chinese": "读书",
+        "pinyin": "dú shū",
+        "english": "study; read"
+      },
+      {
+        "chinese": "本领",
+        "pinyin": "běn lǐng",
+        "english": "skill; capability"
+      },
+      {
+        "chinese": "竞争",
+        "pinyin": "jìng zhēng",
+        "english": "to compete"
+      },
+      {
+        "chinese": "态度",
+        "pinyin": "tài dù",
+        "english": "attitude"
+      },
+      {
+        "chinese": "认真",
+        "pinyin": "rèn zhēn",
+        "english": "serious"
+      },
+      {
+        "chinese": "自觉",
+        "pinyin": "zì jué",
+        "english": "self-aware; self-motivated"
+      },
+      {
+        "chinese": "压力",
+        "pinyin": "yā lì",
+        "english": "pressure"
+      },
+      {
+        "chinese": "负担",
+        "pinyin": "fù dān",
+        "english": "burden"
+      },
+      {
+        "chinese": "淘汰",
+        "pinyin": "táo tài",
+        "english": "eliminate through competition"
+      },
+      {
+        "chinese": "要求",
+        "pinyin": "yāo qiú",
+        "english": "to demand"
+      },
+      {
+        "chinese": "目标",
+        "pinyin": "mù biāo",
+        "english": "goal"
+      },
+      {
+        "chinese": "补习班",
+        "pinyin": "bǔ xí bān",
+        "english": "cram school"
+      },
+      {
+        "chinese": "辅导",
+        "pinyin": "fǔ dǎo",
+        "english": "tutor"
+      },
+      {
+        "chinese": "望子成龙",
+        "pinyin": "wàng zi chéng lóng",
+        "english": "hope for one's child to be very successful"
+      },
+      {
+        "chinese": "用心良苦",
+        "pinyin": "yòng xīn liáng kǔ",
+        "english": "have really given much thought to the matter; well-meaning"
+      }
+    ]
   }
 ];
