@@ -150,3 +150,17 @@ Rules: none
 | 演出 | performance | 表演 |
 
 All other Art 艺术 words are graded exactly.
+
+## Festivities 节日 (`festivities`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 元宵 | sweet dumplings made of glutinous rice | 汤圆 |
+| 故乡 | hometown | 家乡 |
+| 礼拜 | religious service | 宗教仪式 |
+
+All other Festivities 节日 words are graded exactly.
