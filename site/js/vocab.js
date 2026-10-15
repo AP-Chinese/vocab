@@ -2528,7 +2528,7 @@ export const TOPICS = [
       {
         "chinese": "了解",
         "pinyin": "liǎo jiě",
-        "english": "to understand；know"
+        "english": "to understand; know"
       },
       {
         "chinese": "信任",
@@ -2603,7 +2603,7 @@ export const TOPICS = [
       {
         "chinese": "温和",
         "pinyin": "wēn hé",
-        "english": "gentle；soft"
+        "english": "gentle; soft"
       },
       {
         "chinese": "幽默",
@@ -2653,7 +2653,7 @@ export const TOPICS = [
       {
         "chinese": "交往",
         "pinyin": "jiāo wǎng",
-        "english": "to associate / to contact / association / contact；to socialize or have dealings with"
+        "english": "to associate / to contact / association / contact; to socialize or have dealings with"
       },
       {
         "chinese": "文化",
@@ -3063,11 +3063,6 @@ export const TOPICS = [
         "english": "creativity"
       },
       {
-        "chinese": "死记硬背",
-        "pinyin": "sǐ jì yìng bèi",
-        "english": "mechanical memorizing"
-      },
-      {
         "chinese": "读书",
         "pinyin": "dú shū",
         "english": "study; read"
@@ -3131,16 +3126,6 @@ export const TOPICS = [
         "chinese": "辅导",
         "pinyin": "fǔ dǎo",
         "english": "tutor"
-      },
-      {
-        "chinese": "望子成龙",
-        "pinyin": "wàng zi chéng lóng",
-        "english": "hope for one's child to be very successful"
-      },
-      {
-        "chinese": "用心良苦",
-        "pinyin": "yòng xīn liáng kǔ",
-        "english": "have really given much thought to the matter; well-meaning"
       }
     ]
   }

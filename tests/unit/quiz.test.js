@@ -177,3 +177,15 @@ test("teacher's Jobs changes: idiom removed, only 经验 means experience", () =
   assert.ok(has("经验"));
   assert.equal(jobs.words.length, 26);
 });
+
+test("teacher's Friendship changes: English uses the same punctuation as other topics", () => {
+  const friendship = TOPICS.find((t) => t.id === "friendship");
+  for (const w of friendship.words) assert.ok(!/[；，（）：。]/.test(w.english), `${w.chinese}: ${w.english}`);
+  assert.equal(friendship.words.find((w) => w.chinese === "了解").english, "to understand; know");
+});
+
+test("teacher's Education changes: idioms removed", () => {
+  const education = TOPICS.find((t) => t.id === "education");
+  for (const removed of ["死记硬背", "望子成龙", "用心良苦"]) assert.ok(!education.words.some((w) => w.chinese === removed), removed);
+  assert.equal(education.words.length, 29);
+});
