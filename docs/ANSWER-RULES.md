@@ -164,3 +164,17 @@ Rules: none
 | 礼拜 | religious service | 宗教仪式 |
 
 All other Festivities 节日 words are graded exactly.
+
+## Entertainment 娱乐 (`entertainment`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 卡通片 | cartoon | 卡通 |
+| 功夫片 | kung fu movie | 武打片 |
+| 惊险片 | adventure film | 探险片 |
+
+All other Entertainment 娱乐 words are graded exactly.

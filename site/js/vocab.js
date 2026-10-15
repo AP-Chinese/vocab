@@ -1446,7 +1446,7 @@ export const TOPICS = [
       },
       {
         "chinese": "厚薄",
-        "pinyin": "hòu báo",
+        "pinyin": "hòu bó",
         "english": "thickness",
         "alsoAccepted": [
           "厚度"
@@ -2059,7 +2059,10 @@ export const TOPICS = [
       {
         "chinese": "卡通片",
         "pinyin": "kǎ tōng piàn",
-        "english": "cartoon"
+        "english": "cartoon",
+        "alsoAccepted": [
+          "卡通"
+        ]
       },
       {
         "chinese": "科幻片",
@@ -2084,12 +2087,18 @@ export const TOPICS = [
       {
         "chinese": "功夫片",
         "pinyin": "gōng fū piàn",
-        "english": "kung fu movie"
+        "english": "kung fu movie",
+        "alsoAccepted": [
+          "武打片"
+        ]
       },
       {
         "chinese": "惊险片",
         "pinyin": "jīng xiǎn piàn",
-        "english": "adventure film"
+        "english": "adventure film",
+        "alsoAccepted": [
+          "探险片"
+        ]
       },
       {
         "chinese": "连续剧",
@@ -2420,7 +2429,7 @@ export const TOPICS = [
       },
       {
         "chinese": "分散",
-        "pinyin": "fēn sǎn",
+        "pinyin": "fēn sàn",
         "english": "disperse"
       },
       {
