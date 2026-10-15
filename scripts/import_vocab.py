@@ -34,6 +34,10 @@ OVERRIDES = {
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
     ("jobs", "弊"): "disadvantage",  # was capitalized
+    ("friendship", "身材"): "stature; figure",  # was capitalized
+    ("friendship", "了解"): "to understand; know",  # was a full-width ；
+    ("friendship", "温和"): "gentle; soft",  # was a full-width ；
+    ("friendship", "交往"): "to associate / to contact / association / contact; to socialize or have dealings with",  # was a full-width ；
     ("art", "美术馆"): "art museum",  # was "pinacotheca"
     ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
@@ -111,6 +115,9 @@ TOPIC_NAMES = {
     "festivities": "Festivities 节日",  # "AP Chinese: Festivities"
     "lifestyle": "Lifestyle 生活方式",  # "AP Chinese - Lifestyle"
     "jobs": "Jobs 工作",  # "Jobs"
+    "friendship": "Friendship 友谊",  # "Friendship"
+    "housing": "Housing 住房",  # "Housing"
+    "education": "Education 教育",  # "AP Chinese - Education (pg. 382-383)"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
 
@@ -135,6 +142,9 @@ EXCLUDE = {
     ("jobs", "经历"),  # experience (经验 stays)
     ("jobs", "体验"),  # experience (经验 stays)
     ("jobs", "见识"),  # experience (经验 stays)
+    ("education", "死记硬背"),  # idiom: mechanical memorizing
+    ("education", "望子成龙"),  # idiom: hope for one's child to be very successful
+    ("education", "用心良苦"),  # idiom: well-meaning
     ("entertainment", "艺人"),  # actor; artist (演员 stays)
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough
