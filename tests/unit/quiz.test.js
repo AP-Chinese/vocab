@@ -162,3 +162,18 @@ test("teacher's Entertainment changes: 艺人 removed, 演员 stays", () => {
   assert.ok(entertainment.words.some((w) => w.chinese === "演员"));
   assert.equal(entertainment.words.length, 23);
 });
+
+test("teacher's Lifestyle changes: 负责人 became 负责", () => {
+  const lifestyle = TOPICS.find((t) => t.id === "lifestyle");
+  const word = (chinese) => lifestyle.words.find((w) => w.chinese === chinese);
+  assert.equal(word("负责人"), undefined);
+  assert.deepEqual(word("负责"), { chinese: "负责", pinyin: "fù zé", english: "to take responsibility" });
+});
+
+test("teacher's Jobs changes: idiom removed, only 经验 means experience", () => {
+  const jobs = TOPICS.find((t) => t.id === "jobs");
+  const has = (chinese) => jobs.words.some((w) => w.chinese === chinese);
+  for (const removed of ["上当受骗", "经历", "体验", "见识"]) assert.ok(!has(removed), removed);
+  assert.ok(has("经验"));
+  assert.equal(jobs.words.length, 26);
+});

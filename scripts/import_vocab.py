@@ -49,6 +49,7 @@ CHINESE_OVERRIDES = {
     ("family", "大伯"): "伯伯",  # father's elder brother
     ("family", "姑母"): "姑姑",  # father's sister
     ("family", "姨妈"): "姨姨",  # mother's sister
+    ("lifestyle", "负责人"): "负责",  # to take responsibility
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -130,6 +131,10 @@ EXCLUDE = {
     ("festivities", "五颜六色"),  # idiom: colorful
     ("festivities", "美味佳肴"),  # idiom: delicious food
     ("festivities", "前期白怪"),  # typo in the PDF for 千奇百怪; teacher said to remove it
+    ("jobs", "上当受骗"),  # idiom: be fooled and tricked
+    ("jobs", "经历"),  # experience (经验 stays)
+    ("jobs", "体验"),  # experience (经验 stays)
+    ("jobs", "见识"),  # experience (经验 stays)
     ("entertainment", "艺人"),  # actor; artist (演员 stays)
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough

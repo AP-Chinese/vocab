@@ -2329,8 +2329,8 @@ export const TOPICS = [
         "english": "to waste"
       },
       {
-        "chinese": "负责人",
-        "pinyin": "fù zé rén",
+        "chinese": "负责",
+        "pinyin": "fù zé",
         "english": "to take responsibility"
       },
       {
@@ -2392,11 +2392,6 @@ export const TOPICS = [
       {
         "chinese": "经验",
         "pinyin": "jīng yàn",
-        "english": "experience"
-      },
-      {
-        "chinese": "经历",
-        "pinyin": "jīng lì",
         "english": "experience"
       },
       {
@@ -2465,11 +2460,6 @@ export const TOPICS = [
         "english": "rich"
       },
       {
-        "chinese": "体验",
-        "pinyin": "tǐ yàn",
-        "english": "experience"
-      },
-      {
         "chinese": "考验",
         "pinyin": "kǎo yàn",
         "english": "test"
@@ -2478,11 +2468,6 @@ export const TOPICS = [
         "chinese": "观察",
         "pinyin": "guān chá",
         "english": "to observe"
-      },
-      {
-        "chinese": "见识",
-        "pinyin": "jiàn shí",
-        "english": "experience"
       },
       {
         "chinese": "基础",
@@ -2498,11 +2483,6 @@ export const TOPICS = [
         "chinese": "耽误",
         "pinyin": "dān wù",
         "english": "delay"
-      },
-      {
-        "chinese": "上当受骗",
-        "pinyin": "shàng dàng shòu piàn",
-        "english": "be fooled and tricked"
       },
       {
         "chinese": "协调",
