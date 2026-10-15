@@ -178,3 +178,23 @@ Rules: none
 | 惊险片 | adventure film | 探险片 |
 
 All other Entertainment 娱乐 words are graded exactly.
+
+## Lifestyle 生活方式 (`lifestyle`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 疾病 | disease | 病 |
+| 睡眠 | sleep | 睡觉 |
+| 充沛 | full of (energy); abundant | 精力充沛 |
+| 充足 | sufficient | 足够 |
+| 危害 | harm; danger | 危险 |
+| 疲倦 | tired | 累 |
+| 资源 | natural resources | 自然资源 |
+| 人生 | life | 生活 |
+| 守时 | to be punctual | 准时 |
+
+All other Lifestyle 生活方式 words are graded exactly.
