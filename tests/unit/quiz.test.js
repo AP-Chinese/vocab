@@ -150,8 +150,10 @@ test("teacher's Art changes: idiom removed, 美术馆 is art museum", () => {
   assert.equal(art.words.length, 36);
 });
 
-test("teacher's Festivities changes: idioms and the 前期白怪 typo removed", () => {
+test("teacher's Festivities changes: idioms and the 前期白怪 typo removed, 服饰 became 服装", () => {
   const festivities = TOPICS.find((t) => t.id === "festivities");
+  assert.ok(!festivities.words.some((w) => w.chinese === "服饰"));
+  assert.deepEqual(festivities.words.find((w) => w.chinese === "服装"), { chinese: "服装", pinyin: "fú zhuāng", english: "dress and personal adornment" });
   for (const removed of ["五颜六色", "美味佳肴", "前期白怪"]) assert.ok(!festivities.words.some((w) => w.chinese === removed), removed);
   assert.equal(festivities.words.length, 50);
 });

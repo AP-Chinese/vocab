@@ -1834,7 +1834,10 @@ export const TOPICS = [
       {
         "chinese": "元宵",
         "pinyin": "yuán xiāo",
-        "english": "sweet dumplings made of glutinous rice"
+        "english": "sweet dumplings made of glutinous rice",
+        "alsoAccepted": [
+          "汤圆"
+        ]
       },
       {
         "chinese": "花灯",
@@ -1884,7 +1887,10 @@ export const TOPICS = [
       {
         "chinese": "故乡",
         "pinyin": "gù xiāng",
-        "english": "hometown"
+        "english": "hometown",
+        "alsoAccepted": [
+          "家乡"
+        ]
       },
       {
         "chinese": "合家团圆",
@@ -1939,7 +1945,10 @@ export const TOPICS = [
       {
         "chinese": "礼拜",
         "pinyin": "lǐ bài",
-        "english": "religious service"
+        "english": "religious service",
+        "alsoAccepted": [
+          "宗教仪式"
+        ]
       },
       {
         "chinese": "欢乐",
@@ -1977,8 +1986,8 @@ export const TOPICS = [
         "english": "Halloween"
       },
       {
-        "chinese": "服饰",
-        "pinyin": "fú shì",
+        "chinese": "服装",
+        "pinyin": "fú zhuāng",
         "english": "dress and personal adornment"
       },
       {

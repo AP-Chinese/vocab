@@ -54,6 +54,7 @@ CHINESE_OVERRIDES = {
     ("family", "姑母"): "姑姑",  # father's sister
     ("family", "姨妈"): "姨姨",  # mother's sister
     ("lifestyle", "负责人"): "负责",  # to take responsibility
+    ("festivities", "服饰"): "服装",  # dress and personal adornment
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -104,6 +105,9 @@ ALSO_ACCEPTED = {
     ("entertainment", "惊险片"): ["探险片"],
     ("entertainment", "功夫片"): ["武打片"],
     ("entertainment", "卡通片"): ["卡通"],
+    ("festivities", "元宵"): ["汤圆"],
+    ("festivities", "礼拜"): ["宗教仪式"],
+    ("festivities", "故乡"): ["家乡"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
