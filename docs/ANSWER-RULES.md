@@ -150,3 +150,18 @@ Rules: none
 | 演出 | performance | 表演 |
 
 All other Art 艺术 words are graded exactly.
+
+## Jobs 工作 (`jobs`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 经验 | experience | 经历, 体验, 见识 |
+| 经历 | experience | 经验, 体验, 见识 |
+| 体验 | experience | 经验, 经历, 见识 |
+| 见识 | experience | 经验, 经历, 体验 |
+
+All other Jobs 工作 words are graded exactly.

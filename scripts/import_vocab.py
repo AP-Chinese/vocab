@@ -33,6 +33,7 @@ OVERRIDES = {
     ("family", "祖父"): "father's father",  # was "fathers's father"
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
+    ("jobs", "弊"): "disadvantage",  # was capitalized
     ("art", "美术馆"): "art museum",  # was "pinacotheca"
     ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
@@ -107,6 +108,8 @@ TOPIC_NAMES = {
     "clothing": "Clothing 服装",  # "AP Chinese Clothing"
     "art": "Art 艺术",  # "AP Chinese: Art"
     "festivities": "Festivities 节日",  # "AP Chinese: Festivities"
+    "lifestyle": "Lifestyle 生活方式",  # "AP Chinese - Lifestyle"
+    "jobs": "Jobs 工作",  # "Jobs"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
 
