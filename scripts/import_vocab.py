@@ -33,7 +33,6 @@ OVERRIDES = {
     ("family", "祖父"): "father's father",  # was "fathers's father"
     ("food", "纯净水"): "purified water",  # was "spring water"
     ("food", "白酒"): "baijiu (Chinese liquor)",  # was "alcohol"
-    ("jobs", "弊"): "disadvantage",  # was capitalized
     ("friendship", "身材"): "stature; figure",  # was capitalized
     ("friendship", "了解"): "to understand; know",  # was a full-width ；
     ("friendship", "温和"): "gentle; soft",  # was a full-width ；
@@ -118,6 +117,11 @@ ALSO_ACCEPTED = {
     ("lifestyle", "危害"): ["危险"],
     ("lifestyle", "睡眠"): ["睡觉"],
     ("lifestyle", "资源"): ["自然资源"],
+    ("jobs", "生活费"): ["生活费用"],
+    ("jobs", "丰富"): ["富有"],
+    ("jobs", "实践"): ["练习"],
+    ("jobs", "分忧"): ["分担"],
+    ("jobs", "接触"): ["联系"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -159,6 +163,8 @@ EXCLUDE = {
     ("jobs", "经历"),  # experience (经验 stays)
     ("jobs", "体验"),  # experience (经验 stays)
     ("jobs", "见识"),  # experience (经验 stays)
+    ("jobs", "利"),  # advantage, benefit, profit
+    ("jobs", "弊"),  # disadvantage
     ("education", "死记硬背"),  # idiom: mechanical memorizing
     ("education", "望子成龙"),  # idiom: hope for one's child to be very successful
     ("education", "用心良苦"),  # idiom: well-meaning

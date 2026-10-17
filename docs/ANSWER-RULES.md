@@ -198,3 +198,19 @@ Rules: none
 | 守时 | to be punctual | 准时 |
 
 All other Lifestyle 生活方式 words are graded exactly.
+
+## Jobs 工作 (`jobs`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 接触 | contact | 联系 |
+| 实践 | to practice | 练习 |
+| 分忧 | share someone's cares or burdens | 分担 |
+| 生活费 | living expenses | 生活费用 |
+| 丰富 | rich | 富有 |
+
+All other Jobs 工作 words are graded exactly.

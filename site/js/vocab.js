@@ -2400,19 +2400,12 @@ export const TOPICS = [
     "name": "Jobs 工作",
     "words": [
       {
-        "chinese": "利",
-        "pinyin": "lì",
-        "english": "advantage, benefit, profit"
-      },
-      {
-        "chinese": "弊",
-        "pinyin": "bì",
-        "english": "disadvantage"
-      },
-      {
         "chinese": "接触",
         "pinyin": "jiē chù",
-        "english": "contact"
+        "english": "contact",
+        "alsoAccepted": [
+          "联系"
+        ]
       },
       {
         "chinese": "复杂",
@@ -2437,7 +2430,10 @@ export const TOPICS = [
       {
         "chinese": "实践",
         "pinyin": "shí jiàn",
-        "english": "to practice"
+        "english": "to practice",
+        "alsoAccepted": [
+          "练习"
+        ]
       },
       {
         "chinese": "宝贵",
@@ -2472,7 +2468,10 @@ export const TOPICS = [
       {
         "chinese": "分忧",
         "pinyin": "fēn yōu",
-        "english": "share someone's cares or burdens"
+        "english": "share someone's cares or burdens",
+        "alsoAccepted": [
+          "分担"
+        ]
       },
       {
         "chinese": "学费",
@@ -2482,7 +2481,10 @@ export const TOPICS = [
       {
         "chinese": "生活费",
         "pinyin": "shēng huó fèi",
-        "english": "living expenses"
+        "english": "living expenses",
+        "alsoAccepted": [
+          "生活费用"
+        ]
       },
       {
         "chinese": "零用钱",
@@ -2492,7 +2494,10 @@ export const TOPICS = [
       {
         "chinese": "丰富",
         "pinyin": "fēng fù",
-        "english": "rich"
+        "english": "rich",
+        "alsoAccepted": [
+          "富有"
+        ]
       },
       {
         "chinese": "考验",
