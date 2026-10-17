@@ -17,7 +17,9 @@ test.describe("screens @visual", () => {
   });
 
   test("flashcard front and back", async ({ page }) => {
-    await page.goto("/#/topic/school/cards"); // a real School 学校 card
+    // The Test topic, so word changes to a real topic don't redo these screenshots
+    await openTestTopic(page);
+    await page.getByRole("link", { name: "Flashcards" }).click();
     await expect(page).toHaveScreenshot("flashcard-front.png");
     await page.locator(".card").click({ position: { x: 20, y: 20 } });
     await expect(page).toHaveScreenshot("flashcard-back.png");
