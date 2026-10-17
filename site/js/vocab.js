@@ -3266,9 +3266,12 @@ export const TOPICS = [
         "english": "play; drama; script"
       },
       {
-        "chinese": "随笔",
-        "pinyin": "suí bǐ",
-        "english": "essay"
+        "chinese": "文章",
+        "pinyin": "wén zhāng",
+        "english": "essay",
+        "alsoAccepted": [
+          "作文"
+        ]
       },
       {
         "chinese": "游记",
@@ -3281,11 +3284,6 @@ export const TOPICS = [
         "english": "biography"
       },
       {
-        "chinese": "报告文学",
-        "pinyin": "bào gào wén xué",
-        "english": "reportage"
-      },
-      {
         "chinese": "寓言",
         "pinyin": "yù yán",
         "english": "fables; allegory"
@@ -3293,7 +3291,10 @@ export const TOPICS = [
       {
         "chinese": "作家",
         "pinyin": "zuò jiā",
-        "english": "author"
+        "english": "author",
+        "alsoAccepted": [
+          "作者"
+        ]
       },
       {
         "chinese": "诗人",
@@ -3348,7 +3349,10 @@ export const TOPICS = [
       {
         "chinese": "史书",
         "pinyin": "shǐ shū",
-        "english": "historical records"
+        "english": "historical records",
+        "alsoAccepted": [
+          "历史记录"
+        ]
       },
       {
         "chinese": "畅销书",

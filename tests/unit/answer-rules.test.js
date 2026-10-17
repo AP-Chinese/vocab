@@ -169,6 +169,16 @@ test("Science and Technology: the teacher's other accepted answers count when ty
   assert.deepEqual(accepts("手机"), ["手机"]); // everything else stays exact
 });
 
+test("Literature and History: the teacher's other accepted answers count when typing", () => {
+  const topic = TOPICS.find((t) => t.id === "literature-and-history");
+  const accepts = (chinese) =>
+    acceptedAnswers(topic.words.find((w) => w.chinese === chinese), topic.words, answerVariants("literature-and-history")).sort();
+  assert.deepEqual(accepts("史书"), ["史书", "历史记录"].sort());
+  assert.deepEqual(accepts("文章"), ["文章", "作文"].sort());
+  assert.deepEqual(accepts("作家"), ["作家", "作者"].sort());
+  assert.deepEqual(accepts("诗人"), ["诗人"]); // everything else stays exact
+});
+
 test("Family: the teacher's other accepted answers count when typing", () => {
   const family = TOPICS.find((t) => t.id === "family");
   const accepts = (chinese) =>

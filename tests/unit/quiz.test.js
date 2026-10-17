@@ -222,9 +222,12 @@ test("teacher's School changes: sport is 运动, physical education is 体育, s
   assert.equal(school.words.length, 45);
 });
 
-test("teacher's Literature and History changes: English uses the same style as other topics", () => {
+test("teacher's Literature and History changes: English uses the same style as other topics, reportage removed", () => {
   const topic = TOPICS.find((t) => t.id === "literature-and-history");
-  assert.equal(topic.words.find((w) => w.chinese === "报告文学").english, "reportage");
+  assert.equal(topic.words.find((w) => w.chinese === "报告文学"), undefined);
+  assert.equal(topic.words.find((w) => w.chinese === "随笔"), undefined); // essay is 文章 now
+  assert.equal(topic.words.find((w) => w.chinese === "文章").english, "essay");
+  assert.equal(topic.words.length, 33);
   for (const w of topic.words) assert.ok(!/[；，（）：。]/.test(w.english), `${w.chinese}: ${w.english}`);
 });
 
