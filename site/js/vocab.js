@@ -50,8 +50,8 @@ export const TOPICS = [
         "english": "writing; composition"
       },
       {
-        "chinese": "体育",
-        "pinyin": "tǐ yù",
+        "chinese": "运动",
+        "pinyin": "yùn dòng",
         "english": "sport"
       },
       {

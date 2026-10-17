@@ -208,3 +208,12 @@ test("teacher's Education changes: idioms removed", () => {
   for (const removed of ["死记硬背", "望子成龙", "用心良苦"]) assert.ok(!education.words.some((w) => w.chinese === removed), removed);
   assert.equal(education.words.length, 29);
 });
+
+test("teacher's School changes: sport is 运动, physical education stays 体育教育", () => {
+  const school = TOPICS.find((t) => t.id === "school");
+  const word = (chinese) => school.words.find((w) => w.chinese === chinese);
+  assert.equal(word("体育"), undefined);
+  assert.deepEqual(word("运动"), { chinese: "运动", pinyin: "yùn dòng", english: "sport" });
+  assert.equal(word("体育教育").english, "physical education");
+  assert.equal(school.words.length, 46);
+});

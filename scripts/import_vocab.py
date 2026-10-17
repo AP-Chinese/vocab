@@ -58,6 +58,7 @@ CHINESE_OVERRIDES = {
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
+    ("school", "体育"): "运动",  # sport (体育教育 stays as physical education)
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
