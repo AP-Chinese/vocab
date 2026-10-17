@@ -2815,7 +2815,10 @@ export const TOPICS = [
       {
         "chinese": "乡村",
         "pinyin": "xiāng cūn",
-        "english": "countryside"
+        "english": "countryside",
+        "alsoAccepted": [
+          "农村"
+        ]
       },
       {
         "chinese": "镇",
@@ -2850,7 +2853,10 @@ export const TOPICS = [
       {
         "chinese": "位置",
         "pinyin": "wèi zhì",
-        "english": "location"
+        "english": "location",
+        "alsoAccepted": [
+          "地点"
+        ]
       },
       {
         "chinese": "区域",
@@ -2860,7 +2866,10 @@ export const TOPICS = [
       {
         "chinese": "住宅区",
         "pinyin": "zhù zhái qū",
-        "english": "residential area"
+        "english": "residential area",
+        "alsoAccepted": [
+          "居民区"
+        ]
       },
       {
         "chinese": "市区",
@@ -2875,7 +2884,10 @@ export const TOPICS = [
       {
         "chinese": "村",
         "pinyin": "cūn",
-        "english": "village"
+        "english": "village",
+        "alsoAccepted": [
+          "村庄"
+        ]
       },
       {
         "chinese": "公园",
@@ -2903,11 +2915,6 @@ export const TOPICS = [
         "english": "hospital"
       },
       {
-        "chinese": "幼稚园",
-        "pinyin": "yòu zhì yuán",
-        "english": "kindergarten"
-      },
-      {
         "chinese": "养老院",
         "pinyin": "yǎng lǎo yuàn",
         "english": "senior citizen's home"
@@ -2925,12 +2932,15 @@ export const TOPICS = [
       {
         "chinese": "马路",
         "pinyin": "mǎ lù",
-        "english": "road"
+        "english": "road",
+        "alsoAccepted": [
+          "路"
+        ]
       },
       {
         "chinese": "高速公路",
         "pinyin": "gāo sù gōng lù",
-        "english": "freeway"
+        "english": "freeway; highway"
       },
       {
         "chinese": "交通",
@@ -2955,7 +2965,10 @@ export const TOPICS = [
       {
         "chinese": "优美",
         "pinyin": "yōu měi",
-        "english": "beautiful"
+        "english": "beautiful",
+        "alsoAccepted": [
+          "美丽"
+        ]
       },
       {
         "chinese": "设备",
@@ -2985,7 +2998,10 @@ export const TOPICS = [
       {
         "chinese": "剧院",
         "pinyin": "jù yuàn",
-        "english": "theater"
+        "english": "theater",
+        "alsoAccepted": [
+          "剧场"
+        ]
       },
       {
         "chinese": "博物馆",
@@ -2995,7 +3011,7 @@ export const TOPICS = [
       {
         "chinese": "动物园",
         "pinyin": "dòng wù yuán",
-        "english": "zoological garden"
+        "english": "zoo"
       },
       {
         "chinese": "隔壁",
@@ -3035,7 +3051,10 @@ export const TOPICS = [
       {
         "chinese": "海滨",
         "pinyin": "hǎi bīn",
-        "english": "seashore; seaside"
+        "english": "seashore; seaside",
+        "alsoAccepted": [
+          "海边"
+        ]
       },
       {
         "chinese": "山",

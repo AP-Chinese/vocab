@@ -112,6 +112,21 @@ test("Friendship: the teacher's other accepted answers count when typing", () =>
   assert.deepEqual(accepts("幸福"), ["幸福"]); // everything else stays exact
 });
 
+test("Housing: the teacher's other accepted answers count when typing", () => {
+  const housing = TOPICS.find((t) => t.id === "housing");
+  const accepts = (chinese) =>
+    acceptedAnswers(housing.words.find((w) => w.chinese === chinese), housing.words, answerVariants("housing")).sort();
+  assert.deepEqual(accepts("乡村"), ["乡村", "农村"].sort());
+  assert.deepEqual(accepts("优美"), ["优美", "美丽"].sort());
+  assert.deepEqual(accepts("海滨"), ["海滨", "海边"].sort());
+  assert.deepEqual(accepts("村"), ["村", "村庄"].sort());
+  assert.deepEqual(accepts("马路"), ["马路", "路"].sort());
+  assert.deepEqual(accepts("住宅区"), ["住宅区", "居民区"].sort());
+  assert.deepEqual(accepts("位置"), ["位置", "地点"].sort());
+  assert.deepEqual(accepts("剧院"), ["剧院", "剧场"].sort());
+  assert.deepEqual(accepts("城市"), ["城市"]); // everything else stays exact
+});
+
 test("Transportation: the teacher's other accepted answers count when typing", () => {
   const transportation = TOPICS.find((t) => t.id === "transportation");
   const accepts = (chinese) =>

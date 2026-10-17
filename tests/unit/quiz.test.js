@@ -110,6 +110,14 @@ test("teacher's Travel changes: removals, embassy, and the added word", () => {
   assert.deepEqual(word("高铁"), { chinese: "高铁", pinyin: "gāo tiě", english: "high-speed rail" });
 });
 
+test("teacher's Housing changes: 幼稚园 removed, zoo, freeway; highway", () => {
+  const housing = TOPICS.find((t) => t.id === "housing");
+  const word = (chinese) => housing.words.find((w) => w.chinese === chinese);
+  assert.equal(word("幼稚园"), undefined);
+  assert.equal(word("动物园").english, "zoo");
+  assert.equal(word("高速公路").english, "freeway; highway");
+});
+
 test("teacher's Transportation changes: idioms removed", () => {
   const transportation = TOPICS.find((t) => t.id === "transportation");
   const has = (chinese) => transportation.words.some((w) => w.chinese === chinese);
