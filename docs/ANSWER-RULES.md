@@ -235,3 +235,21 @@ Rules: none
 | 争执 | argue, disagree | 争吵 |
 
 All other Friendship 友谊 words are graded exactly.
+
+## Housing 住房 (`housing`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 乡村 | countryside | 农村 |
+| 位置 | location | 地点 |
+| 住宅区 | residential area | 居民区 |
+| 村 | village | 村庄 |
+| 马路 | road | 路 |
+| 优美 | beautiful | 美丽 |
+| 海滨 | seashore; seaside | 海边 |
+
+All other Housing 住房 words are graded exactly.

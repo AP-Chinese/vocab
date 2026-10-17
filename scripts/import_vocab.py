@@ -41,6 +41,8 @@ OVERRIDES = {
     ("art", "美术馆"): "art museum",  # was "pinacotheca"
     ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
+    ("housing", "动物园"): "zoo",  # was "zoological garden"
+    ("housing", "高速公路"): "freeway; highway",  # was "freeway"
     # The PDF wraps these two meanings across each other, so the text came out mixed up
     ("art", "文房四宝"): "the four treasures of the study: writing brush, ink stick, ink slab, paper",
     ("art", "琴棋书画"): "the four arts traditionally studied by the educated (chess, the guqin/zither, painting, and calligraphy)",
@@ -72,6 +74,13 @@ ALSO_ACCEPTED = {
     ("travel", "机票"): ["飞机票"],
     ("travel", "游览区"): ["景区"],
     ("travel", "飞行"): ["航班"],
+    ("housing", "乡村"): ["农村"],
+    ("housing", "优美"): ["美丽"],
+    ("housing", "海滨"): ["海边"],
+    ("housing", "村"): ["村庄"],
+    ("housing", "马路"): ["路"],
+    ("housing", "住宅区"): ["居民区"],
+    ("housing", "位置"): ["地点"],
     ("transportation", "交通事故"): ["事故"],
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],
@@ -185,6 +194,7 @@ EXCLUDE = {
     ("lifestyle", "疲惫"),  # exhausted (疲倦 tired stays)
     ("lifestyle", "劳累"),  # tired, exhausted, fatigued
     ("friendship", "温柔"),  # gentle, soft (温和 stays and accepts 温柔)
+    ("housing", "幼稚园"),  # kindergarten
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
