@@ -273,6 +273,20 @@ Rules: none
 
 All other Education 教育 words are graded exactly.
 
+## Society 社会 (`society`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 变化 | change | 改变 |
+| 妇女 | women; women in general | 女性, 女人 |
+| 偷窃 | steal; pilfer | 偷, 偷盗 |
+
+All other Society 社会 words are graded exactly.
+
 ## Science and Technology 科学与技术 (`science-and-technology`)
 
 Rules: none
