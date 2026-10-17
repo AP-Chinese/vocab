@@ -37,6 +37,7 @@ OVERRIDES = {
     ("friendship", "了解"): "to understand; know",  # was a full-width ；
     ("friendship", "温和"): "gentle; soft",  # was a full-width ；
     ("friendship", "交往"): "to associate / to contact / association / contact; to socialize or have dealings with",  # was a full-width ；
+    ("friendship", "程度"): "level (of education, ability)",  # was "degree; level (of education, ability)"
     ("art", "美术馆"): "art museum",  # was "pinacotheca"
     ("sports", "橄榄球"): "American football",  # was "rugby; football"
     ("travel", "领事馆"): "embassy",  # was "consulate"; the Chinese becomes 大使馆 below
@@ -96,6 +97,16 @@ ALSO_ACCEPTED = {
     ("clothing", "厚薄"): ["厚度"],
     ("clothing", "长短"): ["长度"],
     ("clothing", "运动服"): ["运动衣"],
+    ("friendship", "感情"): ["感受"],
+    ("friendship", "争执"): ["争吵"],
+    ("friendship", "急躁"): ["不耐烦"],
+    ("friendship", "沟通"): ["交流"],
+    ("friendship", "性格"): ["个性"],
+    ("friendship", "勤奋"): ["努力"],
+    ("friendship", "兴趣"): ["爱好"],
+    ("friendship", "彼此"): ["对方"],
+    ("friendship", "长相"): ["外表", "外貌"],
+    ("friendship", "温和"): ["温柔"],  # 温柔 is removed as its own card (same English)
     ("art", "舞蹈"): ["跳舞"],
     ("art", "宝贵"): ["宝贵的", "值钱的", "珍贵的"],
     ("art", "喜爱"): ["喜欢"],
@@ -173,6 +184,7 @@ EXCLUDE = {
     ("food", "老"),  # tough
     ("lifestyle", "疲惫"),  # exhausted (疲倦 tired stays)
     ("lifestyle", "劳累"),  # tired, exhausted, fatigued
+    ("friendship", "温柔"),  # gentle, soft (温和 stays and accepts 温柔)
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).

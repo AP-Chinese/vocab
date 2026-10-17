@@ -214,3 +214,24 @@ Rules: none
 | 丰富 | rich | 富有 |
 
 All other Jobs 工作 words are graded exactly.
+
+## Friendship 友谊 (`friendship`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 彼此 | each other | 对方 |
+| 感情 | feeling; emotion; affection | 感受 |
+| 性格 | personality | 个性 |
+| 急躁 | impetuous; impatient | 不耐烦 |
+| 温和 | gentle; soft | 温柔 |
+| 勤奋 | hardworking; diligent | 努力 |
+| 长相 | looks, appearance | 外表, 外貌 |
+| 兴趣 | interest, hobby | 爱好 |
+| 沟通 | communicate | 交流 |
+| 争执 | argue, disagree | 争吵 |
+
+All other Friendship 友谊 words are graded exactly.
