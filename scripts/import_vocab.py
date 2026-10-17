@@ -94,6 +94,8 @@ ALSO_ACCEPTED = {
     ("housing", "住宅区"): ["居民区"],
     ("housing", "位置"): ["地点"],
     ("housing", "剧院"): ["剧场"],
+    ("housing", "城市"): ["市"],
+    ("housing", "河"): ["河流"],
     ("transportation", "交通事故"): ["事故"],
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],
@@ -160,6 +162,16 @@ ALSO_ACCEPTED = {
     ("society", "妇女"): ["女性", "女人"],
     ("society", "变化"): ["改变"],
     ("society", "偷窃"): ["偷", "偷盗"],
+    ("geography-and-climate", "市"): ["城市"],
+    ("geography-and-climate", "山脉"): ["山"],
+    ("geography-and-climate", "海洋"): ["大海", "海"],
+    ("geography-and-climate", "云"): ["云朵"],
+    ("geography-and-climate", "湿润"): ["湿"],
+    ("geography-and-climate", "旱灾"): ["干旱"],
+    ("geography-and-climate", "河流"): ["河"],
+    ("geography-and-climate", "自然灾难"): ["自然灾害"],
+    ("geography-and-climate", "干燥"): ["干"],
+    ("geography-and-climate", "区"): ["地区"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.

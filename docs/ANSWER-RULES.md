@@ -249,6 +249,7 @@ Rules: none
 
 | Word | English | Also accepted |
 |---|---|---|
+| 城市 | city | 市 |
 | 乡村 | countryside | 农村 |
 | 位置 | location | 地点 |
 | 住宅区 | residential area | 居民区 |
@@ -256,6 +257,7 @@ Rules: none
 | 马路 | road | 路 |
 | 优美 | beautiful | 美丽 |
 | 剧院 | theater | 剧场 |
+| 河 | river | 河流 |
 | 海滨 | seashore; seaside | 海边 |
 
 All other Housing 住房 words are graded exactly.
@@ -286,6 +288,27 @@ Rules: none
 | 偷窃 | steal; pilfer | 偷, 偷盗 |
 
 All other Society 社会 words are graded exactly.
+
+## Geography and Climate 地理与气候 (`geography-and-climate`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 市 | city | 城市 |
+| 区 | district | 地区 |
+| 海洋 | ocean | 大海, 海 |
+| 山脉 | mountain | 山 |
+| 河流 | river | 河 |
+| 干燥 | dry | 干 |
+| 湿润 | wet | 湿 |
+| 云 | cloud | 云朵 |
+| 自然灾难 | natural disaster | 自然灾害 |
+| 旱灾 | drought | 干旱 |
+
+All other Geography and Climate 地理与气候 words are graded exactly.
 
 ## Science and Technology 科学与技术 (`science-and-technology`)
 

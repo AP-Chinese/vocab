@@ -2811,7 +2811,10 @@ export const TOPICS = [
       {
         "chinese": "城市",
         "pinyin": "chéng shì",
-        "english": "city"
+        "english": "city",
+        "alsoAccepted": [
+          "市"
+        ]
       },
       {
         "chinese": "乡村",
@@ -3037,7 +3040,10 @@ export const TOPICS = [
       {
         "chinese": "河",
         "pinyin": "hé",
-        "english": "river"
+        "english": "river",
+        "alsoAccepted": [
+          "河流"
+        ]
       },
       {
         "chinese": "湖",
@@ -3546,12 +3552,18 @@ export const TOPICS = [
       {
         "chinese": "市",
         "pinyin": "shì",
-        "english": "city"
+        "english": "city",
+        "alsoAccepted": [
+          "城市"
+        ]
       },
       {
         "chinese": "区",
         "pinyin": "qū",
-        "english": "district"
+        "english": "district",
+        "alsoAccepted": [
+          "地区"
+        ]
       },
       {
         "chinese": "首都",
@@ -3561,7 +3573,11 @@ export const TOPICS = [
       {
         "chinese": "海洋",
         "pinyin": "hǎi yáng",
-        "english": "ocean"
+        "english": "ocean",
+        "alsoAccepted": [
+          "大海",
+          "海"
+        ]
       },
       {
         "chinese": "森林",
@@ -3576,12 +3592,18 @@ export const TOPICS = [
       {
         "chinese": "山脉",
         "pinyin": "shān mài",
-        "english": "mountain"
+        "english": "mountain",
+        "alsoAccepted": [
+          "山"
+        ]
       },
       {
         "chinese": "河流",
         "pinyin": "hé liú",
-        "english": "river"
+        "english": "river",
+        "alsoAccepted": [
+          "河"
+        ]
       },
       {
         "chinese": "平原",
@@ -3631,12 +3653,18 @@ export const TOPICS = [
       {
         "chinese": "干燥",
         "pinyin": "gān zào",
-        "english": "dry"
+        "english": "dry",
+        "alsoAccepted": [
+          "干"
+        ]
       },
       {
         "chinese": "湿润",
         "pinyin": "shī rùn",
-        "english": "wet"
+        "english": "wet",
+        "alsoAccepted": [
+          "湿"
+        ]
       },
       {
         "chinese": "风",
@@ -3651,7 +3679,10 @@ export const TOPICS = [
       {
         "chinese": "云",
         "pinyin": "yún",
-        "english": "cloud"
+        "english": "cloud",
+        "alsoAccepted": [
+          "云朵"
+        ]
       },
       {
         "chinese": "全球变暖",
@@ -3666,7 +3697,10 @@ export const TOPICS = [
       {
         "chinese": "自然灾难",
         "pinyin": "zì rán zāi nàn",
-        "english": "natural disaster"
+        "english": "natural disaster",
+        "alsoAccepted": [
+          "自然灾害"
+        ]
       },
       {
         "chinese": "洪水",
@@ -3676,7 +3710,10 @@ export const TOPICS = [
       {
         "chinese": "旱灾",
         "pinyin": "hàn zāi",
-        "english": "drought"
+        "english": "drought",
+        "alsoAccepted": [
+          "干旱"
+        ]
       },
       {
         "chinese": "火灾",
