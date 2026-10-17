@@ -3412,11 +3412,6 @@ export const TOPICS = [
         "english": "opportunity"
       },
       {
-        "chinese": "贫富不均",
-        "pinyin": "pín fù bù jūn",
-        "english": "unequal distribution of wealth"
-      },
-      {
         "chinese": "歧视",
         "pinyin": "qí shì",
         "english": "to discriminate (against)"
@@ -3430,11 +3425,6 @@ export const TOPICS = [
         "chinese": "重男轻女",
         "pinyin": "zhòng nán qīng nǚ",
         "english": "to regard males as superior to females"
-      },
-      {
-        "chinese": "同工同酬",
-        "pinyin": "tóng gōng tóng chóu",
-        "english": "equal pay for equal work"
       },
       {
         "chinese": "失业",

@@ -195,6 +195,8 @@ EXCLUDE = {
     ("festivities", "五颜六色"),  # idiom: colorful
     ("festivities", "美味佳肴"),  # idiom: delicious food
     ("festivities", "前期白怪"),  # typo in the PDF for 千奇百怪; teacher said to remove it
+    ("society", "贫富不均"),  # idiom: unequal distribution of wealth (重男轻女 stays)
+    ("society", "同工同酬"),  # idiom: equal pay for equal work
     ("jobs", "上当受骗"),  # idiom: be fooled and tricked
     ("jobs", "经历"),  # experience (经验 stays)
     ("jobs", "体验"),  # experience (经验 stays)

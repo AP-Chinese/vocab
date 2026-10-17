@@ -219,3 +219,17 @@ test("teacher's School changes: sport is 运动, physical education is 体育, s
   assert.equal(word("社会学科").english, "social studies");
   assert.equal(school.words.length, 45);
 });
+
+test("teacher's Literature and History changes: English uses the same style as other topics", () => {
+  const topic = TOPICS.find((t) => t.id === "literature-and-history");
+  assert.equal(topic.words.find((w) => w.chinese === "报告文学").english, "reportage");
+  for (const w of topic.words) assert.ok(!/[；，（）：。]/.test(w.english), `${w.chinese}: ${w.english}`);
+});
+
+test("teacher's Society changes: idioms removed except 重男轻女", () => {
+  const society = TOPICS.find((t) => t.id === "society");
+  const has = (chinese) => society.words.some((w) => w.chinese === chinese);
+  for (const removed of ["贫富不均", "同工同酬"]) assert.ok(!has(removed), removed);
+  assert.ok(has("重男轻女"));
+  assert.equal(society.words.length, 22);
+});
