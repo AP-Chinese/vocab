@@ -259,3 +259,16 @@ Rules: none
 | 海滨 | seashore; seaside | 海边 |
 
 All other Housing 住房 words are graded exactly.
+
+## Education 教育 (`education`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 方式 | method | 方法 |
+| 本领 | skill; capability | 能力 |
+
+All other Education 教育 words are graded exactly.

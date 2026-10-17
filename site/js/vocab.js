@@ -3069,16 +3069,6 @@ export const TOPICS = [
     "name": "Education 教育",
     "words": [
       {
-        "chinese": "普及教育",
-        "pinyin": "pǔ jí jiào yù",
-        "english": "universal education"
-      },
-      {
-        "chinese": "义务教育",
-        "pinyin": "yì wù jiào yù",
-        "english": "compulsory education"
-      },
-      {
         "chinese": "优点",
         "pinyin": "yōu diǎn",
         "english": "strong point; strengths"
@@ -3091,17 +3081,10 @@ export const TOPICS = [
       {
         "chinese": "方式",
         "pinyin": "fāng shì",
-        "english": "method"
-      },
-      {
-        "chinese": "填鸭式",
-        "pinyin": "tián yā shì",
-        "english": "cramming method (in teaching)"
-      },
-      {
-        "chinese": "启发式",
-        "pinyin": "qǐ fā shì",
-        "english": "elicitation method (in teaching); heuristic method"
+        "english": "method",
+        "alsoAccepted": [
+          "方法"
+        ]
       },
       {
         "chinese": "主动性",
@@ -3156,7 +3139,10 @@ export const TOPICS = [
       {
         "chinese": "本领",
         "pinyin": "běn lǐng",
-        "english": "skill; capability"
+        "english": "skill; capability",
+        "alsoAccepted": [
+          "能力"
+        ]
       },
       {
         "chinese": "竞争",
@@ -3202,11 +3188,6 @@ export const TOPICS = [
         "chinese": "目标",
         "pinyin": "mù biāo",
         "english": "goal"
-      },
-      {
-        "chinese": "补习班",
-        "pinyin": "bǔ xí bān",
-        "english": "cram school"
       },
       {
         "chinese": "辅导",
