@@ -3487,5 +3487,533 @@ export const TOPICS = [
         "english": "steal; pilfer"
       }
     ]
+  },
+  {
+    "id": "geography-and-climate",
+    "name": "Geography and Climate 地理与气候",
+    "words": [
+      {
+        "chinese": "地理",
+        "pinyin": "dì lǐ",
+        "english": "geography"
+      },
+      {
+        "chinese": "国家",
+        "pinyin": "guó jiā",
+        "english": "country"
+      },
+      {
+        "chinese": "面积",
+        "pinyin": "miàn jī",
+        "english": "area"
+      },
+      {
+        "chinese": "人口",
+        "pinyin": "rén kǒu",
+        "english": "population"
+      },
+      {
+        "chinese": "国旗",
+        "pinyin": "guó qí",
+        "english": "national flag"
+      },
+      {
+        "chinese": "州",
+        "pinyin": "zhōu",
+        "english": "state"
+      },
+      {
+        "chinese": "省",
+        "pinyin": "shěng",
+        "english": "province"
+      },
+      {
+        "chinese": "县",
+        "pinyin": "xiàn",
+        "english": "county"
+      },
+      {
+        "chinese": "市",
+        "pinyin": "shì",
+        "english": "city"
+      },
+      {
+        "chinese": "区",
+        "pinyin": "qū",
+        "english": "district"
+      },
+      {
+        "chinese": "首都",
+        "pinyin": "shǒu dū",
+        "english": "capital"
+      },
+      {
+        "chinese": "海洋",
+        "pinyin": "hǎi yáng",
+        "english": "ocean"
+      },
+      {
+        "chinese": "森林",
+        "pinyin": "sēn lín",
+        "english": "forest"
+      },
+      {
+        "chinese": "沙漠",
+        "pinyin": "shā mò",
+        "english": "desert"
+      },
+      {
+        "chinese": "山脉",
+        "pinyin": "shān mài",
+        "english": "mountain"
+      },
+      {
+        "chinese": "河流",
+        "pinyin": "hé liú",
+        "english": "river"
+      },
+      {
+        "chinese": "平原",
+        "pinyin": "píng yuán",
+        "english": "plain; flatlands"
+      },
+      {
+        "chinese": "高原",
+        "pinyin": "gāo yuán",
+        "english": "plateau; highland"
+      },
+      {
+        "chinese": "山谷",
+        "pinyin": "shān gǔ",
+        "english": "valley"
+      },
+      {
+        "chinese": "气候",
+        "pinyin": "qì hòu",
+        "english": "climate"
+      },
+      {
+        "chinese": "天气",
+        "pinyin": "tiān qì",
+        "english": "weather"
+      },
+      {
+        "chinese": "季节",
+        "pinyin": "jì jié",
+        "english": "season"
+      },
+      {
+        "chinese": "特点",
+        "pinyin": "tè diǎn",
+        "english": "feature; special characteristic"
+      },
+      {
+        "chinese": "平均",
+        "pinyin": "píng jūn",
+        "english": "average"
+      },
+      {
+        "chinese": "温度",
+        "pinyin": "wēn dù",
+        "english": "temperature"
+      },
+      {
+        "chinese": "干燥",
+        "pinyin": "gān zào",
+        "english": "dry"
+      },
+      {
+        "chinese": "湿润",
+        "pinyin": "shī rùn",
+        "english": "wet"
+      },
+      {
+        "chinese": "风",
+        "pinyin": "fēng",
+        "english": "wind"
+      },
+      {
+        "chinese": "雨",
+        "pinyin": "yǔ",
+        "english": "rain"
+      },
+      {
+        "chinese": "云",
+        "pinyin": "yún",
+        "english": "cloud"
+      },
+      {
+        "chinese": "全球变暖",
+        "pinyin": "quán qiú biàn nuǎn",
+        "english": "global warming"
+      },
+      {
+        "chinese": "温室效应",
+        "pinyin": "wēn shì xiào yìng",
+        "english": "greenhouse effect"
+      },
+      {
+        "chinese": "自然灾难",
+        "pinyin": "zì rán zāi nàn",
+        "english": "natural disaster"
+      },
+      {
+        "chinese": "洪水",
+        "pinyin": "hóng shuǐ",
+        "english": "flood"
+      },
+      {
+        "chinese": "旱灾",
+        "pinyin": "hàn zāi",
+        "english": "drought"
+      },
+      {
+        "chinese": "火灾",
+        "pinyin": "huǒ zāi",
+        "english": "fire (as a disaster)"
+      },
+      {
+        "chinese": "地震",
+        "pinyin": "dì zhèn",
+        "english": "earthquake"
+      }
+    ]
+  },
+  {
+    "id": "science-and-technology",
+    "name": "Science and Technology 科学与技术",
+    "words": [
+      {
+        "chinese": "科学",
+        "pinyin": "kē xué",
+        "english": "science"
+      },
+      {
+        "chinese": "科学家",
+        "pinyin": "kē xué jiā",
+        "english": "scientist"
+      },
+      {
+        "chinese": "电子",
+        "pinyin": "diàn zi",
+        "english": "electronics"
+      },
+      {
+        "chinese": "高科技",
+        "pinyin": "gāo kē jì",
+        "english": "high technology"
+      },
+      {
+        "chinese": "机器人",
+        "pinyin": "jī qì rén",
+        "english": "robot"
+      },
+      {
+        "chinese": "电脑",
+        "pinyin": "diàn nǎo",
+        "english": "computer"
+      },
+      {
+        "chinese": "网络",
+        "pinyin": "wǎng luò",
+        "english": "internet"
+      },
+      {
+        "chinese": "电子信",
+        "pinyin": "diàn zi xìn",
+        "english": "email"
+      },
+      {
+        "chinese": "手机",
+        "pinyin": "shǒu jī",
+        "english": "cell phone"
+      },
+      {
+        "chinese": "发明",
+        "pinyin": "fā míng",
+        "english": "invention"
+      },
+      {
+        "chinese": "克隆",
+        "pinyin": "kè lóng",
+        "english": "cloning"
+      },
+      {
+        "chinese": "太阳能",
+        "pinyin": "tài yáng néng",
+        "english": "solar energy"
+      },
+      {
+        "chinese": "汽车",
+        "pinyin": "qì chē",
+        "english": "automobile"
+      },
+      {
+        "chinese": "实现",
+        "pinyin": "shí xiàn",
+        "english": "to realize"
+      },
+      {
+        "chinese": "梦想",
+        "pinyin": "mèng xiǎng",
+        "english": "to dream"
+      },
+      {
+        "chinese": "改善",
+        "pinyin": "gǎi shàn",
+        "english": "to improve"
+      },
+      {
+        "chinese": "改变",
+        "pinyin": "gǎi biàn",
+        "english": "change"
+      },
+      {
+        "chinese": "提高",
+        "pinyin": "tí gāo",
+        "english": "to improve"
+      },
+      {
+        "chinese": "效率",
+        "pinyin": "xiào lǜ",
+        "english": "efficiency"
+      },
+      {
+        "chinese": "积极面",
+        "pinyin": "jī jí miàn",
+        "english": "positive side"
+      },
+      {
+        "chinese": "消极面",
+        "pinyin": "xiāo jí miàn",
+        "english": "negative side"
+      }
+    ]
+  },
+  {
+    "id": "human-and-nature",
+    "name": "Human and Nature 人与自然",
+    "words": [
+      {
+        "chinese": "人类",
+        "pinyin": "rén lèi",
+        "english": "mankind"
+      },
+      {
+        "chinese": "自然",
+        "pinyin": "zì rán",
+        "english": "nature, natural"
+      },
+      {
+        "chinese": "动物",
+        "pinyin": "dòng wù",
+        "english": "animal"
+      },
+      {
+        "chinese": "生物",
+        "pinyin": "shēng wù",
+        "english": "biology"
+      },
+      {
+        "chinese": "植物",
+        "pinyin": "zhí wù",
+        "english": "plant"
+      },
+      {
+        "chinese": "环境",
+        "pinyin": "huán jìng",
+        "english": "environment"
+      },
+      {
+        "chinese": "保护",
+        "pinyin": "bǎo hù",
+        "english": "to protect"
+      },
+      {
+        "chinese": "污染",
+        "pinyin": "wū rǎn",
+        "english": "pollution"
+      },
+      {
+        "chinese": "资源",
+        "pinyin": "zī yuán",
+        "english": "resources"
+      },
+      {
+        "chinese": "能源",
+        "pinyin": "néng yuán",
+        "english": "energy resources"
+      },
+      {
+        "chinese": "平衡",
+        "pinyin": "píng héng",
+        "english": "balance; balanced"
+      },
+      {
+        "chinese": "工业",
+        "pinyin": "gōng yè",
+        "english": "industry"
+      },
+      {
+        "chinese": "化学",
+        "pinyin": "huà xué",
+        "english": "chemistry"
+      },
+      {
+        "chinese": "废物",
+        "pinyin": "fèi wù",
+        "english": "wastes"
+      },
+      {
+        "chinese": "垃圾",
+        "pinyin": "lā jī",
+        "english": "trash, garbage"
+      },
+      {
+        "chinese": "排放",
+        "pinyin": "pái fàng",
+        "english": "discharge"
+      },
+      {
+        "chinese": "废气",
+        "pinyin": "fèi qì",
+        "english": "waste gas or steam"
+      },
+      {
+        "chinese": "废渣",
+        "pinyin": "fèi zhā",
+        "english": "waste residue; solid waste"
+      },
+      {
+        "chinese": "废水",
+        "pinyin": "fèi shuǐ",
+        "english": "waste water"
+      },
+      {
+        "chinese": "噪音",
+        "pinyin": "zào yīn",
+        "english": "noise"
+      },
+      {
+        "chinese": "臭氧层",
+        "pinyin": "chòu yǎng céng",
+        "english": "ozone layer; ozonosphere"
+      },
+      {
+        "chinese": "酸雨",
+        "pinyin": "suān yǔ",
+        "english": "acid rain"
+      },
+      {
+        "chinese": "治理",
+        "pinyin": "zhì lǐ",
+        "english": "bring under control; manage"
+      },
+      {
+        "chinese": "回收",
+        "pinyin": "huí shōu",
+        "english": "to recycle"
+      },
+      {
+        "chinese": "废物利用",
+        "pinyin": "fèi wù lì yòng",
+        "english": "waste use"
+      },
+      {
+        "chinese": "实验",
+        "pinyin": "shí yàn",
+        "english": "experiment"
+      },
+      {
+        "chinese": "解剖",
+        "pinyin": "jiě pōu",
+        "english": "dissect"
+      },
+      {
+        "chinese": "人道",
+        "pinyin": "rén dào",
+        "english": "humanitarianism; humane"
+      },
+      {
+        "chinese": "残忍",
+        "pinyin": "cán rěn",
+        "english": "brutal, cruel"
+      },
+      {
+        "chinese": "忽略",
+        "pinyin": "hū lüè",
+        "english": "overlook, ignore"
+      },
+      {
+        "chinese": "意识",
+        "pinyin": "yì shí",
+        "english": "consciousness"
+      },
+      {
+        "chinese": "薄弱",
+        "pinyin": "bó ruò",
+        "english": "weak, frail"
+      },
+      {
+        "chinese": "破坏",
+        "pinyin": "pò huài",
+        "english": "to destroy"
+      },
+      {
+        "chinese": "热带雨林",
+        "pinyin": "rè dài yǔ lín",
+        "english": "tropical rain forest"
+      },
+      {
+        "chinese": "稀有",
+        "pinyin": "xī yǒu",
+        "english": "rare"
+      },
+      {
+        "chinese": "珍贵",
+        "pinyin": "zhēn guì",
+        "english": "valuable, precious"
+      },
+      {
+        "chinese": "面临",
+        "pinyin": "miàn lín",
+        "english": "to face; to be confronted with"
+      },
+      {
+        "chinese": "濒临",
+        "pinyin": "bīn lín",
+        "english": "to be on the verge of"
+      },
+      {
+        "chinese": "灭绝",
+        "pinyin": "miè jué",
+        "english": "exterminate; become extinct"
+      },
+      {
+        "chinese": "抗议",
+        "pinyin": "kàng yì",
+        "english": "protest; protection"
+      },
+      {
+        "chinese": "避免",
+        "pinyin": "bì miǎn",
+        "english": "to avoid"
+      },
+      {
+        "chinese": "采取",
+        "pinyin": "cǎi qǔ",
+        "english": "to take; to adopt (measures, methods, steps)"
+      },
+      {
+        "chinese": "措施",
+        "pinyin": "cuò shī",
+        "english": "measure, step"
+      },
+      {
+        "chinese": "保护区",
+        "pinyin": "bǎo hù qū",
+        "english": "protected area"
+      }
+    ]
   }
 ];

@@ -173,6 +173,9 @@ TOPIC_NAMES = {
     "housing": "Housing 住房",  # "Housing"
     "literature-and-history": "Literature and History 文学与历史",  # "Literature and History"
     "society": "Society 社会",  # "Society"
+    "geography-and-climate": "Geography and Climate 地理与气候",  # "ap chinese: geography & climate"
+    "science-and-technology": "Science and Technology 科学与技术",  # "AP Chinese - Science and Technology"
+    "human-and-nature": "Human and Nature 人与自然",  # "AP Chinese Human & Nature"
     "education": "Education 教育",  # "AP Chinese - Education (pg. 382-383)"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }

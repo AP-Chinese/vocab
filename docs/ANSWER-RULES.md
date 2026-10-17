@@ -272,3 +272,16 @@ Rules: none
 | 本领 | skill; capability | 能力 |
 
 All other Education 教育 words are graded exactly.
+
+## Science and Technology 科学与技术 (`science-and-technology`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 改善 | to improve | 提高 |
+| 提高 | to improve | 改善 |
+
+All other Science and Technology 科学与技术 words are graded exactly.
