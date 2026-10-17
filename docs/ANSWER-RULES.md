@@ -273,6 +273,20 @@ Rules: none
 
 All other Education 教育 words are graded exactly.
 
+## Literature and History 文学与历史 (`literature-and-history`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 文章 | essay | 作文 |
+| 作家 | author | 作者 |
+| 史书 | historical records | 历史记录 |
+
+All other Literature and History 文学与历史 words are graded exactly.
+
 ## Society 社会 (`society`)
 
 Rules: none

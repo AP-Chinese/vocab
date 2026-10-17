@@ -26,7 +26,6 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 # Teacher-approved corrections to the source sets: (topic ID, chinese) -> english.
 OVERRIDES = {
     ("human-and-nature", "抗议"): "protest",  # was "protest; protection"
-    ("literature-and-history", "报告文学"): "reportage",  # was capitalized
     ("literature-and-history", "观众"): "spectator; audience",  # was a full-width ；
     ("literature-and-history", "人物"): "character; literary figure",  # was a full-width ；
     ("literature-and-history", "现实"): "reality; actuality",  # was a full-width ；
@@ -68,6 +67,7 @@ CHINESE_OVERRIDES = {
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
     ("school", "体育"): "运动",  # sport
     ("school", "体育教育"): "体育",  # physical education
+    ("literature-and-history", "随笔"): "文章",  # essay
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -176,6 +176,9 @@ ALSO_ACCEPTED = {
     ("science-and-technology", "改变"): ["变化"],
     ("science-and-technology", "积极面"): ["正面"],
     ("science-and-technology", "消极面"): ["负面"],
+    ("literature-and-history", "史书"): ["历史记录"],
+    ("literature-and-history", "文章"): ["作文"],
+    ("literature-and-history", "作家"): ["作者"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -247,6 +250,7 @@ EXCLUDE = {
     ("science-and-technology", "改善"),  # to improve (提高 stays and accepts 改善, 改进)
     ("transportation", "改善"),  # to improve (kept only in Science and Technology, as 提高)
     ("society", "变化"),  # change (kept only in Science and Technology, as 改变, which accepts 变化)
+    ("literature-and-history", "报告文学"),  # reportage
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
