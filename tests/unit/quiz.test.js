@@ -189,6 +189,10 @@ test("teacher's Friendship changes: English uses the same punctuation as other t
   const friendship = TOPICS.find((t) => t.id === "friendship");
   for (const w of friendship.words) assert.ok(!/[；，（）：。]/.test(w.english), `${w.chinese}: ${w.english}`);
   assert.equal(friendship.words.find((w) => w.chinese === "了解").english, "to understand; know");
+  assert.ok(!friendship.words.some((w) => w.chinese === "温柔")); // combined into 温和
+  assert.ok(friendship.words.some((w) => w.chinese === "温和"));
+  assert.equal(friendship.words.find((w) => w.chinese === "程度").english, "level (of education, ability)");
+  assert.equal(friendship.words.length, 46);
 });
 
 test("teacher's Education changes: idioms removed", () => {

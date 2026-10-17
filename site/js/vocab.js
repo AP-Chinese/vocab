@@ -2563,7 +2563,10 @@ export const TOPICS = [
       {
         "chinese": "彼此",
         "pinyin": "bǐ cǐ",
-        "english": "each other"
+        "english": "each other",
+        "alsoAccepted": [
+          "对方"
+        ]
       },
       {
         "chinese": "了解",
@@ -2583,7 +2586,10 @@ export const TOPICS = [
       {
         "chinese": "感情",
         "pinyin": "gǎn qíng",
-        "english": "feeling; emotion; affection"
+        "english": "feeling; emotion; affection",
+        "alsoAccepted": [
+          "感受"
+        ]
       },
       {
         "chinese": "分享",
@@ -2598,7 +2604,10 @@ export const TOPICS = [
       {
         "chinese": "性格",
         "pinyin": "xìng gé",
-        "english": "personality"
+        "english": "personality",
+        "alsoAccepted": [
+          "个性"
+        ]
       },
       {
         "chinese": "外向",
@@ -2628,7 +2637,10 @@ export const TOPICS = [
       {
         "chinese": "急躁",
         "pinyin": "jí zào",
-        "english": "impetuous; impatient"
+        "english": "impetuous; impatient",
+        "alsoAccepted": [
+          "不耐烦"
+        ]
       },
       {
         "chinese": "体贴",
@@ -2636,14 +2648,12 @@ export const TOPICS = [
         "english": "to care for; to be considerate of (someone)"
       },
       {
-        "chinese": "温柔",
-        "pinyin": "wēn róu",
-        "english": "gentle, soft"
-      },
-      {
         "chinese": "温和",
         "pinyin": "wēn hé",
-        "english": "gentle; soft"
+        "english": "gentle; soft",
+        "alsoAccepted": [
+          "温柔"
+        ]
       },
       {
         "chinese": "幽默",
@@ -2658,7 +2668,10 @@ export const TOPICS = [
       {
         "chinese": "勤奋",
         "pinyin": "qín fèn",
-        "english": "hardworking; diligent"
+        "english": "hardworking; diligent",
+        "alsoAccepted": [
+          "努力"
+        ]
       },
       {
         "chinese": "年龄",
@@ -2668,7 +2681,11 @@ export const TOPICS = [
       {
         "chinese": "长相",
         "pinyin": "zhǎng xiàng",
-        "english": "looks, appearance"
+        "english": "looks, appearance",
+        "alsoAccepted": [
+          "外表",
+          "外貌"
+        ]
       },
       {
         "chinese": "身材",
@@ -2678,7 +2695,10 @@ export const TOPICS = [
       {
         "chinese": "兴趣",
         "pinyin": "xìng qù",
-        "english": "interest, hobby"
+        "english": "interest, hobby",
+        "alsoAccepted": [
+          "爱好"
+        ]
       },
       {
         "chinese": "习惯",
@@ -2713,7 +2733,7 @@ export const TOPICS = [
       {
         "chinese": "程度",
         "pinyin": "chéng dù",
-        "english": "degree; level (of education, ability)"
+        "english": "level (of education, ability)"
       },
       {
         "chinese": "不同",
@@ -2728,7 +2748,10 @@ export const TOPICS = [
       {
         "chinese": "沟通",
         "pinyin": "gōu tōng",
-        "english": "communicate"
+        "english": "communicate",
+        "alsoAccepted": [
+          "交流"
+        ]
       },
       {
         "chinese": "冲突",
@@ -2738,7 +2761,10 @@ export const TOPICS = [
       {
         "chinese": "争执",
         "pinyin": "zhēng zhí",
-        "english": "argue, disagree"
+        "english": "argue, disagree",
+        "alsoAccepted": [
+          "争吵"
+        ]
       },
       {
         "chinese": "吵架",
