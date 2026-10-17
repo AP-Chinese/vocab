@@ -3195,5 +3195,307 @@ export const TOPICS = [
         "english": "tutor"
       }
     ]
+  },
+  {
+    "id": "literature-and-history",
+    "name": "Literature and History 文学与历史",
+    "words": [
+      {
+        "chinese": "文学",
+        "pinyin": "wén xué",
+        "english": "literature"
+      },
+      {
+        "chinese": "杰作",
+        "pinyin": "jié zuò",
+        "english": "masterpiece"
+      },
+      {
+        "chinese": "古典文学",
+        "pinyin": "gǔ diǎn wén xué",
+        "english": "classical literature"
+      },
+      {
+        "chinese": "现代文学",
+        "pinyin": "xiàn dài wén xué",
+        "english": "contemporary literature"
+      },
+      {
+        "chinese": "大众文学",
+        "pinyin": "dà zhòng wén xué",
+        "english": "popular literature"
+      },
+      {
+        "chinese": "民间文学",
+        "pinyin": "mín jiān wén xué",
+        "english": "folklore"
+      },
+      {
+        "chinese": "网络文学",
+        "pinyin": "wǎng luò wén xué",
+        "english": "Internet literature"
+      },
+      {
+        "chinese": "博客",
+        "pinyin": "bó kè",
+        "english": "blog"
+      },
+      {
+        "chinese": "小说",
+        "pinyin": "xiǎo shuō",
+        "english": "novel"
+      },
+      {
+        "chinese": "爱情小说",
+        "pinyin": "ài qíng xiǎo shuō",
+        "english": "love story"
+      },
+      {
+        "chinese": "侦探小说",
+        "pinyin": "zhēn tàn xiǎo shuō",
+        "english": "detective story"
+      },
+      {
+        "chinese": "幽默小说",
+        "pinyin": "yōu mò xiǎo shuō",
+        "english": "humorous story"
+      },
+      {
+        "chinese": "历史小说",
+        "pinyin": "lì shǐ xiǎo shuō",
+        "english": "historical novel"
+      },
+      {
+        "chinese": "散文",
+        "pinyin": "sǎn wén",
+        "english": "prose"
+      },
+      {
+        "chinese": "诗歌",
+        "pinyin": "shī gē",
+        "english": "poetry"
+      },
+      {
+        "chinese": "剧本",
+        "pinyin": "jù běn",
+        "english": "play; drama; script"
+      },
+      {
+        "chinese": "随笔",
+        "pinyin": "suí bǐ",
+        "english": "essay"
+      },
+      {
+        "chinese": "游记",
+        "pinyin": "yóu jì",
+        "english": "book of travels"
+      },
+      {
+        "chinese": "传记",
+        "pinyin": "zhuàn jì",
+        "english": "biography"
+      },
+      {
+        "chinese": "报告文学",
+        "pinyin": "bào gào wén xué",
+        "english": "reportage"
+      },
+      {
+        "chinese": "寓言",
+        "pinyin": "yù yán",
+        "english": "fables; allegory"
+      },
+      {
+        "chinese": "作家",
+        "pinyin": "zuò jiā",
+        "english": "author"
+      },
+      {
+        "chinese": "诗人",
+        "pinyin": "shī rén",
+        "english": "poet"
+      },
+      {
+        "chinese": "名人",
+        "pinyin": "míng rén",
+        "english": "famous people"
+      },
+      {
+        "chinese": "读者",
+        "pinyin": "dú zhě",
+        "english": "reader"
+      },
+      {
+        "chinese": "观众",
+        "pinyin": "guān zhòng",
+        "english": "spectator; audience"
+      },
+      {
+        "chinese": "刻画",
+        "pinyin": "kè huà",
+        "english": "characterize"
+      },
+      {
+        "chinese": "描述",
+        "pinyin": "miáo shù",
+        "english": "describe"
+      },
+      {
+        "chinese": "人物",
+        "pinyin": "rén wù",
+        "english": "character; literary figure"
+      },
+      {
+        "chinese": "生动",
+        "pinyin": "shēng dòng",
+        "english": "vividly"
+      },
+      {
+        "chinese": "反映",
+        "pinyin": "fǎn yìng",
+        "english": "reflect"
+      },
+      {
+        "chinese": "现实",
+        "pinyin": "xiàn shí",
+        "english": "reality; actuality"
+      },
+      {
+        "chinese": "史书",
+        "pinyin": "shǐ shū",
+        "english": "historical records"
+      },
+      {
+        "chinese": "畅销书",
+        "pinyin": "chàng xiāo shū",
+        "english": "best seller"
+      }
+    ]
+  },
+  {
+    "id": "society",
+    "name": "Society 社会",
+    "words": [
+      {
+        "chinese": "社会",
+        "pinyin": "shè huì",
+        "english": "society"
+      },
+      {
+        "chinese": "政府",
+        "pinyin": "zhèng fǔ",
+        "english": "government"
+      },
+      {
+        "chinese": "国家",
+        "pinyin": "guó jiā",
+        "english": "country"
+      },
+      {
+        "chinese": "热门话题",
+        "pinyin": "rè mén huà tí",
+        "english": "hot topic"
+      },
+      {
+        "chinese": "变化",
+        "pinyin": "biàn huà",
+        "english": "change"
+      },
+      {
+        "chinese": "现象",
+        "pinyin": "xiàn xiàng",
+        "english": "phenomenon"
+      },
+      {
+        "chinese": "机会",
+        "pinyin": "jī huì",
+        "english": "opportunity"
+      },
+      {
+        "chinese": "贫富不均",
+        "pinyin": "pín fù bù jūn",
+        "english": "unequal distribution of wealth"
+      },
+      {
+        "chinese": "歧视",
+        "pinyin": "qí shì",
+        "english": "to discriminate (against)"
+      },
+      {
+        "chinese": "妇女",
+        "pinyin": "fù nǚ",
+        "english": "women; women in general"
+      },
+      {
+        "chinese": "重男轻女",
+        "pinyin": "zhòng nán qīng nǚ",
+        "english": "to regard males as superior to females"
+      },
+      {
+        "chinese": "同工同酬",
+        "pinyin": "tóng gōng tóng chóu",
+        "english": "equal pay for equal work"
+      },
+      {
+        "chinese": "失业",
+        "pinyin": "shī yè",
+        "english": "lose one's job; unemployment"
+      },
+      {
+        "chinese": "宗教",
+        "pinyin": "zōng jiào",
+        "english": "religion"
+      },
+      {
+        "chinese": "平等",
+        "pinyin": "píng děng",
+        "english": "equal"
+      },
+      {
+        "chinese": "公平",
+        "pinyin": "gōng píng",
+        "english": "fair"
+      },
+      {
+        "chinese": "宪法",
+        "pinyin": "xiàn fǎ",
+        "english": "Constitution"
+      },
+      {
+        "chinese": "私人",
+        "pinyin": "sī rén",
+        "english": "private individual; personal"
+      },
+      {
+        "chinese": "犯罪",
+        "pinyin": "fàn zuì",
+        "english": "commit a crime"
+      },
+      {
+        "chinese": "罪犯",
+        "pinyin": "zuì fàn",
+        "english": "criminal"
+      },
+      {
+        "chinese": "隐私",
+        "pinyin": "yǐn sī",
+        "english": "privacy"
+      },
+      {
+        "chinese": "权利",
+        "pinyin": "quán lì",
+        "english": "power; right; privilege"
+      },
+      {
+        "chinese": "赌博",
+        "pinyin": "dǔ bó",
+        "english": "gamble"
+      },
+      {
+        "chinese": "偷窃",
+        "pinyin": "tōu qiè",
+        "english": "steal; pilfer"
+      }
+    ]
   }
 ];

@@ -25,6 +25,12 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 
 # Teacher-approved corrections to the source sets: (topic ID, chinese) -> english.
 OVERRIDES = {
+    ("literature-and-history", "报告文学"): "reportage",  # was capitalized
+    ("literature-and-history", "观众"): "spectator; audience",  # was a full-width ；
+    ("literature-and-history", "人物"): "character; literary figure",  # was a full-width ；
+    ("literature-and-history", "现实"): "reality; actuality",  # was a full-width ；
+    ("society", "妇女"): "women; women in general",  # was a full-width ；
+    ("society", "私人"): "private individual; personal",  # was a full-width ；
     ("school", "电脑"): "computer",
     ("travel", "单程旅行"): "one-way trip",  # was "outbound journey"
     ("transportation", "交通管理"): "traffic control",  # was capitalized
@@ -165,6 +171,8 @@ TOPIC_NAMES = {
     "jobs": "Jobs 工作",  # "Jobs"
     "friendship": "Friendship 友谊",  # "Friendship"
     "housing": "Housing 住房",  # "Housing"
+    "literature-and-history": "Literature and History 文学与历史",  # "Literature and History"
+    "society": "Society 社会",  # "Society"
     "education": "Education 教育",  # "AP Chinese - Education (pg. 382-383)"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
