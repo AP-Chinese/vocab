@@ -281,7 +281,6 @@ Rules: none
 
 | Word | English | Also accepted |
 |---|---|---|
-| 变化 | change | 改变 |
 | 妇女 | women; women in general | 女性, 女人 |
 | 偷窃 | steal; pilfer | 偷, 偷盗 |
 

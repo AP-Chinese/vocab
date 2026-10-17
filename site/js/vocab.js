@@ -568,11 +568,6 @@ export const TOPICS = [
         "english": "public"
       },
       {
-        "chinese": "改善",
-        "pinyin": "gǎi shàn",
-        "english": "to improve"
-      },
-      {
         "chinese": "状况",
         "pinyin": "zhuàng kuàng",
         "english": "state, situation"
@@ -3385,14 +3380,6 @@ export const TOPICS = [
         "chinese": "热门话题",
         "pinyin": "rè mén huà tí",
         "english": "hot topic"
-      },
-      {
-        "chinese": "变化",
-        "pinyin": "biàn huà",
-        "english": "change",
-        "alsoAccepted": [
-          "改变"
-        ]
       },
       {
         "chinese": "现象",

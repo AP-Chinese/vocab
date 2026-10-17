@@ -120,10 +120,10 @@ test("teacher's Housing changes: 幼稚园 removed, zoo, freeway; highway", () =
   assert.equal(word("河"), undefined);
 });
 
-test("teacher's Transportation changes: idioms removed", () => {
+test("teacher's Transportation changes: idioms removed, 改善 removed", () => {
   const transportation = TOPICS.find((t) => t.id === "transportation");
   const has = (chinese) => transportation.words.some((w) => w.chinese === chinese);
-  for (const removed of ["畅通无阻", "水泄不通"]) assert.ok(!has(removed), removed);
+  for (const removed of ["畅通无阻", "水泄不通", "改善"]) assert.ok(!has(removed), removed);
 });
 
 test("teacher's Family changes: 亲属 removed, 伯伯, 姑姑 and 姨姨", () => {
@@ -228,12 +228,12 @@ test("teacher's Literature and History changes: English uses the same style as o
   for (const w of topic.words) assert.ok(!/[；，（）：。]/.test(w.english), `${w.chinese}: ${w.english}`);
 });
 
-test("teacher's Society changes: idioms removed except 重男轻女", () => {
+test("teacher's Society changes: idioms and 变化 removed, 重男轻女 stays", () => {
   const society = TOPICS.find((t) => t.id === "society");
   const has = (chinese) => society.words.some((w) => w.chinese === chinese);
-  for (const removed of ["贫富不均", "同工同酬"]) assert.ok(!has(removed), removed);
+  for (const removed of ["贫富不均", "同工同酬", "变化"]) assert.ok(!has(removed), removed);
   assert.ok(has("重男轻女"));
-  assert.equal(society.words.length, 22);
+  assert.equal(society.words.length, 21);
 });
 
 test("teacher's Science and Technology changes: 电子信 became 电子邮件, 改善 merged into 提高", () => {

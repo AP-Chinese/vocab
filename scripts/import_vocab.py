@@ -158,7 +158,6 @@ ALSO_ACCEPTED = {
     ("education", "方式"): ["方法"],
     ("education", "本领"): ["能力"],
     ("society", "妇女"): ["女性", "女人"],
-    ("society", "变化"): ["改变"],
     ("society", "偷窃"): ["偷", "偷盗"],
     ("geography-and-climate", "市"): ["城市"],
     ("geography-and-climate", "山脉"): ["山"],
@@ -246,6 +245,8 @@ EXCLUDE = {
     ("friendship", "温柔"),  # gentle, soft (温和 stays and accepts 温柔)
     ("housing", "幼稚园"),  # kindergarten
     ("science-and-technology", "改善"),  # to improve (提高 stays and accepts 改善, 改进)
+    ("transportation", "改善"),  # to improve (kept only in Science and Technology, as 提高)
+    ("society", "变化"),  # change (kept only in Science and Technology, as 改变, which accepts 变化)
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
