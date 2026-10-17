@@ -3719,8 +3719,8 @@ export const TOPICS = [
         "english": "internet"
       },
       {
-        "chinese": "电子信",
-        "pinyin": "diàn zi xìn",
+        "chinese": "电子邮件",
+        "pinyin": "diàn zi yóu jiàn",
         "english": "email"
       },
       {
@@ -3992,7 +3992,7 @@ export const TOPICS = [
       {
         "chinese": "抗议",
         "pinyin": "kàng yì",
-        "english": "protest; protection"
+        "english": "protest"
       },
       {
         "chinese": "避免",

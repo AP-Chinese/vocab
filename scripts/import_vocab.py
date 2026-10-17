@@ -25,6 +25,7 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 
 # Teacher-approved corrections to the source sets: (topic ID, chinese) -> english.
 OVERRIDES = {
+    ("human-and-nature", "抗议"): "protest",  # was "protest; protection"
     ("literature-and-history", "报告文学"): "reportage",  # was capitalized
     ("literature-and-history", "观众"): "spectator; audience",  # was a full-width ；
     ("literature-and-history", "人物"): "character; literary figure",  # was a full-width ；
@@ -61,6 +62,7 @@ CHINESE_OVERRIDES = {
     ("family", "大伯"): "伯伯",  # father's elder brother
     ("family", "姑母"): "姑姑",  # father's sister
     ("family", "姨妈"): "姨姨",  # mother's sister
+    ("science-and-technology", "电子信"): "电子邮件",  # email
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
