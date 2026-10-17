@@ -123,6 +123,7 @@ test("Housing: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("马路"), ["马路", "路"].sort());
   assert.deepEqual(accepts("住宅区"), ["住宅区", "居民区"].sort());
   assert.deepEqual(accepts("位置"), ["位置", "地点"].sort());
+  assert.deepEqual(accepts("剧院"), ["剧院", "剧场"].sort());
   assert.deepEqual(accepts("城市"), ["城市"]); // everything else stays exact
 });
 

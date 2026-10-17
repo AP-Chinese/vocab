@@ -2998,7 +2998,10 @@ export const TOPICS = [
       {
         "chinese": "剧院",
         "pinyin": "jù yuàn",
-        "english": "theater"
+        "english": "theater",
+        "alsoAccepted": [
+          "剧场"
+        ]
       },
       {
         "chinese": "博物馆",

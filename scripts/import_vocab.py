@@ -81,6 +81,7 @@ ALSO_ACCEPTED = {
     ("housing", "马路"): ["路"],
     ("housing", "住宅区"): ["居民区"],
     ("housing", "位置"): ["地点"],
+    ("housing", "剧院"): ["剧场"],
     ("transportation", "交通事故"): ["事故"],
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],

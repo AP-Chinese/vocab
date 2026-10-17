@@ -250,6 +250,7 @@ Rules: none
 | 村 | village | 村庄 |
 | 马路 | road | 路 |
 | 优美 | beautiful | 美丽 |
+| 剧院 | theater | 剧场 |
 | 海滨 | seashore; seaside | 海边 |
 
 All other Housing 住房 words are graded exactly.
