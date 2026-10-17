@@ -50,8 +50,8 @@ export const TOPICS = [
         "english": "writing; composition"
       },
       {
-        "chinese": "体育",
-        "pinyin": "tǐ yù",
+        "chinese": "运动",
+        "pinyin": "yùn dòng",
         "english": "sport"
       },
       {
@@ -67,7 +67,10 @@ export const TOPICS = [
       {
         "chinese": "社会学科",
         "pinyin": "shè huì xué kē",
-        "english": "social studies"
+        "english": "social studies",
+        "alsoAccepted": [
+          "社会学"
+        ]
       },
       {
         "chinese": "历史",
@@ -100,11 +103,6 @@ export const TOPICS = [
         "english": "economics"
       },
       {
-        "chinese": "社会学",
-        "pinyin": "shè huì xué",
-        "english": "sociology"
-      },
-      {
         "chinese": "心理学",
         "pinyin": "xīn lǐ xué",
         "english": "psychology"
@@ -127,7 +125,10 @@ export const TOPICS = [
       {
         "chinese": "爵士",
         "pinyin": "jué shì",
-        "english": "jazz"
+        "english": "jazz",
+        "alsoAccepted": [
+          "爵士乐"
+        ]
       },
       {
         "chinese": "管弦乐队",
@@ -215,8 +216,8 @@ export const TOPICS = [
         "english": "physiology"
       },
       {
-        "chinese": "体育教育",
-        "pinyin": "tǐ yù jiào yù",
+        "chinese": "体育",
+        "pinyin": "tǐ yù",
         "english": "physical education"
       },
       {

@@ -58,6 +58,8 @@ CHINESE_OVERRIDES = {
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
+    ("school", "体育"): "运动",  # sport
+    ("school", "体育教育"): "体育",  # physical education
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -69,6 +71,8 @@ ADDITIONS = {
 # Other answers the teacher accepts when a student types the Chinese: (topic ID, chinese) -> [answers].
 # Keyed by the word as it appears in the app (after corrections). Multiple choice is unaffected.
 ALSO_ACCEPTED = {
+    ("school", "社会学科"): ["社会学"],
+    ("school", "爵士"): ["爵士乐"],
     ("travel", "订"): ["预定", "定"],
     ("travel", "旅馆"): ["酒店"],
     ("travel", "机票"): ["飞机票"],
@@ -166,6 +170,7 @@ TOPIC_NAMES = {
 # Teacher-approved removals from the source sets: (topic ID, chinese).
 EXCLUDE = {
     ("school", "数学分析"),  # math analysis
+    ("school", "社会学"),  # sociology (社会学科 stays, and also accepts 社会学)
     ("travel", "特快车"),  # express train
     # Idioms
     ("travel", "独具匠心"),

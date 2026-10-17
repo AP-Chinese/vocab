@@ -6,13 +6,18 @@ What each word accepts in the quiz's typed questions, beyond the exact textbook 
 
 ## School 学校 (`school`)
 
-Rules: `xue-suffix`
+Rules: `xue-suffix`, `shi-suffix`
 
 ### Also accepts other answers
 
 | Word | English | Also accepted |
 |---|---|---|
+| 社会学科 | social studies | 社会学 |
+| 世界史 | world history | 世界历史 |
+| 欧洲史 | European history | 欧洲历史 |
+| 美国史 | U.S. history | 美国历史 |
 | 心理学 | psychology | 心理, 心理科学 |
+| 爵士 | jazz | 爵士乐 |
 | 代数学 | algebra | 代数, 代数科学 |
 | 几何学 | geometry | 几何, 几何科学 |
 | 统计学 | statistics | 统计, 统计科学 |
@@ -29,8 +34,8 @@ Rules: `xue-suffix`
 |---|---|---|
 | 世界文学 | world literature | 文学 means "literature", so its 学 isn't an "-ology" ending |
 | 英国文学 | English literature | 文学 means "literature", so its 学 isn't an "-ology" ending |
+| 历史 | history | too short: fewer than 2 characters would be left |
 | 经济学 | economics | excluded by the teacher |
-| 社会学 | sociology | excluded by the teacher |
 | 数学 | mathematics | too short: fewer than 2 characters would be left |
 | 科学 | science | too short: fewer than 2 characters would be left |
 | 化学 | chemistry | too short: fewer than 2 characters would be left |
