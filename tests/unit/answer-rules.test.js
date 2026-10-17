@@ -264,3 +264,13 @@ test("Jobs: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("接触"), ["接触", "联系"].sort());
   assert.deepEqual(accepts("复杂"), ["复杂"]); // everything else stays exact
 });
+
+test("Society: the teacher's other accepted answers count when typing", () => {
+  const society = TOPICS.find((t) => t.id === "society");
+  const accepts = (chinese) =>
+    acceptedAnswers(society.words.find((w) => w.chinese === chinese), society.words, answerVariants("society")).sort();
+  assert.deepEqual(accepts("妇女"), ["妇女", "女性", "女人"].sort());
+  assert.deepEqual(accepts("变化"), ["变化", "改变"].sort());
+  assert.deepEqual(accepts("偷窃"), ["偷窃", "偷", "偷盗"].sort());
+  assert.deepEqual(accepts("私人"), ["私人"]); // everything else stays exact
+});

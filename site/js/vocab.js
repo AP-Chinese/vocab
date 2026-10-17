@@ -3399,7 +3399,10 @@ export const TOPICS = [
       {
         "chinese": "变化",
         "pinyin": "biàn huà",
-        "english": "change"
+        "english": "change",
+        "alsoAccepted": [
+          "改变"
+        ]
       },
       {
         "chinese": "现象",
@@ -3419,7 +3422,11 @@ export const TOPICS = [
       {
         "chinese": "妇女",
         "pinyin": "fù nǚ",
-        "english": "women; women in general"
+        "english": "women; women in general",
+        "alsoAccepted": [
+          "女性",
+          "女人"
+        ]
       },
       {
         "chinese": "重男轻女",
@@ -3484,7 +3491,11 @@ export const TOPICS = [
       {
         "chinese": "偷窃",
         "pinyin": "tōu qiè",
-        "english": "steal; pilfer"
+        "english": "steal; pilfer",
+        "alsoAccepted": [
+          "偷",
+          "偷盗"
+        ]
       }
     ]
   },

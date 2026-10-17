@@ -157,6 +157,9 @@ ALSO_ACCEPTED = {
     ("jobs", "接触"): ["联系"],
     ("education", "方式"): ["方法"],
     ("education", "本领"): ["能力"],
+    ("society", "妇女"): ["女性", "女人"],
+    ("society", "变化"): ["改变"],
+    ("society", "偷窃"): ["偷", "偷盗"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
