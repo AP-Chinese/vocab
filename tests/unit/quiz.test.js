@@ -233,3 +233,16 @@ test("teacher's Society changes: idioms removed except 重男轻女", () => {
   assert.ok(has("重男轻女"));
   assert.equal(society.words.length, 22);
 });
+
+test("teacher's Science and Technology changes: 电子信 became 电子邮件", () => {
+  const topic = TOPICS.find((t) => t.id === "science-and-technology");
+  const word = (chinese) => topic.words.find((w) => w.chinese === chinese);
+  assert.equal(word("电子信"), undefined);
+  assert.equal(word("电子邮件").english, "email");
+  assert.equal(topic.words.length, 21);
+});
+
+test("teacher's Human and Nature changes: 抗议 is just protest", () => {
+  const topic = TOPICS.find((t) => t.id === "human-and-nature");
+  assert.equal(topic.words.find((w) => w.chinese === "抗议").english, "protest");
+});

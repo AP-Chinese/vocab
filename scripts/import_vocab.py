@@ -25,6 +25,7 @@ JS_FILE = ROOT / "site" / "js" / "vocab.js"
 
 # Teacher-approved corrections to the source sets: (topic ID, chinese) -> english.
 OVERRIDES = {
+    ("human-and-nature", "抗议"): "protest",  # was "protest; protection"
     ("literature-and-history", "报告文学"): "reportage",  # was capitalized
     ("literature-and-history", "观众"): "spectator; audience",  # was a full-width ；
     ("literature-and-history", "人物"): "character; literary figure",  # was a full-width ；
@@ -61,6 +62,7 @@ CHINESE_OVERRIDES = {
     ("family", "大伯"): "伯伯",  # father's elder brother
     ("family", "姑母"): "姑姑",  # father's sister
     ("family", "姨妈"): "姨姨",  # mother's sister
+    ("science-and-technology", "电子信"): "电子邮件",  # email
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
@@ -173,6 +175,9 @@ TOPIC_NAMES = {
     "housing": "Housing 住房",  # "Housing"
     "literature-and-history": "Literature and History 文学与历史",  # "Literature and History"
     "society": "Society 社会",  # "Society"
+    "geography-and-climate": "Geography and Climate 地理与气候",  # "ap chinese: geography & climate"
+    "science-and-technology": "Science and Technology 科学与技术",  # "AP Chinese - Science and Technology"
+    "human-and-nature": "Human and Nature 人与自然",  # "AP Chinese Human & Nature"
     "education": "Education 教育",  # "AP Chinese - Education (pg. 382-383)"
     "entertainment": "Entertainment 娱乐",  # "AP Chinese - Entertainment (pg. 372)"
 }
