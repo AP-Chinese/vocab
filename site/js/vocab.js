@@ -3728,7 +3728,10 @@ export const TOPICS = [
       {
         "chinese": "电子",
         "pinyin": "diàn zi",
-        "english": "electronics"
+        "english": "electronics",
+        "alsoAccepted": [
+          "电子设备"
+        ]
       },
       {
         "chinese": "高科技",
@@ -3743,7 +3746,10 @@ export const TOPICS = [
       {
         "chinese": "电脑",
         "pinyin": "diàn nǎo",
-        "english": "computer"
+        "english": "computer",
+        "alsoAccepted": [
+          "计算机"
+        ]
       },
       {
         "chinese": "网络",
@@ -3788,22 +3794,27 @@ export const TOPICS = [
       {
         "chinese": "梦想",
         "pinyin": "mèng xiǎng",
-        "english": "to dream"
-      },
-      {
-        "chinese": "改善",
-        "pinyin": "gǎi shàn",
-        "english": "to improve"
+        "english": "to dream",
+        "alsoAccepted": [
+          "做梦"
+        ]
       },
       {
         "chinese": "改变",
         "pinyin": "gǎi biàn",
-        "english": "change"
+        "english": "change",
+        "alsoAccepted": [
+          "变化"
+        ]
       },
       {
         "chinese": "提高",
         "pinyin": "tí gāo",
-        "english": "to improve"
+        "english": "to improve",
+        "alsoAccepted": [
+          "改进",
+          "改善"
+        ]
       },
       {
         "chinese": "效率",
@@ -3813,12 +3824,18 @@ export const TOPICS = [
       {
         "chinese": "积极面",
         "pinyin": "jī jí miàn",
-        "english": "positive side"
+        "english": "positive side",
+        "alsoAccepted": [
+          "正面"
+        ]
       },
       {
         "chinese": "消极面",
         "pinyin": "xiāo jí miàn",
-        "english": "negative side"
+        "english": "negative side",
+        "alsoAccepted": [
+          "负面"
+        ]
       }
     ]
   },

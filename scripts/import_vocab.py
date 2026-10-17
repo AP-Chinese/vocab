@@ -170,6 +170,13 @@ ALSO_ACCEPTED = {
     ("geography-and-climate", "自然灾难"): ["自然灾害"],
     ("geography-and-climate", "干燥"): ["干"],
     ("geography-and-climate", "区"): ["地区"],
+    ("science-and-technology", "电子"): ["电子设备"],
+    ("science-and-technology", "电脑"): ["计算机"],
+    ("science-and-technology", "梦想"): ["做梦"],
+    ("science-and-technology", "提高"): ["改进", "改善"],  # 改善 is removed as its own card (same English)
+    ("science-and-technology", "改变"): ["变化"],
+    ("science-and-technology", "积极面"): ["正面"],
+    ("science-and-technology", "消极面"): ["负面"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -238,6 +245,7 @@ EXCLUDE = {
     ("lifestyle", "劳累"),  # tired, exhausted, fatigued
     ("friendship", "温柔"),  # gentle, soft (温和 stays and accepts 温柔)
     ("housing", "幼稚园"),  # kindergarten
+    ("science-and-technology", "改善"),  # to improve (提高 stays and accepts 改善, 改进)
 }
 
 # Corrections to generated pinyin: chinese -> pinyin (tone marks, one space between syllables).
