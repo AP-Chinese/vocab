@@ -177,12 +177,12 @@ test("teacher's Lifestyle changes: 负责人 became 负责, 习气 became 坏习
   assert.equal(lifestyle.words.length, 41);
 });
 
-test("teacher's Jobs changes: idiom removed, only 经验 means experience", () => {
+test("teacher's Jobs changes: idiom removed, only 经验 means experience, 利 and 弊 removed", () => {
   const jobs = TOPICS.find((t) => t.id === "jobs");
   const has = (chinese) => jobs.words.some((w) => w.chinese === chinese);
-  for (const removed of ["上当受骗", "经历", "体验", "见识"]) assert.ok(!has(removed), removed);
+  for (const removed of ["上当受骗", "经历", "体验", "见识", "利", "弊"]) assert.ok(!has(removed), removed);
   assert.ok(has("经验"));
-  assert.equal(jobs.words.length, 26);
+  assert.equal(jobs.words.length, 24);
 });
 
 test("teacher's Friendship changes: English uses the same punctuation as other topics", () => {
