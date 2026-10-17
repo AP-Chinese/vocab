@@ -21,7 +21,6 @@ Rules: `xue-suffix`, `shi-suffix`
 | 代数学 | algebra | 代数, 代数科学 |
 | 几何学 | geometry | 几何, 几何科学 |
 | 统计学 | statistics | 统计, 统计科学 |
-| 生物学 | biology | 生物, 生物科学 |
 | 物理学 | physics | 物理, 物理科学 |
 | 环境科学 | environmental science | 环境学 |
 | 解剖学 | anatomy | 解剖, 解剖科学 |
@@ -338,3 +337,15 @@ Rules: none
 | 消极面 | negative side | 负面 |
 
 All other Science and Technology 科学与技术 words are graded exactly.
+
+## Human and Nature 人与自然 (`human-and-nature`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 噪音 | noise | 噪声 |
+
+All other Human and Nature 人与自然 words are graded exactly.

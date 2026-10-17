@@ -218,8 +218,9 @@ test("teacher's School changes: sport is 运动, physical education is 体育, s
   assert.equal(word("体育").english, "physical education");
   assert.equal(word("体育教育"), undefined);
   assert.equal(word("社会学"), undefined);
+  assert.equal(word("生物学"), undefined); // biology stays only in Human and Nature, as 生物
   assert.equal(word("社会学科").english, "social studies");
-  assert.equal(school.words.length, 45);
+  assert.equal(school.words.length, 44);
 });
 
 test("teacher's Literature and History changes: English uses the same style as other topics, reportage removed", () => {
@@ -249,7 +250,10 @@ test("teacher's Science and Technology changes: 电子信 became 电子邮件, �
   assert.equal(topic.words.length, 20);
 });
 
-test("teacher's Human and Nature changes: 抗议 is just protest", () => {
+test("teacher's Human and Nature changes: 抗议 is just protest, 濒临 removed", () => {
   const topic = TOPICS.find((t) => t.id === "human-and-nature");
   assert.equal(topic.words.find((w) => w.chinese === "抗议").english, "protest");
+  assert.equal(topic.words.find((w) => w.chinese === "濒临"), undefined);
+  assert.equal(topic.words.find((w) => w.chinese === "生物").english, "biology");
+  assert.equal(topic.words.length, 43);
 });
