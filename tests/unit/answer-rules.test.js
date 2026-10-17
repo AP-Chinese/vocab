@@ -37,7 +37,7 @@ test("School: the 学 rule accepts exactly the agreed spellings, and nothing els
 });
 
 test("School: teacher exclusions and words the rule must skip stay exact", () => {
-  for (const chinese of ["经济学", "社会学", "世界文学", "英国文学", "科学", "数学", "化学", "医学", "历史"]) {
+  for (const chinese of ["经济学", "世界文学", "英国文学", "科学", "数学", "化学", "医学", "历史"]) {
     const word = school.words.find((w) => w.chinese === chinese);
     assert.deepEqual(acceptedAnswers(word, school.words, schoolVariants), [chinese]);
   }

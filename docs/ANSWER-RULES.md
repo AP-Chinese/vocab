@@ -36,7 +36,6 @@ Rules: `xue-suffix`, `shi-suffix`
 | 英国文学 | English literature | 文学 means "literature", so its 学 isn't an "-ology" ending |
 | 历史 | history | too short: fewer than 2 characters would be left |
 | 经济学 | economics | excluded by the teacher |
-| 社会学 | sociology | excluded by the teacher |
 | 数学 | mathematics | too short: fewer than 2 characters would be left |
 | 科学 | science | too short: fewer than 2 characters would be left |
 | 化学 | chemistry | too short: fewer than 2 characters would be left |

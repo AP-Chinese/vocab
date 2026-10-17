@@ -58,7 +58,8 @@ CHINESE_OVERRIDES = {
     ("lifestyle", "负责人"): "负责",  # to take responsibility
     ("festivities", "服饰"): "服装",  # dress and personal adornment
     ("lifestyle", "习气"): "坏习惯",  # bad habit; bad practice
-    ("school", "体育"): "运动",  # sport (体育教育 stays as physical education)
+    ("school", "体育"): "运动",  # sport
+    ("school", "体育教育"): "体育",  # physical education
 }
 
 # Teacher-approved words to add that aren't in the source set: topic ID -> [(chinese, english)].
@@ -169,6 +170,7 @@ TOPIC_NAMES = {
 # Teacher-approved removals from the source sets: (topic ID, chinese).
 EXCLUDE = {
     ("school", "数学分析"),  # math analysis
+    ("school", "社会学"),  # sociology (社会学科 stays, and also accepts 社会学)
     ("travel", "特快车"),  # express train
     # Idioms
     ("travel", "独具匠心"),

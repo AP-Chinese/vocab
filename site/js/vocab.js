@@ -103,11 +103,6 @@ export const TOPICS = [
         "english": "economics"
       },
       {
-        "chinese": "社会学",
-        "pinyin": "shè huì xué",
-        "english": "sociology"
-      },
-      {
         "chinese": "心理学",
         "pinyin": "xīn lǐ xué",
         "english": "psychology"
@@ -221,8 +216,8 @@ export const TOPICS = [
         "english": "physiology"
       },
       {
-        "chinese": "体育教育",
-        "pinyin": "tǐ yù jiào yù",
+        "chinese": "体育",
+        "pinyin": "tǐ yù",
         "english": "physical education"
       },
       {
