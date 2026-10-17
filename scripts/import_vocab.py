@@ -147,6 +147,8 @@ ALSO_ACCEPTED = {
     ("jobs", "实践"): ["练习"],
     ("jobs", "分忧"): ["分担"],
     ("jobs", "接触"): ["联系"],
+    ("education", "方式"): ["方法"],
+    ("education", "本领"): ["能力"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -194,6 +196,11 @@ EXCLUDE = {
     ("education", "死记硬背"),  # idiom: mechanical memorizing
     ("education", "望子成龙"),  # idiom: hope for one's child to be very successful
     ("education", "用心良苦"),  # idiom: well-meaning
+    ("education", "填鸭式"),  # cramming method (in teaching)
+    ("education", "补习班"),  # cram school
+    ("education", "启发式"),  # elicitation method (in teaching); heuristic method
+    ("education", "普及教育"),  # universal education
+    ("education", "义务教育"),  # compulsory education
     ("entertainment", "艺人"),  # actor; artist (演员 stays)
     ("family", "亲属"),  # relations; relatives (亲戚 stays)
     ("food", "老"),  # tough

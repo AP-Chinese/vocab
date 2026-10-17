@@ -203,10 +203,10 @@ test("teacher's Friendship changes: English uses the same punctuation as other t
   assert.equal(friendship.words.length, 46);
 });
 
-test("teacher's Education changes: idioms removed", () => {
+test("teacher's Education changes: idioms and five other words removed", () => {
   const education = TOPICS.find((t) => t.id === "education");
-  for (const removed of ["死记硬背", "望子成龙", "用心良苦"]) assert.ok(!education.words.some((w) => w.chinese === removed), removed);
-  assert.equal(education.words.length, 29);
+  for (const removed of ["死记硬背", "望子成龙", "用心良苦", "填鸭式", "补习班", "启发式", "普及教育", "义务教育"]) assert.ok(!education.words.some((w) => w.chinese === removed), removed);
+  assert.equal(education.words.length, 24);
 });
 
 test("teacher's School changes: sport is 运动, physical education is 体育, sociology removed", () => {

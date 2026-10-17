@@ -93,6 +93,14 @@ test("Travel: the teacher's other accepted answers count when typing", () => {
   assert.ok(isCorrect(q, "酒店") && isAlternateSpelling(q, "酒店")); // feedback shows the textbook answer 旅馆
 });
 
+test("Education: the teacher's other accepted answers count when typing", () => {
+  const education = TOPICS.find((t) => t.id === "education");
+  const accepts = (chinese) =>
+    acceptedAnswers(education.words.find((w) => w.chinese === chinese), education.words, answerVariants("education")).sort();
+  assert.deepEqual(accepts("方式"), ["方式", "方法"].sort());
+  assert.deepEqual(accepts("本领"), ["本领", "能力"].sort());
+});
+
 test("Friendship: the teacher's other accepted answers count when typing", () => {
   const friendship = TOPICS.find((t) => t.id === "friendship");
   const accepts = (chinese) =>
