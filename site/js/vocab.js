@@ -67,7 +67,10 @@ export const TOPICS = [
       {
         "chinese": "社会学科",
         "pinyin": "shè huì xué kē",
-        "english": "social studies"
+        "english": "social studies",
+        "alsoAccepted": [
+          "社会学"
+        ]
       },
       {
         "chinese": "历史",
@@ -127,7 +130,10 @@ export const TOPICS = [
       {
         "chinese": "爵士",
         "pinyin": "jué shì",
-        "english": "jazz"
+        "english": "jazz",
+        "alsoAccepted": [
+          "爵士乐"
+        ]
       },
       {
         "chinese": "管弦乐队",

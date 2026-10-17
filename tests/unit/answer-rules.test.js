@@ -19,6 +19,11 @@ const SCHOOL_EXTRAS = {
   生理学: ["生理", "生理科学"],
   计算机学: ["计算机", "计算机科学"],
   环境科学: ["环境学"], // the reverse direction
+  美国史: ["美国历史"], // the 史 rule
+  世界史: ["世界历史"],
+  欧洲史: ["欧洲历史"],
+  社会学科: ["社会学"], // the teacher's list
+  爵士: ["爵士乐"],
 };
 
 test("School: the 学 rule accepts exactly the agreed spellings, and nothing else changes", () => {
@@ -32,7 +37,7 @@ test("School: the 学 rule accepts exactly the agreed spellings, and nothing els
 });
 
 test("School: teacher exclusions and words the rule must skip stay exact", () => {
-  for (const chinese of ["经济学", "社会学", "世界文学", "英国文学", "科学", "数学", "化学", "医学"]) {
+  for (const chinese of ["经济学", "社会学", "世界文学", "英国文学", "科学", "数学", "化学", "医学", "历史"]) {
     const word = school.words.find((w) => w.chinese === chinese);
     assert.deepEqual(acceptedAnswers(word, school.words, schoolVariants), [chinese]);
   }

@@ -69,6 +69,8 @@ ADDITIONS = {
 # Other answers the teacher accepts when a student types the Chinese: (topic ID, chinese) -> [answers].
 # Keyed by the word as it appears in the app (after corrections). Multiple choice is unaffected.
 ALSO_ACCEPTED = {
+    ("school", "社会学科"): ["社会学"],
+    ("school", "爵士"): ["爵士乐"],
     ("travel", "订"): ["预定", "定"],
     ("travel", "旅馆"): ["酒店"],
     ("travel", "机票"): ["飞机票"],

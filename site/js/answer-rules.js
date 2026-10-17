@@ -20,6 +20,15 @@ export const RULES = {
       return { variants: [stem, `${stem}科学`] };
     },
   },
+  // 美国史 also accepts 美国历史. 历史 itself stays exact.
+  "shi-suffix": {
+    apply(answer) {
+      if (!answer.endsWith("史")) return null;
+      const stem = answer.slice(0, -1);
+      if (stem.length < 2) return { skip: "too short: fewer than 2 characters would be left" };
+      return { variants: [`${stem}历史`] };
+    },
+  },
   // 黄 also accepts 黄色. Only the listed color words; 咖啡色 and 颜色 already end in 色 or aren't a color.
   "se-suffix": {
     apply(answer) {
@@ -35,6 +44,7 @@ export const TOPIC_RULES = {
   school: [
     // 经济 and 社会 alone mean "economy" and "society", so those words must keep their 学.
     { rule: "xue-suffix", except: ["经济学", "社会学"] },
+    { rule: "shi-suffix" },
   ],
   clothing: [{ rule: "se-suffix" }],
 };
