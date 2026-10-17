@@ -137,7 +137,7 @@ test("Housing: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("住宅区"), ["住宅区", "居民区"].sort());
   assert.deepEqual(accepts("位置"), ["位置", "地点"].sort());
   assert.deepEqual(accepts("剧院"), ["剧院", "剧场"].sort());
-  assert.deepEqual(accepts("城市"), ["城市"]); // everything else stays exact
+  assert.deepEqual(accepts("镇"), ["镇"]); // everything else stays exact
 });
 
 test("Transportation: the teacher's other accepted answers count when typing", () => {
@@ -273,4 +273,28 @@ test("Society: the teacher's other accepted answers count when typing", () => {
   assert.deepEqual(accepts("变化"), ["变化", "改变"].sort());
   assert.deepEqual(accepts("偷窃"), ["偷窃", "偷", "偷盗"].sort());
   assert.deepEqual(accepts("私人"), ["私人"]); // everything else stays exact
+});
+
+test("Geography and Climate: the teacher's other accepted answers count when typing", () => {
+  const geography = TOPICS.find((t) => t.id === "geography-and-climate");
+  const accepts = (chinese) =>
+    acceptedAnswers(
+      geography.words.find((w) => w.chinese === chinese),
+      geography.words,
+      answerVariants("geography-and-climate"),
+    ).sort();
+  const expected = {
+    市: ["城市"],
+    山脉: ["山"],
+    海洋: ["大海", "海"],
+    云: ["云朵"],
+    湿润: ["湿"],
+    旱灾: ["干旱"],
+    河流: ["河"],
+    自然灾难: ["自然灾害"],
+    干燥: ["干"],
+    区: ["地区"],
+  };
+  for (const [chinese, extra] of Object.entries(expected)) assert.deepEqual(accepts(chinese), [chinese, ...extra].sort(), chinese);
+  assert.deepEqual(accepts("洪水"), ["洪水"]); // everything else stays exact
 });

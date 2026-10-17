@@ -287,6 +287,27 @@ Rules: none
 
 All other Society 社会 words are graded exactly.
 
+## Geography and Climate 地理与气候 (`geography-and-climate`)
+
+Rules: none
+
+### Also accepts other answers
+
+| Word | English | Also accepted |
+|---|---|---|
+| 市 | city | 城市 |
+| 区 | district | 地区 |
+| 海洋 | ocean | 大海, 海 |
+| 山脉 | mountain | 山 |
+| 河流 | river | 河 |
+| 干燥 | dry | 干 |
+| 湿润 | wet | 湿 |
+| 云 | cloud | 云朵 |
+| 自然灾难 | natural disaster | 自然灾害 |
+| 旱灾 | drought | 干旱 |
+
+All other Geography and Climate 地理与气候 words are graded exactly.
+
 ## Science and Technology 科学与技术 (`science-and-technology`)
 
 Rules: none

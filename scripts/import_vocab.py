@@ -160,6 +160,16 @@ ALSO_ACCEPTED = {
     ("society", "妇女"): ["女性", "女人"],
     ("society", "变化"): ["改变"],
     ("society", "偷窃"): ["偷", "偷盗"],
+    ("geography-and-climate", "市"): ["城市"],
+    ("geography-and-climate", "山脉"): ["山"],
+    ("geography-and-climate", "海洋"): ["大海", "海"],
+    ("geography-and-climate", "云"): ["云朵"],
+    ("geography-and-climate", "湿润"): ["湿"],
+    ("geography-and-climate", "旱灾"): ["干旱"],
+    ("geography-and-climate", "河流"): ["河"],
+    ("geography-and-climate", "自然灾难"): ["自然灾害"],
+    ("geography-and-climate", "干燥"): ["干"],
+    ("geography-and-climate", "区"): ["地区"],
 }
 
 # Display names, by topic ID, when the PDF title isn't what the app should show.
@@ -196,6 +206,8 @@ EXCLUDE = {
     ("travel", "依山傍水"),
     ("travel", "景色如画"),
     ("travel", "山清水秀"),
+    ("housing", "城市"),  # city (kept in Geography and Climate as 市, which also accepts 城市)
+    ("housing", "河"),  # river (kept in Geography and Climate as 河流, which also accepts 河)
     ("transportation", "畅通无阻"),  # unobstructed; unimpeded
     ("transportation", "水泄不通"),  # jam-packed
     ("clothing", "物美价廉"),  # idiom: attractive goods at inexpensive prices
