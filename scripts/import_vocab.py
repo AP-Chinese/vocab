@@ -94,8 +94,6 @@ ALSO_ACCEPTED = {
     ("housing", "住宅区"): ["居民区"],
     ("housing", "位置"): ["地点"],
     ("housing", "剧院"): ["剧场"],
-    ("housing", "城市"): ["市"],
-    ("housing", "河"): ["河流"],
     ("transportation", "交通事故"): ["事故"],
     ("transportation", "交通管理"): ["交通控制"],
     ("transportation", "条件"): ["情况"],
@@ -208,6 +206,8 @@ EXCLUDE = {
     ("travel", "依山傍水"),
     ("travel", "景色如画"),
     ("travel", "山清水秀"),
+    ("housing", "城市"),  # city (kept in Geography and Climate as 市, which also accepts 城市)
+    ("housing", "河"),  # river (kept in Geography and Climate as 河流, which also accepts 河)
     ("transportation", "畅通无阻"),  # unobstructed; unimpeded
     ("transportation", "水泄不通"),  # jam-packed
     ("clothing", "物美价廉"),  # idiom: attractive goods at inexpensive prices

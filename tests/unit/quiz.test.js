@@ -116,6 +116,8 @@ test("teacher's Housing changes: 幼稚园 removed, zoo, freeway; highway", () =
   assert.equal(word("幼稚园"), undefined);
   assert.equal(word("动物园").english, "zoo");
   assert.equal(word("高速公路").english, "freeway; highway");
+  assert.equal(word("城市"), undefined); // city and river live in Geography and Climate
+  assert.equal(word("河"), undefined);
 });
 
 test("teacher's Transportation changes: idioms removed", () => {

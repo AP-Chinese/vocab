@@ -249,7 +249,6 @@ Rules: none
 
 | Word | English | Also accepted |
 |---|---|---|
-| 城市 | city | 市 |
 | 乡村 | countryside | 农村 |
 | 位置 | location | 地点 |
 | 住宅区 | residential area | 居民区 |
@@ -257,7 +256,6 @@ Rules: none
 | 马路 | road | 路 |
 | 优美 | beautiful | 美丽 |
 | 剧院 | theater | 剧场 |
-| 河 | river | 河流 |
 | 海滨 | seashore; seaside | 海边 |
 
 All other Housing 住房 words are graded exactly.

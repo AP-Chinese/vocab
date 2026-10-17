@@ -2809,14 +2809,6 @@ export const TOPICS = [
     "name": "Housing 住房",
     "words": [
       {
-        "chinese": "城市",
-        "pinyin": "chéng shì",
-        "english": "city",
-        "alsoAccepted": [
-          "市"
-        ]
-      },
-      {
         "chinese": "乡村",
         "pinyin": "xiāng cūn",
         "english": "countryside",
@@ -3036,14 +3028,6 @@ export const TOPICS = [
         "chinese": "树林",
         "pinyin": "shù lín",
         "english": "woods"
-      },
-      {
-        "chinese": "河",
-        "pinyin": "hé",
-        "english": "river",
-        "alsoAccepted": [
-          "河流"
-        ]
       },
       {
         "chinese": "湖",
