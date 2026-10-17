@@ -281,7 +281,6 @@ Rules: none
 
 | Word | English | Also accepted |
 |---|---|---|
-| 变化 | change | 改变 |
 | 妇女 | women; women in general | 女性, 女人 |
 | 偷窃 | steal; pilfer | 偷, 偷盗 |
 
@@ -316,7 +315,12 @@ Rules: none
 
 | Word | English | Also accepted |
 |---|---|---|
-| 改善 | to improve | 提高 |
-| 提高 | to improve | 改善 |
+| 电子 | electronics | 电子设备 |
+| 电脑 | computer | 计算机 |
+| 梦想 | to dream | 做梦 |
+| 改变 | change | 变化 |
+| 提高 | to improve | 改进, 改善 |
+| 积极面 | positive side | 正面 |
+| 消极面 | negative side | 负面 |
 
 All other Science and Technology 科学与技术 words are graded exactly.

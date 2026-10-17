@@ -155,6 +155,20 @@ test("Transportation: the teacher's other accepted answers count when typing", (
   assert.deepEqual(accepts("状况"), ["状况"]); // everything else stays exact
 });
 
+test("Science and Technology: the teacher's other accepted answers count when typing", () => {
+  const sci = TOPICS.find((t) => t.id === "science-and-technology");
+  const accepts = (chinese) =>
+    acceptedAnswers(sci.words.find((w) => w.chinese === chinese), sci.words, answerVariants("science-and-technology")).sort();
+  assert.deepEqual(accepts("电子"), ["电子", "电子设备"].sort());
+  assert.deepEqual(accepts("电脑"), ["电脑", "计算机"].sort());
+  assert.deepEqual(accepts("梦想"), ["梦想", "做梦"].sort());
+  assert.deepEqual(accepts("提高"), ["提高", "改进", "改善"].sort());
+  assert.deepEqual(accepts("改变"), ["改变", "变化"].sort());
+  assert.deepEqual(accepts("积极面"), ["积极面", "正面"].sort());
+  assert.deepEqual(accepts("消极面"), ["消极面", "负面"].sort());
+  assert.deepEqual(accepts("手机"), ["手机"]); // everything else stays exact
+});
+
 test("Family: the teacher's other accepted answers count when typing", () => {
   const family = TOPICS.find((t) => t.id === "family");
   const accepts = (chinese) =>
@@ -270,7 +284,6 @@ test("Society: the teacher's other accepted answers count when typing", () => {
   const accepts = (chinese) =>
     acceptedAnswers(society.words.find((w) => w.chinese === chinese), society.words, answerVariants("society")).sort();
   assert.deepEqual(accepts("妇女"), ["妇女", "女性", "女人"].sort());
-  assert.deepEqual(accepts("变化"), ["变化", "改变"].sort());
   assert.deepEqual(accepts("偷窃"), ["偷窃", "偷", "偷盗"].sort());
   assert.deepEqual(accepts("私人"), ["私人"]); // everything else stays exact
 });
