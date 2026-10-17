@@ -10,7 +10,6 @@ const schoolVariants = answerVariants("school");
 // Every School word the 学 rule changes, with exactly what it adds. All other School words stay exact.
 const SCHOOL_EXTRAS = {
   物理学: ["物理", "物理科学"],
-  生物学: ["生物", "生物科学"],
   心理学: ["心理", "心理科学"],
   统计学: ["统计", "统计科学"],
   代数学: ["代数", "代数科学"],
@@ -320,4 +319,12 @@ test("Geography and Climate: the teacher's other accepted answers count when typ
   };
   for (const [chinese, extra] of Object.entries(expected)) assert.deepEqual(accepts(chinese), [chinese, ...extra].sort(), chinese);
   assert.deepEqual(accepts("洪水"), ["洪水"]); // everything else stays exact
+});
+
+test("Human and Nature: the teacher's other accepted answers count when typing", () => {
+  const topic = TOPICS.find((t) => t.id === "human-and-nature");
+  const accepts = (chinese) =>
+    acceptedAnswers(topic.words.find((w) => w.chinese === chinese), topic.words, answerVariants("human-and-nature")).sort();
+  assert.deepEqual(accepts("噪音"), ["噪音", "噪声"].sort());
+  assert.deepEqual(accepts("生物"), ["生物"]); // everything else stays exact
 });

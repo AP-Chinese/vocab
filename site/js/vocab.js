@@ -186,11 +186,6 @@ export const TOPICS = [
         "english": "science"
       },
       {
-        "chinese": "生物学",
-        "pinyin": "shēng wù xué",
-        "english": "biology"
-      },
-      {
         "chinese": "化学",
         "pinyin": "huà xué",
         "english": "chemistry"
@@ -3932,7 +3927,10 @@ export const TOPICS = [
       {
         "chinese": "噪音",
         "pinyin": "zào yīn",
-        "english": "noise"
+        "english": "noise",
+        "alsoAccepted": [
+          "噪声"
+        ]
       },
       {
         "chinese": "臭氧层",
@@ -4018,11 +4016,6 @@ export const TOPICS = [
         "chinese": "面临",
         "pinyin": "miàn lín",
         "english": "to face; to be confronted with"
-      },
-      {
-        "chinese": "濒临",
-        "pinyin": "bīn lín",
-        "english": "to be on the verge of"
       },
       {
         "chinese": "灭绝",

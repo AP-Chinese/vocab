@@ -157,6 +157,7 @@ ALSO_ACCEPTED = {
     ("jobs", "接触"): ["联系"],
     ("education", "方式"): ["方法"],
     ("education", "本领"): ["能力"],
+    ("human-and-nature", "噪音"): ["噪声"],
     ("society", "妇女"): ["女性", "女人"],
     ("society", "偷窃"): ["偷", "偷盗"],
     ("geography-and-climate", "市"): ["城市"],
@@ -208,6 +209,8 @@ TOPIC_NAMES = {
 EXCLUDE = {
     ("school", "数学分析"),  # math analysis
     ("school", "社会学"),  # sociology (社会学科 stays, and also accepts 社会学)
+    ("school", "生物学"),  # biology (kept only in Human and Nature, as 生物)
+    ("human-and-nature", "濒临"),  # to be on the verge of
     ("travel", "特快车"),  # express train
     # Idioms
     ("travel", "独具匠心"),
